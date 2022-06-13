@@ -9,6 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
 }
 
 
@@ -45,7 +46,7 @@ header {
             display: block;
             width: 40px;
             height: 1px;
-            background-color: $color-base;
+            background-color: #000;
             &:nth-child(2) {
                 margin: 13px 0;
             }
@@ -78,6 +79,98 @@ header {
 
 
 //main
+main {
+    color: #000;
+    
+    article.slide {
+        h2 {
+            font-size: 0;
+        }
+        img {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+
+    section.explain {
+
+        div.explain-txt {
+            position: relative;
+            padding-left: 15px;
+        
+            h3 {
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+                &:nth-child(2) {
+                    font-weight: normal;
+                    position: absolute;
+                    top: -1px;
+                    right: 15px;
+                }
+            }
+        
+            p {
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+
+            a {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+
+                &:hover {
+                    border-bottom: 1px solid #000;
+                }                
+            }
+        }
+    }
+
+    section.option {
+        padding-left: 15px;
+        padding-top:  100px;
+        div.flex-box {
+            width:65%;
+            display: flex;
+
+            div.w-box {
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+                a {
+                    display: inline-block;
+                    color: black;
+                    font-size: 15px;
+                    &:hover {
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+    
+            div.b-box {
+                width: 150px;
+                height: 150px;
+                background-color: black;
+                p {
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                a {
+                    display: inline-block;
+                    color: white;
+                    font-size: 15px;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
 
 
 // footer
@@ -86,6 +179,7 @@ footer {
     width: 100%;
 
     hr {
+        margin-top: 50px;
         border: 1px solid $color-base;
     }
 

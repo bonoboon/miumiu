@@ -1,0 +1,381 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 22px;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+header h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 a img {
+    width: 200px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 13px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 30px;
+}
+
+main {
+  color: #000;
+}
+
+main article.slide h2 {
+  font-size: 0;
+}
+
+main article.slide img {
+  width: 100%;
+  margin: 15px 0;
+}
+
+main section.explain div.explain-txt {
+  position: relative;
+  padding-left: 15px;
+}
+
+main section.explain div.explain-txt h3:first-child {
+  margin-bottom: 15px;
+}
+
+main section.explain div.explain-txt h3:nth-child(2) {
+  font-weight: normal;
+  position: absolute;
+  top: -1px;
+  right: 15px;
+}
+
+main section.explain div.explain-txt p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+main section.explain div.explain-txt a {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main section.explain div.explain-txt a:hover {
+  border-bottom: 1px solid #000;
+}
+
+main section.option {
+  padding-left: 15px;
+  padding-top: 100px;
+}
+
+main section.option div.flex-box {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.option div.flex-box div.w-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+main section.option div.flex-box div.w-box a {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+}
+
+main section.option div.flex-box div.w-box a:hover {
+  border-bottom: 1px solid black;
+}
+
+main section.option div.flex-box div.b-box {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
+
+main section.option div.flex-box div.b-box p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main section.option div.flex-box div.b-box a {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+}
+
+main section.option div.flex-box div.b-box a:hover {
+  border-bottom: 1px solid white;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer hr {
+  margin-top: 50px;
+  border: 1px solid #867573;
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h2 {
+  display: inline-block;
+  color: #867573;
+  margin: 15px 0 10px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h2 {
+    font-size: 21px;
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h2 {
+    padding-right: 131px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h2 {
+    padding-right: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
