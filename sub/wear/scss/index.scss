@@ -17,14 +17,13 @@
 header {
     position: relative;
     width: 100%;
-    background-color: #f9f9f9;
-
     h1 {
-        padding-top: 10px;
+        padding-top: 5px;
         text-align: center;
         a {
             img {
-                width: 130px;
+                width: 110px;
+                // background-color: antiquewhite;
 
                 @include responsive(pc-screens) {
                     width: 200px;
@@ -35,7 +34,7 @@ header {
 
     div.mobile-menu {
         position: absolute;
-        top: 30px;
+        top: 25px;
         right: 15px;
 
         @include responsive(pc-screens) {
@@ -44,11 +43,11 @@ header {
         
         span {
             display: block;
-            width: 40px;
+            width: 30px;
             height: 1px;
-            background-color: #000;
+            background-color: black;
             &:nth-child(2) {
-                margin: 13px 0;
+                margin: 10px 0;
             }
         }
     }
@@ -89,30 +88,60 @@ main {
         img {
             width: 100%;
             margin: 15px 0;
+            @include responsive(tablet-screens) {
+                width: 50%;
+                margin-left: 25%;
+            }
         }
     }
 
     section.explain {
-
+        @include responsive(tablet-screens) {
+            position: absolute;
+            top: 21%;
+            left: 0;
+            width: 25%;
+            height: 300px;
+        }
         div.explain-txt {
             position: relative;
-            padding-left: 15px;
-        
+            margin-left: 15px;
+            
             h3 {
                 &:first-child {
                     margin-bottom: 15px;
+                    font-size: 22px;
                 }
                 &:nth-child(2) {
-                    font-weight: normal;
                     position: absolute;
-                    top: -1px;
+                    top: 0;
                     right: 15px;
+                    font-size: 20px;
+                    font-weight: normal;
                 }
+                
+                @include responsive(tablet-screens) {
+                    &:first-child {
+                        margin-bottom: 30px;
+                        font-size: 27px;
+                    }
+
+                    &:nth-child(2){
+                        position: relative;
+                        margin-left: 15px;
+                        margin-bottom: 45px;
+                        font-size: 22px;
+                    }
+                }
+ 
             }
         
             p {
                 font-size: 15px;
                 margin-bottom: 15px;
+                @include responsive(tablet-screens) {
+                    font-size: 17px;
+                }
             }
 
             a {
@@ -123,7 +152,11 @@ main {
 
                 &:hover {
                     border-bottom: 1px solid #000;
-                }                
+                }
+                
+                @include responsive(tablet-screens) {
+                    font-size: 17px;
+                }
             }
         }
     }
@@ -131,18 +164,34 @@ main {
     section.option {
         padding-left: 15px;
         padding-top:  100px;
+
+        @include responsive(tablet-screens) {
+            position: absolute;
+            top: 20%;
+            right: 0;
+            padding-top: 0;
+            // background-color: aqua;
+        }    
+
         div.flex-box {
-            width:65%;
+            width: 100%;
             display: flex;
+            @include responsive(tablet-screens) {
+                flex-direction: column;
+                margin-right: 15px;
+            }
 
             div.w-box {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
+                padding: 15px;
                 border: 1px solid black;
+
                 a {
                     display: inline-block;
                     color: black;
-                    font-size: 15px;
+                    font-size: 13px;
+                    font-weight: 600;
                     &:hover {
                         border-bottom: 1px solid black;
                     }
@@ -150,25 +199,29 @@ main {
             }
     
             div.b-box {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
+                padding: 10px;
                 background-color: black;
+
                 p {
+                    font-size: 13px;
                     color: white;
-                    font-size: 15px;
-                    font-weight: 600;
+                    margin-bottom: 45px;
                 }
                 a {
                     display: inline-block;
                     color: white;
-                    font-size: 15px;
-                    &:hover {
-                        border-bottom: 1px solid white;
+                    font-size: 10px;
+                    font-weight: 600;
+                    &:nth-child(2) {
+                        &:hover {
+                            border-bottom: 1px solid white;
+                        }
                     }
                 }
             }
-        }
-        
+        }  
     }
 }
 
@@ -209,6 +262,7 @@ footer {
                 position: absolute;
                 top: 15px;
                 right: 0;
+                color: $color-base;
                 
                 @include responsive(pc-screens) {
                     display: none;
