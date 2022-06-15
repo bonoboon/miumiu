@@ -1,0 +1,243 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.grid {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+// header
+header {
+    position: relative;
+    width: 100%;
+    // background-color: black;
+
+    h1 {
+        padding-top: 10px;
+        text-align: center;
+        a {
+            img {
+                width: 130px;
+
+                @include responsive(pc-screens) {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    div.mobile-menu {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+
+        @include responsive(pc-screens) {
+            display: none;
+        }
+        
+        span {
+            display: block;
+            width: 40px;
+            height: 1px;
+            background-color: $color-base;
+            &:nth-child(2) {
+                margin: 13px 0;
+            }
+        }
+    }
+
+    div.header-icon {
+        display: none;
+
+        @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+        }
+
+        a {
+            display: inline-block;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+
+//main
+
+
+// footer
+footer {
+    position: relative;
+    width: 100%;
+
+    hr {
+        border: 1px solid $color-base;
+    }
+
+    div.grid {
+        div {
+            position: relative;
+            h2 {
+                display: inline-block;
+                color: $color-base;
+                margin: 15px 0 10px 0;
+                font: {
+                    size: 22px;
+                    weight: normal;
+                }
+                
+                @include responsive(pc-screens) {
+                    font: {
+                        size: 21px;
+                        weight: bold;
+                    }
+                    border-right: 2px solid $color-base;
+                    margin-right: 50px;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+                
+            }
+
+            a {
+                // display: none;
+                color: $color-base;
+                
+                @include responsive(pc-screens) {
+                    display: inline-block;
+                    margin-right: 55px;
+                }
+            }
+        }
+
+        div.category {
+            h2 {
+    
+                @include responsive(pc-screens) {
+                    padding-right: 131px;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+            }
+        }
+        
+        div.service {
+            h2 {
+
+                @include responsive(pc-screens) {
+                    padding-right: 45px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+            }
+        }
+
+        div.follow {
+            h2 {
+
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+                
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+        }
+
+        div.company {
+            h2 {
+               
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+
+            p {
+                // display: none;
+                margin-left: 5px;
+                @include responsive(pc-screens) {
+                    display: block;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        div.sns {
+            display: none;
+
+            @include responsive(pc-screens) {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 30px;
+
+                a {
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    div.footer-logo {
+        margin-top: 45px;
+        text-align: center;
+        
+        @include responsive(pc-screens) {
+            margin-top: 60px;
+        }
+        
+        img {
+            width: 110px;
+            @include responsive(pc-screens) {
+                width: 180px;
+            }
+        }
+    }
+
+    div.top {
+        display: none;
+
+        @include responsive(pc-screens) {
+            position: absolute;
+            right: 100px;
+        }
+    }
+
+}
+
