@@ -139,18 +139,26 @@ main article.slide img {
 
 @media screen and (min-width: 768px) {
   main article.slide img {
-    width: 50%;
-    margin-left: 25%;
+    width: 55%;
+    margin-left: 22.5%;
   }
 }
 
 @media screen and (min-width: 768px) {
   main section.explain {
     position: absolute;
-    top: 21%;
+    top: 40%;
     left: 0;
-    width: 25%;
+    width: 22.5%;
     height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.explain {
+    top: 50%;
+    left: 0;
+    padding-left: 5%;
   }
 }
 
@@ -196,20 +204,56 @@ main section.explain div.explain-txt p {
   }
 }
 
-main section.explain div.explain-txt a {
+main section.explain div.explain-txt div.detail a {
   display: inline-block;
   color: black;
   font-size: 15px;
   font-weight: 600;
 }
 
-main section.explain div.explain-txt a:hover {
+main section.explain div.explain-txt div.detail a:hover {
   border-bottom: 1px solid #000;
 }
 
 @media screen and (min-width: 768px) {
-  main section.explain div.explain-txt a {
+  main section.explain div.explain-txt div.detail a {
     font-size: 17px;
+  }
+}
+
+main section.explain div.explain-txt div.detail p {
+  display: none;
+}
+
+main section.explain div.explain-txt div.w-b-box {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.explain div.explain-txt div.w-b-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+  }
+  main section.explain div.explain-txt div.w-b-box div.wishlist-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-right: 0;
+  }
+  main section.explain div.explain-txt div.w-b-box div.wishlist-box a img {
+    width: 60%;
+    margin: 7px 7px;
+  }
+  main section.explain div.explain-txt div.w-b-box div.basket-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaa;
+  }
+  main section.explain div.explain-txt div.w-b-box div.basket-box a img {
+    width: 60%;
+    margin: 7px 7px;
   }
 }
 
@@ -221,10 +265,22 @@ main section.option {
 @media screen and (min-width: 768px) {
   main section.option {
     position: absolute;
-    top: 20%;
+    top: 40%;
     right: 0;
     padding-top: 0;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option {
+    top: 50%;
+    right: 0%;
+    padding-right: 5%;
+  }
+}
+
+main section.option h3 {
+  font-size: 0;
 }
 
 main section.option div.flex-box {
@@ -251,6 +307,13 @@ main section.option div.flex-box div.w-box {
   border: 1px solid black;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.w-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 main section.option div.flex-box div.w-box a {
   display: inline-block;
   color: black;
@@ -262,17 +325,37 @@ main section.option div.flex-box div.w-box a:hover {
   border-bottom: 1px solid black;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.w-box a {
+    font-size: 17px;
+  }
+}
+
 main section.option div.flex-box div.b-box {
   width: 120px;
   height: 120px;
-  padding: 10px;
+  padding: 15px;
   background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 main section.option div.flex-box div.b-box p {
   font-size: 13px;
   color: white;
   margin-bottom: 45px;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box p {
+    margin-bottom: 58px;
+    font-size: 17px;
+  }
 }
 
 main section.option div.flex-box div.b-box a {
@@ -286,6 +369,12 @@ main section.option div.flex-box div.b-box a:nth-child(2):hover {
   border-bottom: 1px solid white;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box a {
+    font-size: 14px;
+  }
+}
+
 footer {
   position: relative;
   width: 100%;
@@ -294,6 +383,12 @@ footer {
 footer hr {
   margin-top: 50px;
   border: 1px solid #867573;
+}
+
+@media screen and (min-width: 768px) {
+  footer hr {
+    margin-top: 30px;
+  }
 }
 
 footer div.grid div {
