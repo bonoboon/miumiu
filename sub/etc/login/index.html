@@ -18,15 +18,101 @@
         </div>
 
         <div class="header-icon">
-            <a href=""><img src="./images/login_color.png" alt="login"></a>
-            <a href=""><img src="./images/wishlist_color.png" alt="wishlist"></a>
-            <a href=""><img src="./images/basket_color.png" alt="basket"></a>
+            <a href=""><img src="./images/login_black.png" alt="login"></a>
+            <a href=""><img src="./images/wishlist_black.png" alt="wishlist"></a>
+            <a href=""><img src="./images/basket_black.png" alt="basket"></a>
         </div>
     </header>
 
     <main>
+        <section class="title-box">
+            <div class="login-title">
+                <h1>로그인</h1>
+            </div>        
+        </section>
 
-
+        <section class="login-join">
+            <h2>login</h2>
+            <div class="grid">
+                <div class="flex-box">
+                    <div class="login-box">
+                        <h3>로그인</h3>
+                        <p class="typeds">계정에 접속하시려면 아래에 이메일 주소와 비밀번호를 입력해 주십시오.</p>
+                        <form >
+                            <ul>
+                                <li>
+                                    <label for="id">이메일</label>
+                                    <input type="text" id="id" name="id"
+                                    size="16">
+                                </li>
+                                <li>
+                                    <label for="id">비밀번호</label>
+                                    <input type="password" id="pw" name="pw"
+                                    size="16">
+                                </li>
+                            </ul>
+                        </form>
+                        <p class="service">본 사이트는 reCAPTCHA에 의해 보호되며 Google 
+                            <a>개인정보취급방침</a> 및 
+                            <a>서비스 약관</a>이 적용됩니다.
+                        </p>
+                        <button><a href="#">로그인</a></button>
+                    </div><!--login-box-->
+                    <div class="join-box">
+                        <h3>가입하기</h3>
+                        <span>모든 항목은 필수 입력사항입니다.</span>
+                        <p class="essential">버버리에 가입하시려면 다음을 이용하여 등록해주십시오.</p>
+                        <form>
+                            <ul>
+                                <li>
+                                    <label for="area">지역</label>
+                                    <select name="area" id="area">
+                                        <option value="ko" selected>대한민국</option>
+                                        <option value="japan">일본</option>
+                                        <option value="china">중국</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="gender">성별</label>
+                                    <select name="gender" id="gender">
+                                        <option value="w" selected>여성</option>
+                                        <option value="m">남성</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="last-name">성</label>
+                                    <input type="text" id="last-name" name="last-name"
+                                    maxlength="8" >
+                                </li>
+                                <li>
+                                    <label for="first-name">이름</label>
+                                    <input type="text" id="first-name" name="first-name"
+                                    maxlength="8" >
+                                </li>
+                                <li>
+                                    <label for="phone">전화번호</label>
+                                    <input type="text" id="phone" name="phone"
+                                    maxlength="8" >
+                                </li>
+                                <li>
+                                    <label for="e-mail">이메일</label>
+                                    <input type="text" id="e-mail" name="e-mail"
+                                    maxlength="8" >
+                                </li>
+                                <li>
+                                    <label for="pw">비민번호(영자와 숫자 조합)</label>
+                                    <input type="pw" id="pw" name="pw"
+                                    maxlength="8" >
+                                </li>
+                            </ul>
+                        </form>
+                        <p class="service">본 사이트는 reCAPTCHA에 의해 보호되며 google <a>개인정보취급방침</a> 및 <a>서비스 약관</a>이 적용됩니다.</p>
+                        <button><a href="#">가입하기</a></button>
+                    </div>
+                </div> <!--flex-box-->
+            </div><!--grid-->
+        </section>
+            
     </main>
 
     <footer>
