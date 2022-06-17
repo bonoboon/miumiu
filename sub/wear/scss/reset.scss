@@ -18,22 +18,38 @@ ul {
 a {
     display: block;
     text-decoration: none;
+    color: $black;
 }
 
 h2 {
-    font-size: 33px;
+    font-size: 0;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.125em;
+    color: $black;
+}
+
+h4 {
+    font : {
+        size: 1.1em;
+        weight: normal;
+    }
 }
 
 p {
-    font-size: 16px;
+    font: {
+        size: 0.95em;
+        weight: 550;
+    }
+}
+
+strong {
+    font-size: 0.9em;
 }
 
 span {
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 header,

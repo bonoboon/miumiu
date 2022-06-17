@@ -9,7 +9,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    
 }
 
 
@@ -23,10 +22,9 @@ header {
         a {
             img {
                 width: 110px;
-                // background-color: antiquewhite;
-
                 @include responsive(pc-screens) {
-                    width: 200px;
+                    width: 120px;
+                    margin-bottom: 40px;
                 }
             }
         }
@@ -45,7 +43,7 @@ header {
             display: block;
             width: 30px;
             height: 1px;
-            background-color: black;
+            background-color: $black;
             &:nth-child(2) {
                 margin: 10px 0;
             }
@@ -59,18 +57,17 @@ header {
             display: block;
             position: absolute;
             bottom: 0;
-            right: 15px;
-        }
-
+            right: 2%;
+        }  
         a {
             display: inline-block;
-            margin-right: 25px;
+            margin-right: 15px;
             &:last-child {
                 margin-right: 0;
             }
 
             img {
-                width: 30px;
+                width: 25px;
             }
         }
     }
@@ -79,262 +76,219 @@ header {
 
 //main
 main {
-    color: #000;
-    
-    article.slide {
-        h2 {
-            font-size: 0;
-        }
+    article {
         img {
             width: 100%;
-            margin: 15px 0;
-            @include responsive(tablet-screens) {
-                width: 55%;
-                margin-left: 22.5%;
-            }
+            height: 350px;
+            @include responsive(pc-screens) {
+               height: 900px;
+            }  
         }
     }
 
-    section.explain {
-        
-        @include responsive(tablet-screens) {
-            position: absolute;
-            top: 40%;
-            left: 0;
-            width: 22.5%;
-            height: 300px;
-            
-        }
-
+    nav {
         @include responsive(pc-screens) {
-            top: 50%;
-            left: 0;
-            padding-left: 5%;
-        }
-        div.explain-txt {
-            position: relative;
-            margin-left: 15px;
-            
-            h3 {
-                &:first-child {
-                    margin-bottom: 15px;
-                    font-size: 22px;
-                }
-                &:nth-child(2) {
-                    position: absolute;
-                    top: 0;
-                    right: 15px;
-                    font-size: 20px;
-                    font-weight: normal;
-                }
-                
-                @include responsive(tablet-screens) {
+            margin: 40px 0 10px;
+        } 
+        .gnb {
+            padding: 0 4%;
+            border-top: 1px solid $black-border;
+            border-bottom: 1px solid $black-border;
+            @include responsive(pc-screens) {
+                padding: 0 3%;
+            } 
+            li {
+                display: inline-block;
+                font-size: 0.7em;
+                @include responsive(pc-screens) {
+                    padding: 15px 0;
+                    margin-right: 7%;
+                    font-size: 1em;
                     &:first-child {
-                        margin-bottom: 30px;
-                        font-size: 27px;
+                        font-weight: 550;
                     }
+                    &:nth-child(2) {
+                        a {
+                            font-weight: bold;
+                            border-bottom: 2px solid $black;
+                        }
+                    }
+                } 
+            }
+        }
+    }
 
-                    &:nth-child(2){
-                        position: relative;
-                        margin-left: 15px;
-                        margin-bottom: 45px;
-                        font-size: 22px;
+    #shoulder {
+        margin: 30px 0 60px;
+        padding: 4%;
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+            padding: 2%;
+        } 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            column-gap: 0.5rem;
+            row-gap: 1rem;
+            margin-top: 10px;
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2,1fr);
+            } 
+            .grid-item-main-img {
+                grid-column: 1/3;
+                grid-row: 1/3;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                @include responsive(pc-screens) {
+                    grid-column: 3/5;
+                } 
+            }
+            .grid-item {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        padding: 3px 10%;
+                        line-height: 15px;
+                        @include responsive(pc-screens) {
+                            padding: 0;
+                            margin-bottom: 15px;
+                        } 
                     }
                 }
- 
             }
-        
-            p {
-                font-size: 15px;
-                margin-bottom: 15px;
-                @include responsive(tablet-screens) {
-                    font-size: 17px;
+        }
+    }
+
+
+    #clutches {
+        padding: 4%;
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+            padding: 2%;
+        } 
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+            } 
+            li {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        padding: 3px 10%;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #handles {
+        margin: 60px 0;
+        padding: 4%;
+        @include responsive(pc-screens) {
+            margin: 0;
+            padding: 2%;
+        } 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            margin-top: 10px;
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2,1fr);
+            } 
+
+            .grid-item-main-img {
+                grid-column: 1/3;
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
             }
             
-            div.detail {
+            .grid-item {
                 a {
-                    display: inline-block;
-                    color: black;
-                    font-size: 15px;
-                    font-weight: 600;
-    
-                    &:hover {
-                        border-bottom: 1px solid #000;
+                    img {
+                        width: 100%;
                     }
-                    
-                    @include responsive(tablet-screens) {
-                        font-size: 17px;
+                    p {
+                        padding: 3px 10%;
+                        line-height: 15px;
                     }
-                }
-
-                p {
-                    display: none;
-                }
-            }
-
-            div.w-b-box {
-                display: none;
-                @include responsive(pc-screens) {
-                    display: flex;
-                    margin-top: 100px;
-                    div.wishlist-box {
-                        width: 40px;
-                        height: 40px;
-                        border: 2px solid #aaa;
-                        border-right: 0;
-                        a {
-                            img {
-                                width: 60%;
-                                margin: 7px 7px;
-                            }
-                        }
-                    }
-
-                    div.basket-box {
-                        width: 40px;
-                        height: 40px;
-                        border: 2px solid #aaa;
-                        
-                        a {
-                            img {
-                                width: 60%;
-                                margin: 7px 7px;
-                            }
-                        }
-                    }
-                    
                 }
             }
         }
     }
 
-    section.option {
-        padding-left: 15px;
-        padding-top:  100px;
-        
-
-        @include responsive(tablet-screens) {
-            position: absolute;
-            top: 40%;
-            right: 0;
-            padding-top: 0;
-            // background-color: aqua;
-        }    
-
+    #mini {
+        padding: 4%;
+        margin-bottom: 80px;
         @include responsive(pc-screens) {
-            top: 50%;
-            right: 0%;
-            padding-right: 5%;
-        }
-
-        h3 {
-            font-size: 0;
-        }
-
-        div.flex-box {
+            padding: 0 2%;
+            margin-bottom: 200px;
+        } 
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            margin-top: 10px;
             width: 100%;
-            display: flex;
-            @include responsive(tablet-screens) {
-                flex-direction: column;
-                margin-right: 15px;
-            }
-
-            div.w-box {
-                width: 120px;
-                height: 120px;
-                padding: 15px;
-                border: 1px solid black;
-
-                @include responsive(pc-screens) {
-                    width: 150px;
-                    height: 150px;
-                }
-
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2,1fr);
+            } 
+            li {
                 a {
-                    display: inline-block;
-                    color: black;
-                    font-size: 13px;
-                    font-weight: 600;
-                    &:hover {
-                        border-bottom: 1px solid black;
+                    img {
+                        width: 100%;
                     }
-
-                    @include responsive(pc-screens) {
-                        font-size: 17px;
+                    p {
+                        padding: 3px 11%;
+                        line-height: 15px;
                     }
                 }
             }
-    
-            div.b-box {
-                width: 120px;
-                height: 120px;
-                padding: 15px;
-                background-color: black;
-
-                @include responsive(pc-screens) {
-                    width: 150px;
-                    height: 150px;
-                }
-
-                p {
-                    font-size: 13px;
-                    color: white;
-                    margin-bottom: 45px;
-
-                    @include responsive(pc-screens) {
-                        margin-bottom: 58px;
-                        font-size: 17px;
-                    }
-                }
-                a {
-                    display: inline-block;
-                    color: white;
-                    font-size: 10px;
-                    font-weight: 600;
-                    &:nth-child(2) {
-                        &:hover {
-                            border-bottom: 1px solid white;
-                        }
-                    }
-                    @include responsive(pc-screens) {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }  
+        }
     }
+
 }
-
-
 // footer
 footer {
     position: relative;
     width: 100%;
-
-    hr {
-        margin-top: 50px;
-        border: 1px solid $color-base;
-        @include responsive(tablet-screens) {
-            margin-top: 30px;
-        }
-    }
-
+    color: $color-base;
+    border-top: 1px solid $color-border;
     div.grid {
         div {
             position: relative;
-            h2 {
+            h4 {
                 display: inline-block;
-                color: $color-base;
-                margin: 15px 0 10px 0;
-                font: {
-                    size: 22px;
-                    weight: normal;
-                }
-                
+                margin: 10px 0;
                 @include responsive(pc-screens) {
                     font: {
-                        size: 21px;
                         weight: bold;
                     }
                     border-right: 2px solid $color-base;
@@ -344,43 +298,41 @@ footer {
 
             span {
                 position: absolute;
-                top: 15px;
+                top: 5px;
                 right: 0;
-                color: $color-base;
-                
+                font-size: 90%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
-                
             }
 
             a {
-                // display: none;
+                display: none;
                 color: $color-base;
-                
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 55px;
+                    margin-right: 3%;
                 }
             }
         }
 
         div.category {
-            h2 {
-    
+            h4 {
                 @include responsive(pc-screens) {
-                    padding-right: 131px;
+                    padding-right: 116px;
                 }
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
         
         div.service {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
                     margin-bottom: 40px;
@@ -388,21 +340,22 @@ footer {
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
 
         div.follow {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-                padding: 15px 5px;
-                
+                padding: 15px 5%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -410,16 +363,16 @@ footer {
         }
 
         div.company {
-            h2 {
-               
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             p {
-                // display: none;
-                margin-left: 5px;
+                display: none;
+                margin-top: 10px;
+                font-weight: normal;
                 @include responsive(pc-screens) {
                     display: block;
                     margin-left: 0;
@@ -429,13 +382,11 @@ footer {
 
         div.sns {
             display: none;
-
             @include responsive(pc-screens) {
                 display: block;
                 position: absolute;
-                top: 15px;
-                right: 30px;
-
+                top: 10px;
+                right: 15px;
                 a {
                     margin-right: 15px;
                     &:last-child {
