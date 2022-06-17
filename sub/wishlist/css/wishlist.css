@@ -1,0 +1,488 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #867573;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 22px;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 200px;
+  }
+}
+
+header div.logo {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header div.logo h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.logo h1 a img {
+    width: 200px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 13px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    top: 180px;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 30px;
+}
+
+header div.main-img-text {
+  position: relative;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.main-img-text {
+    margin-top: 120px;
+  }
+}
+
+header div.main-img-text img {
+  width: 100%;
+}
+
+header div.main-img-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.main-img-text p {
+    font-size: 36px;
+  }
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main div.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+main div.flex-box section {
+  text-align: center;
+}
+
+main div.flex-box section h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.flex-box section h2 {
+    font-size: 20px;
+  }
+}
+
+main div.flex-box aside.login {
+  margin-bottom: 50px;
+  padding: 45px 0 35px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.flex-box aside.login {
+    width: 30%;
+    padding: 125px 0 390px;
+  }
+}
+
+main div.flex-box aside.login h2 {
+  font-size: 0;
+}
+
+main div.flex-box aside.login strong {
+  display: block;
+  margin-bottom: 80px;
+  color: #000;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.flex-box aside.login strong {
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 15px;
+  }
+}
+
+main div.flex-box aside.login a {
+  width: 80%;
+  margin: 0 auto;
+  padding: 18px 0;
+  color: #fff;
+  font-size: 24px;
+  background-color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right {
+    width: 65%;
+  }
+}
+
+main div.right section.wishlist {
+  margin-bottom: 75px;
+}
+
+main div.right section.wishlist h2 {
+  padding-top: 25px;
+  border-top: 1px solid #867573;
+}
+
+main div.right section.wishlist p {
+  color: #000;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.wishlist p {
+    font-size: 20px;
+  }
+}
+
+main div.right section.recommend div a {
+  margin-bottom: 15px;
+}
+
+main div.right section.recommend div p {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.recommend div p {
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+main div.right section.recommend div strong {
+  color: #000;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.recommend div strong {
+    font-weight: 500;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.recommend div.mini-bag,
+  main div.right section.recommend div.mini-skirt {
+    display: none;
+  }
+}
+
+main div.right section.recommend div.mini-bag {
+  margin-bottom: 50px;
+}
+
+main div.right section.recommend div.product {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.recommend div.product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main div.right section.recommend div.product div.mini-bag-pc,
+  main div.right section.recommend div.product div.mini-skirt-pc {
+    width: 50%;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer hr {
+  border: 1px solid #867573;
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h2 {
+  display: inline-block;
+  color: #867573;
+  margin: 15px 0 10px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h2 {
+    font-size: 21px;
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  display: none;
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h2 {
+    padding-right: 131px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h2 {
+    padding-right: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  display: none;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=wishlist.css.map */

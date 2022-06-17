@@ -1,0 +1,483 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #867573;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 22px;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 200px;
+  }
+}
+
+header div.logo {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header div.logo h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.logo h1 a img {
+    width: 200px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 13px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    top: 180px;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 30px;
+}
+
+header div.main-img-text {
+  position: relative;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.main-img-text {
+    margin-top: 120px;
+  }
+}
+
+header div.main-img-text img {
+  width: 100%;
+}
+
+header div.main-img-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.main-img-text p {
+    font-size: 36px;
+  }
+}
+
+main section h2 {
+  font-size: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main div.main-flex-box aside.left-menu {
+  margin-bottom: 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box aside.left-menu {
+    width: 30%;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}
+
+main div.main-flex-box aside.left-menu h2 {
+  font-size: 0;
+}
+
+main div.main-flex-box aside.left-menu nav ul.gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box aside.left-menu nav ul.gnb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}
+
+main div.main-flex-box aside.left-menu nav ul.gnb li {
+  width: 33.33333%;
+}
+
+main div.main-flex-box aside.left-menu nav ul.gnb li a {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box aside.left-menu nav ul.gnb li a {
+    padding: 0;
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+main div.main-flex-box aside.left-menu nav ul.gnb li a:hover {
+  text-decoration: underline;
+}
+
+main div.main-flex-box section.order-des {
+  border-top: 1px solid #c6bebe;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box section.order-des {
+    width: 70%;
+  }
+}
+
+main div.main-flex-box section.order-des h3 {
+  margin: 30px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+main div.main-flex-box section.order-des ul li {
+  list-style: disc inside;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+main div.main-flex-box section.order-des ul li a {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main div.main-flex-box section.order-des strong {
+  color: #000;
+  font-size: 18px;
+}
+
+main div.main-flex-box section.order-des p {
+  margin-top: 30px;
+  color: #000;
+  font-size: 18px;
+}
+
+main div.main-flex-box section.order-des div.shipping {
+  margin-top: 25px;
+  border-top: 1px solid #c6bebe;
+}
+
+main div.main-flex-box section.order-des div.shipping strong a {
+  display: inline-block;
+  color: #000;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+main div.main-flex-box section.order-des div.shipping-address form {
+  margin-bottom: 75px;
+}
+
+main div.main-flex-box section.order-des div.shipping-address form label {
+  display: block;
+  margin: 50px 0 25px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main div.main-flex-box section.order-des div.shipping-address form select {
+  width: 270px;
+  padding: 12px 18px;
+  border: 2px solid #000;
+  font-size: 18px;
+}
+
+main div.main-flex-box section.order-des div.shipping-address strong {
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+main div.main-flex-box section.order-des div.shipping-address p {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.main-flex-box section.order-des div.shipping-address p {
+    margin-bottom: 200px;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer hr {
+  border: 1px solid #867573;
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h2 {
+  display: inline-block;
+  color: #867573;
+  margin: 15px 0 10px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h2 {
+    font-size: 21px;
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  display: none;
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h2 {
+    padding-right: 131px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h2 {
+    padding-right: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  display: none;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=order.css.map */
