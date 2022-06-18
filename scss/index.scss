@@ -16,69 +16,334 @@
 header {
     position: relative;
     width: 100%;
-    // background-color: black;
+    margin-bottom: 50px;
 
-    h1 {
-        padding-top: 10px;
+    div.main-img-mobile {
+        width: 100%;
         text-align: center;
-        a {
-            img {
-                width: 130px;
-
-                @include responsive(pc-screens) {
-                    width: 200px;
-                }
-            }
-        }
-    }
-
-    div.mobile-menu {
-        position: absolute;
-        top: 30px;
-        right: 15px;
 
         @include responsive(pc-screens) {
             display: none;
         }
-        
-        span {
-            display: block;
-            width: 40px;
-            height: 1px;
-            background-color: $color-base;
-            &:nth-child(2) {
-                margin: 13px 0;
+
+        a {
+            img {
+                width: 100%;
             }
         }
-    }
+    } // main-img-mobile
 
-    div.header-icon {
+    div.main-img-pc {
         display: none;
+        width: 100%;
+        text-align: center;
 
         @include responsive(pc-screens) {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            right: 15px;
+            display: flex;
         }
 
         a {
-            display: inline-block;
-            margin-right: 25px;
-            &:last-child {
-                margin-right: 0;
+
+            @include responsive(pc-screens) {
+                width: (100%/3);
             }
 
             img {
-                width: 30px;
+                width: 100%;
             }
         }
-    }
-}
+    } // main-img-pc
+        
+    div.logo {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        h1 {
+            a {
+                img {
+                    width: 130px;
+    
+                    @include responsive(pc-screens) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    } // logo
+} // header
 
 
 //main
+main {
+    width: 100%;
 
+    section {
+        margin-bottom: 60px;
+
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            font-size: 0;
+        }
+        
+        a {
+            position: relative;
+            width: 47%;
+            margin-bottom: 30px;
+
+            @include responsive(pc-screens) {
+                margin-bottom: 40px;
+            }
+    
+            &:hover {
+               background-color: #000;
+            }
+    
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        div.button {
+            text-align: center;
+            a {
+                width: 100px;
+                height: 35px;
+                display: inline-block;
+                margin-bottom: 0;
+                border: 1px solid $color-base;
+                font-size: 26px;
+                color: $color-base;
+
+                @include responsive(pc-screens) {
+                    width: 90px;
+                    height: 30px;
+                    font-size: 24px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    background-color: $color-base;
+                }
+            }
+        }
+
+        div.product-des-mobile {
+            display: none;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+
+            h3 {
+                margin-bottom: 5px;
+            }
+        }
+
+        div.product-des-pc {
+            display: none;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+
+            h3 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+    section.acc {
+        div.acc-img-mobile {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            @include responsive(pc-screens) {
+                display: none;
+            }
+        } // acc-mobile-img
+        
+        div.acc-img-pc {
+            display: none;
+            
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            div.paint {
+                width: 35%;
+                a {
+                    width: 100%;
+                }
+            }
+
+            div.acc-pc-right {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 60%;
+
+                a {
+                    width: 47%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        } // acc-img-pc
+    } // acc
+
+    section.bags {
+        width: 100%;
+
+        video {
+            width: 100%;
+            margin-bottom: 30px;
+            object-fit: fill;
+        }
+
+        div.bags-img-mobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @include responsive(pc-screens) {
+                display: none;
+            }
+
+            a {
+                width: 47%;
+            }
+        } // bags-img-mobile
+
+        div.bags-img-pc {
+            display: none;
+
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
+    } // bags
+
+    section.wear {
+        div.wear-img-mobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @include responsive(pc-screens) {
+                display: none;
+            }
+
+            div.wear-mobile-left {
+                width: 47%;
+                a {
+                    width: 100%;
+                }
+            }
+
+            div.wear-big {
+                width: 47%;
+                a {
+                    width: 100%;
+                }
+            }
+        } // wear-img-mobile
+
+        div.wear-img-pc {
+            display: none;
+
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            
+            div.wear-pc-left {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 60%;
+                a {
+                    width: 47%;
+                }
+            }
+
+            div.wear-big-pc {
+                width: 35%;
+                a {
+                    width: 100%;
+                }
+            }
+        } // wear-img-pc
+    } // wear
+
+    article.slide {
+        margin-bottom: 70px;
+
+        @include responsive(pc-screens) {
+            margin-bottom: 235px;
+        }
+        
+        h2 {
+            font-size: 0;
+        }
+
+        ul.slide-img-mobile {
+            display: flex;
+            overflow: hidden;
+            width: 400%;
+            @include responsive(pc-screens) {
+                display: none;
+            }
+
+            li {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        } // slide-img-mobile
+
+        ul.slide-img-pc {
+            display: none;
+
+            @include responsive(pc-screens) {
+                display: flex;
+                overflow: hidden;
+                width: 400%;
+            }
+
+            li {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        } // slide-img-pc
+    } // slide
+} // main
 
 // footer
 footer {
@@ -123,7 +388,7 @@ footer {
             }
 
             a {
-                // display: none;
+                display: none;
                 color: $color-base;
                 
                 @include responsive(pc-screens) {
@@ -186,7 +451,7 @@ footer {
             }
 
             p {
-                // display: none;
+                display: none;
                 margin-left: 5px;
                 @include responsive(pc-screens) {
                     display: block;
@@ -216,6 +481,7 @@ footer {
     
     div.footer-logo {
         margin-top: 45px;
+        margin-bottom: 90px;
         text-align: center;
         
         @include responsive(pc-screens) {
@@ -238,6 +504,4 @@ footer {
             right: 100px;
         }
     }
-
 }
-

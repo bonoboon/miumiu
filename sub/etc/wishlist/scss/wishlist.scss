@@ -1,0 +1,411 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.grid {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+// header
+header {
+    width: 100%;
+    margin-bottom: 50px;
+
+    @include responsive(pc-screens) {
+        margin-bottom: 200px;
+    }
+
+    div.logo {
+        padding-top: 10px;
+        text-align: center;
+        h1 {
+            a {
+                img {
+                    width: 130px;
+    
+                    @include responsive(pc-screens) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    } // logo
+
+    div.mobile-menu {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+
+        @include responsive(pc-screens) {
+            display: none;
+        }
+        
+        span {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: $black;
+            &:nth-child(2) {
+                margin: 13px 0;
+            }
+        }
+    }
+
+    div.header-icon {
+        display: none;
+
+        @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            top: 180px;
+            right: 15px;
+        }
+
+        a {
+            display: inline-block;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    div.main-img-text {
+        position: relative;
+        margin-top: 15px;
+
+        @include responsive(pc-screens) {
+            margin-top: 120px;
+        }
+        
+        img {
+            width: 100%;
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #fff;
+
+            @include responsive(pc-screens) {
+                font-size: 36px;
+            }
+        }
+    }
+} // header
+
+// main
+main {
+    margin-bottom: 50px;
+    @include responsive(pc-screens) {
+        margin-bottom: 200px;
+    }
+    div.flex-box {
+        @include responsive(pc-screens) {
+            display: flex;
+            justify-content: space-between;
+        }
+        section {
+            text-align: center;
+            h2 {
+                margin-bottom: 25px;
+                font-size: 24px;
+                color: #000;
+                @include responsive(pc-screens) {
+                    font-size: 20px;
+                }
+            }
+        }
+        aside.login {
+            margin-bottom: 50px;
+            padding: 45px 0 35px;
+            text-align: center;
+            background-color: #f4f4f4;
+    
+            @include responsive(pc-screens) {
+                width: 30%;
+                padding: 125px 0 390px;
+            }
+    
+            h2 {
+                font-size: 0;
+            }
+    
+            strong {
+                display: block;
+                margin-bottom: 80px;
+                color: #000;
+                font-size: 20px;
+    
+                @include responsive(pc-screens) {
+                    font-size: 18px;
+                    text-align: justify;
+                    padding: 0 15px;
+                }
+            }
+    
+            a {
+                width: 80%;
+                margin: 0 auto;
+                padding: 18px 0;
+                color: #fff;
+                font-size: 24px;
+                background-color: #000;
+            }
+        }
+    }
+    
+    div.right {
+        @include responsive(pc-screens) {
+            width: 65%;
+        }
+        section.wishlist {
+            margin-bottom: 75px;
+            h2 {
+                padding-top: 25px;
+                border-top: 1px solid $color-base;
+            }
+            
+            p {
+                color: #000;
+                font-size: 24px;
+                @include responsive(pc-screens) {
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        section.recommend {
+            div {
+                a {
+                    margin-bottom: 15px;
+                }
+    
+                p {
+                    margin-bottom: 30px;
+                    color: #000;
+                    font-size: 22px;
+
+                    @include responsive(pc-screens) {
+                        font: {
+                            weight: 300;
+                            size: 20px;
+                        }
+                            
+                    }
+                }
+    
+                strong {
+                    color: #000;
+                    font-size: 24px;
+                    
+                    @include responsive(pc-screens) {
+                        font: {
+                            weight: 500;
+                            size: 22px;
+                        }
+                    }
+                }
+            }
+
+            div.mini-bag,
+            div.mini-skirt {
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+
+            div.mini-bag {
+                margin-bottom: 50px;
+            }
+
+            div.product {
+                display: none;
+                @include responsive(pc-screens) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                div.mini-bag-pc,
+                div.mini-skirt-pc {
+                    @include responsive(pc-screens) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+} // main
+
+// footer
+footer {
+    position: relative;
+    width: 100%;
+
+    hr {
+        border: 1px solid $color-base;
+    }
+
+    div.grid {
+        div {
+            position: relative;
+            h2 {
+                display: inline-block;
+                color: $color-base;
+                margin: 15px 0 10px 0;
+                font: {
+                    size: 22px;
+                    weight: normal;
+                }
+                
+                @include responsive(pc-screens) {
+                    font: {
+                        size: 21px;
+                        weight: bold;
+                    }
+                    border-right: 2px solid $color-base;
+                    margin-right: 50px;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+                
+            }
+
+            a {
+                display: none;
+                color: $color-base;
+                
+                @include responsive(pc-screens) {
+                    display: inline-block;
+                    margin-right: 55px;
+                }
+            }
+        }
+
+        div.category {
+            h2 {
+    
+                @include responsive(pc-screens) {
+                    padding-right: 131px;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+            }
+        }
+        
+        div.service {
+            h2 {
+
+                @include responsive(pc-screens) {
+                    padding-right: 45px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+            }
+        }
+
+        div.follow {
+            h2 {
+
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+
+            a {
+                padding: 15px 5px;
+                
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+        }
+
+        div.company {
+            h2 {
+               
+                @include responsive(pc-screens) {
+                    display: none;
+                }
+            }
+
+            p {
+                display: none;
+                margin-left: 5px;
+                @include responsive(pc-screens) {
+                    display: block;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        div.sns {
+            display: none;
+
+            @include responsive(pc-screens) {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 30px;
+
+                a {
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    div.footer-logo {
+        margin-top: 45px;
+        margin-bottom: 90px;
+        text-align: center;
+        
+        @include responsive(pc-screens) {
+            margin-top: 60px;
+        }
+        
+        img {
+            width: 110px;
+            @include responsive(pc-screens) {
+                width: 180px;
+            }
+        }
+    }
+
+    div.top {
+        display: none;
+
+        @include responsive(pc-screens) {
+            position: absolute;
+            right: 100px;
+        }
+    }
+}
