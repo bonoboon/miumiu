@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // color: $color-base;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background-color: $backColor-body;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $black;
+}
+
+h2 {
+    font-size: 0;
+}
+
+h3 {
+    font : {
+        size: 1.1em;
+        weight: normal;
+    }
+}
+
+p {
+    font: {
+        size: 0.95em;
+        weight: 550;
+    }
+}
+
+span {
+    font-size: 1.375em;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+    display: block;
+}
