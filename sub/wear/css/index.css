@@ -186,19 +186,60 @@ main nav .gnb li {
   }
 }
 
-main #shoulder {
-  margin: 30px 0 60px;
+main #outer {
   padding: 4%;
 }
 
 @media screen and (min-width: 1024px) {
-  main #shoulder {
+  main #outer {
     margin-bottom: 100px;
     padding: 2%;
   }
 }
 
-main #shoulder .container {
+main #outer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #outer ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+main #outer ul li a img {
+  width: 100%;
+  height: 300px;
+}
+
+main #outer ul li a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+main #top {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #top {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #top .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -213,7 +254,7 @@ main #shoulder .container {
 }
 
 @media screen and (min-width: 1024px) {
-  main #shoulder .container {
+  main #top .container {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -221,7 +262,7 @@ main #shoulder .container {
   }
 }
 
-main #shoulder .container .grid-item-main-img {
+main #top .container .grid-item-main-img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -230,143 +271,49 @@ main #shoulder .container .grid-item-main-img {
   grid-row: 1/3;
 }
 
-main #shoulder .container .grid-item-main-img img {
+main #top .container .grid-item-main-img img {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  main #shoulder .container .grid-item-main-img {
+  main #top .container .grid-item-main-img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3/5;
   }
 }
 
-main #shoulder .container .grid-item a img {
+main #top .container .grid-item a img {
   width: 100%;
+  height: 300px;
 }
 
-main #shoulder .container .grid-item a p {
+main #top .container .grid-item a p {
   padding: 3px 10%;
   line-height: 15px;
 }
 
 @media screen and (min-width: 1024px) {
-  main #shoulder .container .grid-item a p {
+  main #top .container .grid-item a p {
     padding: 0;
     margin-bottom: 15px;
   }
 }
 
-main #clutches {
-  padding: 4%;
-}
-
-@media screen and (min-width: 1024px) {
-  main #clutches {
-    margin-bottom: 100px;
-    padding: 2%;
-  }
-}
-
-main #clutches ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-  row-gap: 0.5rem;
-  margin-top: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-@media screen and (min-width: 1024px) {
-  main #clutches ul {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-main #clutches ul li a img {
-  width: 100%;
-}
-
-main #clutches ul li a p {
-  padding: 3px 10%;
-  line-height: 15px;
-}
-
-main #handles {
-  margin: 60px 0;
-  padding: 4%;
-}
-
-@media screen and (min-width: 1024px) {
-  main #handles {
-    margin: 0;
-    padding: 2%;
-  }
-}
-
-main #handles .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-  row-gap: 0.5rem;
-  margin-top: 10px;
-  text-align: center;
-}
-
-@media screen and (min-width: 1024px) {
-  main #handles .container {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-main #handles .container .grid-item-main-img {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-}
-
-main #handles .container .grid-item-main-img img {
-  width: 100%;
-  height: 100%;
-}
-
-main #handles .container .grid-item a img {
-  width: 100%;
-}
-
-main #handles .container .grid-item a p {
-  padding: 3px 10%;
-  line-height: 15px;
-}
-
-main #mini {
+main #dress {
   padding: 4%;
   margin-bottom: 80px;
 }
 
 @media screen and (min-width: 1024px) {
-  main #mini {
+  main #dress {
     padding: 0 2%;
     margin-bottom: 200px;
   }
 }
 
-main #mini ul {
+main #dress ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -382,7 +329,7 @@ main #mini ul {
 }
 
 @media screen and (min-width: 1024px) {
-  main #mini ul {
+  main #dress ul {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -390,13 +337,88 @@ main #mini ul {
   }
 }
 
-main #mini ul li a img {
+main #dress ul li a img {
   width: 100%;
+  height: 300px;
 }
 
-main #mini ul li a p {
+main #dress ul li a p {
   padding: 3px 11%;
   line-height: 15px;
+}
+
+main #bottom {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #bottom .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #bottom .container .grid-item-main-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+main #bottom .container .grid-item-main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container .grid-item-main-img {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+  }
+}
+
+main #bottom .container .grid-item a img {
+  width: 100%;
+  height: 300px;
+}
+
+main #bottom .container .grid-item a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container .grid-item a p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
 }
 
 footer {
