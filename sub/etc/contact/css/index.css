@@ -23,7 +23,7 @@ a {
 }
 
 h2 {
-  font-size: 0;
+  font-size: 1em;
 }
 
 h3 {
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: 0.95em;
+  font-size: 0.93em;
   font-weight: 550;
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 header h1 {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -74,7 +74,7 @@ header h1 a img {
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
-    width: 120px;
+    width: 150px;
     margin-bottom: 40px;
   }
 }
@@ -152,7 +152,8 @@ main .title-box {
 
 main .title-box .title h1 {
   text-align: center;
-  font-size: calc(14px + 2.35vw);
+  font-size: calc(13px + 2.35vw);
+  color: #fff;
   line-height: 200px;
 }
 
@@ -160,6 +161,46 @@ main .title-box .title h1 {
   main .title-box .title h1 {
     line-height: 450px;
   }
+}
+
+main nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main nav .gnb {
+  padding: 0 5%;
+  text-align: center;
+}
+
+main nav .gnb li {
+  display: inline-block;
+  margin: 10px 15% 10px 0;
+}
+
+main nav .gnb li:first-child {
+  border-bottom: 1px solid #000;
+}
+
+main nav .gnb li:last-child {
+  margin-right: 0;
+}
+
+main nav .gnb li a {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+main .contact-txt .flex-box h2 {
+  margin: 30px 0;
+}
+
+main .contact-txt .flex-box p {
+  font-weight: 500;
+}
+
+main .contact-txt .flex-box p:last-child {
+  margin-bottom: 30px;
 }
 
 footer {
@@ -173,13 +214,13 @@ footer div.grid div {
   position: relative;
 }
 
-footer div.grid div h4 {
+footer div.grid div h3 {
   display: inline-block;
-  margin: 10px 0;
+  margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h4 {
+  footer div.grid div h3 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -188,7 +229,7 @@ footer div.grid div h4 {
 
 footer div.grid div span {
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 0;
   font-size: 90%;
 }
@@ -200,7 +241,6 @@ footer div.grid div span {
 }
 
 footer div.grid div a {
-  display: none;
   color: #867573;
 }
 
@@ -228,7 +268,7 @@ footer div.grid div.category a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h4 {
+  footer div.grid div.service h3 {
     padding-right: 45px;
     margin-bottom: 40px;
   }
@@ -245,7 +285,7 @@ footer div.grid div.service a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.follow h4 {
+  footer div.grid div.follow h3 {
     display: none;
   }
 }
@@ -261,13 +301,12 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h4 {
+  footer div.grid div.company h3 {
     display: none;
   }
 }
 
 footer div.grid div.company p {
-  display: none;
   margin-top: 10px;
   font-weight: normal;
 }
