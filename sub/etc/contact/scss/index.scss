@@ -9,6 +9,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: antiquewhite;
 }
 
 
@@ -21,9 +22,9 @@ header {
         text-align: center;
         a {
             img {
-                width: 110px; // 
+                width: 130px; 
                 @include responsive(pc-screens) {
-                    width: 150px; //
+                    width: 200px;
                     margin-bottom: 40px; //
                 }
             }
@@ -32,7 +33,7 @@ header {
 
     div.mobile-menu {
         position: absolute;
-        top: 25px; //
+        top: 30px; 
         right: 15px;
 
         @include responsive(pc-screens) {
@@ -41,7 +42,7 @@ header {
         
         span {
             display: block;
-            width: 30px; //
+            width: 30px;    //
             height: 1px;
             background-color: $black;
             &:nth-child(2) {
@@ -57,11 +58,11 @@ header {
             display: block;
             position: absolute;
             bottom: 0;
-            right: 2%; //
+            right: 15px;
         }  
         a {
             display: inline-block;
-            margin-right: 15px; //
+            margin-right: 25px; //
             &:last-child {
                 margin-right: 0;
             }
@@ -86,21 +87,29 @@ main {
         @include responsive(tablet-screens) {
             height: 300px;
             background: url(../images/miu-belle-bag3.jpg);
+            background-size: cover;
         }
 
         @include responsive(pc-screens) {
             height: 450px;
+            margin-bottom: 170px;
             background: url(../images/miu-belle-bag3.jpg); 
-
+            background-position: 50%;
+            background-size: cover;
         }
 
         .title {
             h1 {
                 text-align: center;
-                font-size: calc(13px + 2.35vw);
                 color: #fff;
+                font-size: 20px;
                 line-height: 200px;
+                @include responsive(tablet-screens) {
+                    font-size: 30px;
+                    line-height: 300px;
+                }
                 @include responsive(pc-screens) {
+                    font-size: 40px;
                     line-height: 450px;
                 }
             }
@@ -110,37 +119,74 @@ main {
     nav {
         border-top: 1px solid $black-border;
         border-bottom: 1px solid $black-border;
-        .gnb {
-            padding: 0 5%;
-            text-align: center;
-            li {
-                display: inline-block;
-                margin: 10px 15% 10px 0;
-                &:first-child {
-                    border-bottom: 1px solid $black;
+        @include responsive(pc-screens) {
+            border: none;
+        }
+        .grid {
+            .gnb {
+                padding: 0 5%;
+                text-align: center;
+                @include responsive(pc-screens) {
+                    border: none;
+                    float: left;
+                    width: 32%;
+                    padding: 0;
+                    text-align: left;
                 }
-                &:last-child {
-                    margin-right: 0;
-                }
-                a {
-                    font : {
-                        size: 1.15rem;
-                        weight: 500;
+                li {
+                    display: inline-block;
+                    margin: 10px 15% 10px 0;
+                    @include responsive(pc-screens) {
+                        margin-bottom: 100px;
+                    }
+                    &:first-child {
+                        border-bottom: 2px solid $black;
+                        @include responsive(pc-screens) {
+                            width: 18.5%;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    @include responsive(pc-screens) {
+                        display: block;
+                    }
+                    a {
+                        font : {
+                            size: 1.15rem;
+                            weight: 500;
+                        }
                     }
                 }
             }
         }
+        
     }
 
     .contact-txt {
-        .flex-box {
-            h2 {
-                margin: 30px 0; 
+        hr {
+            display: none;
+            @include responsive(pc-screens) {
+                display: block;
             }
-            p {
-                font-weight: 500; 
-                &:last-child {
-                    margin-bottom: 30px;
+        }
+        .grid {
+            .text-box {
+                @include responsive(pc-screens) {
+                    float: right;
+                    width: 63%;
+                }
+                h2 {
+                    margin: 30px 0; 
+                }
+                p {
+                    font-weight: 450; 
+                    &:last-child {
+                        margin-bottom: 30px;
+                        @include responsive(pc-screens) {
+                            margin-bottom: 180px;
+                        }
+                    }
                 }
             }
         }
@@ -154,6 +200,9 @@ footer {
     width: 100%;
     color: $color-base;
     border-top: 1px solid $color-border;
+    @include responsive(pc-screens) {
+        clear: both;
+    }
     div.grid {
         div {
             position: relative;
@@ -182,7 +231,7 @@ footer {
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 3%; 
+                    margin-right: 5%; //
                 }
             }
         }
@@ -206,7 +255,6 @@ footer {
             h3 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
-                    margin-bottom: 40px;
                 }
             }
 
@@ -246,6 +294,7 @@ footer {
                 font-weight: normal; //
                 @include responsive(pc-screens) {
                     display: block;
+                    margin-top: 35px;
                     margin-left: 0;
                 }
             }
