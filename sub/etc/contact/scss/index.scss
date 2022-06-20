@@ -9,7 +9,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    background-color: antiquewhite;
 }
 
 
@@ -33,7 +32,7 @@ header {
 
     div.mobile-menu {
         position: absolute;
-        top: 30px; 
+        top: 35px; //
         right: 15px;
 
         @include responsive(pc-screens) {
@@ -140,10 +139,8 @@ main {
                         margin-bottom: 100px;
                     }
                     &:first-child {
-                        border-bottom: 2px solid $black;
-                        @include responsive(pc-screens) {
-                            width: 18.5%;
-                        }
+                        text-decoration: underline;
+                        text-underline-position: under;
                     }
                     &:last-child {
                         margin-right: 0;

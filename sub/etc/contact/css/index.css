@@ -23,7 +23,7 @@ a {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 0.99em;
 }
 
 h3 {
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: 0.98em;
+  font-size: 0.96em;
   font-weight: 550;
 }
 
@@ -56,7 +56,6 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: antiquewhite;
 }
 
 header {
@@ -82,7 +81,7 @@ header h1 a img {
 
 header div.mobile-menu {
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 15px;
 }
 
@@ -214,13 +213,8 @@ main nav .grid .gnb li {
 }
 
 main nav .grid .gnb li:first-child {
-  border-bottom: 2px solid #000;
-}
-
-@media screen and (min-width: 1024px) {
-  main nav .grid .gnb li:first-child {
-    width: 18.5%;
-  }
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 main nav .grid .gnb li:last-child {
