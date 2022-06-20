@@ -1,0 +1,12 @@
+@import "./style.scss";
+@import "./reset.scss";
+@import "./mixin.scss";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.grid {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

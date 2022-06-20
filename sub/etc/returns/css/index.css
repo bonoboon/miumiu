@@ -132,14 +132,14 @@ main .title-box {
   width: 100%;
   height: 200px;
   margin: 15px 0 50px;
-  background: url(../images/miu-belle-bag3.jpg);
+  background: url(../images/returns_main.png);
   background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
   main .title-box {
     height: 300px;
-    background: url(../images/miu-belle-bag3.jpg);
+    background: url(../images/returns_main.png);
     background-size: cover;
   }
 }
@@ -148,7 +148,7 @@ main .title-box {
   main .title-box {
     height: 450px;
     margin-bottom: 170px;
-    background: url(../images/miu-belle-bag3.jpg);
+    background: url(../images/returns_main.png);
     background-position: 50%;
     background-size: cover;
   }
@@ -212,13 +212,10 @@ main nav .grid .gnb li {
   }
 }
 
-main nav .grid .gnb li:first-child {
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
 main nav .grid .gnb li:last-child {
   margin-right: 0;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 @media screen and (min-width: 1024px) {
@@ -232,39 +229,42 @@ main nav .grid .gnb li a {
   font-weight: 500;
 }
 
-main .contact-txt hr {
+main .returns-txt hr {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main .contact-txt hr {
+  main .returns-txt hr {
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .contact-txt .grid .text-box {
+  main .returns-txt .grid .text-box {
     float: right;
     width: 63%;
   }
 }
 
-main .contact-txt .grid .text-box h2 {
+main .returns-txt .grid .text-box h2 {
   margin: 30px 0;
 }
 
-main .contact-txt .grid .text-box p {
+main .returns-txt .grid .text-box p {
   font-weight: 450;
-}
-
-main .contact-txt .grid .text-box p:last-child {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1024px) {
-  main .contact-txt .grid .text-box p:last-child {
+  main .returns-txt .grid .text-box p:last-child {
     margin-bottom: 180px;
   }
+}
+
+main .returns-txt .grid .text-box p a {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 footer {

@@ -80,19 +80,19 @@ main {
         width: 100%;
         height: 200px;
         margin: 15px 0 50px;
-        background: url(../images/miu-belle-bag3.jpg); 
+        background: url(../images/returns_main.png); 
         background-size: cover;
 
         @include responsive(tablet-screens) {
             height: 300px;
-            background: url(../images/miu-belle-bag3.jpg);
+            background: url(../images/returns_main.png);
             background-size: cover;
         }
 
         @include responsive(pc-screens) {
             height: 450px;
             margin-bottom: 170px;
-            background: url(../images/miu-belle-bag3.jpg); 
+            background: url(../images/returns_main.png); 
             background-position: 50%;
             background-size: cover;
         }
@@ -138,12 +138,10 @@ main {
                     @include responsive(pc-screens) {
                         margin-bottom: 100px;
                     }
-                    &:first-child {
-                        text-decoration: underline;
-                        text-underline-position: under;
-                    }
                     &:last-child {
                         margin-right: 0;
+                        text-decoration: underline;
+                        text-underline-position: under;
                     }
                     @include responsive(pc-screens) {
                         display: block;
@@ -160,7 +158,7 @@ main {
         
     }
 
-    .contact-txt {
+    .returns-txt {
         hr {
             display: none;
             @include responsive(pc-screens) {
@@ -178,17 +176,24 @@ main {
                 }
                 p {
                     font-weight: 450; 
+                    margin-bottom: 30px;
                     &:last-child {
-                        margin-bottom: 30px;
                         @include responsive(pc-screens) {
                             margin-bottom: 180px;
                         }
+                    }
+                    a {
+                        display: inline-block;
+                        text-decoration: underline;
+                        text-underline-position: under;
                     }
                 }
             }
         }
     }
 }
+
+
 
 
 // footer
