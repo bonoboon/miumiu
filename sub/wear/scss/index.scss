@@ -118,7 +118,39 @@ main {
         }
     }
 
-    #shoulder {
+    #outer {
+        padding: 4%;
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+            padding: 2%;
+        } 
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 0.5rem;
+            row-gap: 0.5rem;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+            } 
+            li {
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    p {
+                        padding: 3px 10%;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #top {
         margin: 30px 0 60px;
         padding: 4%;
         @include responsive(pc-screens) {
@@ -152,6 +184,7 @@ main {
                 a {
                     img {
                         width: 100%;
+                        height: 100%;
                     }
                     p {
                         padding: 3px 10%;
@@ -167,80 +200,7 @@ main {
     }
 
 
-    #clutches {
-        padding: 4%;
-        @include responsive(pc-screens) {
-            margin-bottom: 100px;
-            padding: 2%;
-        } 
-        ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 0.5rem;
-            row-gap: 0.5rem;
-            margin-top: 10px;
-            width: 100%;
-            text-align: center;
-            @include responsive(pc-screens) {
-                grid-template-columns: repeat(4, 1fr);
-            } 
-            li {
-                a {
-                    img {
-                        width: 100%;
-                    }
-                    p {
-                        padding: 3px 10%;
-                        line-height: 15px;
-                    }
-                }
-            }
-        }
-    }
-
-    #handles {
-        margin: 60px 0;
-        padding: 4%;
-        @include responsive(pc-screens) {
-            margin: 0;
-            padding: 2%;
-        } 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4,1fr);
-            column-gap: 0.5rem;
-            row-gap: 0.5rem;
-            margin-top: 10px;
-            text-align: center;
-            @include responsive(pc-screens) {
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2,1fr);
-            } 
-
-            .grid-item-main-img {
-                grid-column: 1/3;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
-            .grid-item {
-                a {
-                    img {
-                        width: 100%;
-                    }
-                    p {
-                        padding: 3px 10%;
-                        line-height: 15px;
-                    }
-                }
-            }
-        }
-    }
-
-    #mini {
+    #dress {
         padding: 4%;
         margin-bottom: 80px;
         @include responsive(pc-screens) {
@@ -264,10 +224,60 @@ main {
                 a {
                     img {
                         width: 100%;
+                        height: 100%;
                     }
                     p {
                         padding: 3px 11%;
                         line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #bottom {
+        margin: 30px 0 60px;
+        padding: 4%;
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+            padding: 2%;
+        } 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            column-gap: 0.5rem;
+            row-gap: 1rem;
+            margin-top: 10px;
+            text-align: center;
+            @include responsive(pc-screens) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2,1fr);
+            } 
+            .grid-item-main-img {
+                grid-column: 1/3;
+                grid-row: 1/2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                @include responsive(pc-screens) {
+                    grid-column: 3/5;
+                } 
+            }
+            .grid-item {
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    p {
+                        padding: 3px 10%;
+                        line-height: 15px;
+                        @include responsive(pc-screens) {
+                            padding: 0;
+                            margin-bottom: 15px;
+                        } 
                     }
                 }
             }

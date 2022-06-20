@@ -17,14 +17,14 @@ header {
     position: relative;
     width: 100%;
     h1 {
-        padding-top: 5px;
+        padding-top: 10px;
         text-align: center;
         a {
             img {
-                width: 110px;
+                width: 130px; 
                 @include responsive(pc-screens) {
-                    width: 120px;
-                    margin-bottom: 40px;
+                    width: 200px;
+                    margin-bottom: 40px; //
                 }
             }
         }
@@ -32,7 +32,7 @@ header {
 
     div.mobile-menu {
         position: absolute;
-        top: 25px;
+        top: 35px; //
         right: 15px;
 
         @include responsive(pc-screens) {
@@ -41,11 +41,11 @@ header {
         
         span {
             display: block;
-            width: 30px;
+            width: 30px;    //
             height: 1px;
             background-color: $black;
             &:nth-child(2) {
-                margin: 10px 0;
+                margin: 10px 0; //
             }
         }
     }
@@ -57,17 +57,17 @@ header {
             display: block;
             position: absolute;
             bottom: 0;
-            right: 2%;
+            right: 15px;
         }  
         a {
             display: inline-block;
-            margin-right: 15px;
+            margin-right: 25px; //
             &:last-child {
                 margin-right: 0;
             }
 
             img {
-                width: 25px;
+                width: 25px; //
             }
         }
     }
@@ -86,21 +86,104 @@ main {
         @include responsive(tablet-screens) {
             height: 300px;
             background: url(../images/miu-belle-bag3.jpg);
+            background-size: cover;
         }
 
         @include responsive(pc-screens) {
             height: 450px;
+            margin-bottom: 170px;
             background: url(../images/miu-belle-bag3.jpg); 
-
+            background-position: 50%;
+            background-size: cover;
         }
 
         .title {
             h1 {
                 text-align: center;
-                font-size: calc(14px + 2.35vw);
+                color: #fff;
+                font-size: 20px;
                 line-height: 200px;
+                @include responsive(tablet-screens) {
+                    font-size: 30px;
+                    line-height: 300px;
+                }
                 @include responsive(pc-screens) {
+                    font-size: 40px;
                     line-height: 450px;
+                }
+            }
+        }
+    }
+
+    nav {
+        border-top: 1px solid $black-border;
+        border-bottom: 1px solid $black-border;
+        @include responsive(pc-screens) {
+            border: none;
+        }
+        .grid {
+            .gnb {
+                padding: 0 5%;
+                text-align: center;
+                @include responsive(pc-screens) {
+                    border: none;
+                    float: left;
+                    width: 32%;
+                    padding: 0;
+                    text-align: left;
+                }
+                li {
+                    display: inline-block;
+                    margin: 10px 15% 10px 0;
+                    @include responsive(pc-screens) {
+                        margin-bottom: 100px;
+                    }
+                    &:first-child {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    @include responsive(pc-screens) {
+                        display: block;
+                    }
+                    a {
+                        font : {
+                            size: 1.15rem;
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .contact-txt {
+        hr {
+            display: none;
+            @include responsive(pc-screens) {
+                display: block;
+            }
+        }
+        .grid {
+            .text-box {
+                @include responsive(pc-screens) {
+                    float: right;
+                    width: 63%;
+                }
+                h2 {
+                    margin: 30px 0; 
+                }
+                p {
+                    font-weight: 450; 
+                    &:last-child {
+                        margin-bottom: 30px;
+                        @include responsive(pc-screens) {
+                            margin-bottom: 180px;
+                        }
+                    }
                 }
             }
         }
@@ -114,16 +197,17 @@ footer {
     width: 100%;
     color: $color-base;
     border-top: 1px solid $color-border;
+    @include responsive(pc-screens) {
+        clear: both;
+    }
     div.grid {
         div {
             position: relative;
-            h4 {
+            h3 {
                 display: inline-block;
-                margin: 10px 0;
+                margin: 15px 0 10px;
                 @include responsive(pc-screens) {
-                    font: {
-                        weight: bold;
-                    }
+                    font-weight: bold;
                     border-right: 2px solid $color-base;
                     margin-right: 50px;
                 }
@@ -131,20 +215,20 @@ footer {
 
             span {
                 position: absolute;
-                top: 5px;
+                top: 15px;
                 right: 0;
-                font-size: 90%;
+                font-size: 90%; //
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-                display: none;
+                // display: none;
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 3%;
+                    margin-right: 5%; //
                 }
             }
         }
@@ -157,7 +241,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%;
+                padding: 15px 5%; //
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -165,15 +249,14 @@ footer {
         }
         
         div.service {
-            h4 {
+            h3 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
-                    margin-bottom: 40px;
                 }
             }
 
             a {
-                padding: 15px 5%;
+                padding: 15px 5%; //
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -181,14 +264,14 @@ footer {
         }
 
         div.follow {
-            h4 {
+            h3 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-                padding: 15px 5%;
+                padding: 15px 5%; //
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -196,18 +279,19 @@ footer {
         }
 
         div.company {
-            h4 {
+            h3 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             p {
-                display: none;
-                margin-top: 10px;
-                font-weight: normal;
+                // display: none;
+                margin-top: 10px; //
+                font-weight: normal; //
                 @include responsive(pc-screens) {
                     display: block;
+                    margin-top: 35px;
                     margin-left: 0;
                 }
             }
