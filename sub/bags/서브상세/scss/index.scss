@@ -76,8 +76,6 @@ header {
 
 //main
 main {
-    color: #000;
-    
     article.slide {
         h2 {
             font-size: 0;
@@ -93,14 +91,12 @@ main {
     }
 
     section.explain {
-        
         @include responsive(tablet-screens) {
             position: absolute;
             top: 40%;
             left: 0;
             width: 22.5%;
             height: 300px;
-            
         }
 
         @include responsive(pc-screens) {
@@ -112,7 +108,7 @@ main {
             position: relative;
             margin-left: 15px;
             
-            h3 {
+            h2 {
                 &:first-child {
                     margin-bottom: 15px;
                     font-size: 22px;
@@ -209,24 +205,17 @@ main {
     section.option {
         padding-left: 15px;
         padding-top:  100px;
-        
-
         @include responsive(tablet-screens) {
             position: absolute;
             top: 40%;
             right: 0;
             padding-top: 0;
-            // background-color: aqua;
         }    
 
         @include responsive(pc-screens) {
             top: 50%;
             right: 0%;
             padding-right: 5%;
-        }
-
-        h3 {
-            font-size: 0;
         }
 
         div.flex-box {
@@ -241,7 +230,7 @@ main {
                 width: 120px;
                 height: 120px;
                 padding: 15px;
-                border: 1px solid black;
+                border: 1px solid $black;
 
                 @include responsive(pc-screens) {
                     width: 150px;
@@ -303,17 +292,13 @@ main {
     }
 }
 
-
-
 // footer
 footer {
     position: relative;
     width: 100%;
+    margin-top: 50px;
     color: $color-base;
     border-top: 1px solid $color-border;
-    @include responsive(pc-screens) {
-        clear: both;
-    }
     div.grid {
         div {
             position: relative;
@@ -331,7 +316,7 @@ footer {
                 position: absolute;
                 top: 15px;
                 right: 0;
-                font-size: 90%; //
+                font-size: 90%; 
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -342,7 +327,7 @@ footer {
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 5%; //
+                    margin-right: 5%; 
                 }
             }
         }
@@ -355,7 +340,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -370,7 +355,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -385,7 +370,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -401,8 +386,8 @@ footer {
 
             p {
                 // display: none;
-                margin-top: 10px; //
-                font-weight: normal; //
+                margin-top: 10px; 
+                font-weight: normal; 
                 @include responsive(pc-screens) {
                     display: block;
                     margin-top: 35px;

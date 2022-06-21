@@ -22,11 +22,11 @@ a {
 }
 
 h2 {
-  font-size: 0;
+  font-size: 1.125em;
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 0;
 }
 
 h4 {
@@ -36,7 +36,6 @@ h4 {
 
 p {
   font-size: 0.95em;
-  font-weight: 550;
 }
 
 span {
@@ -131,10 +130,6 @@ header div.header-icon a img {
   width: 25px;
 }
 
-main {
-  color: #000;
-}
-
 main article.slide h2 {
   font-size: 0;
 }
@@ -174,12 +169,12 @@ main section.explain div.explain-txt {
   margin-left: 15px;
 }
 
-main section.explain div.explain-txt h3:first-child {
+main section.explain div.explain-txt h2:first-child {
   margin-bottom: 15px;
   font-size: 22px;
 }
 
-main section.explain div.explain-txt h3:nth-child(2) {
+main section.explain div.explain-txt h2:nth-child(2) {
   position: absolute;
   top: 0;
   right: 15px;
@@ -188,11 +183,11 @@ main section.explain div.explain-txt h3:nth-child(2) {
 }
 
 @media screen and (min-width: 768px) {
-  main section.explain div.explain-txt h3:first-child {
+  main section.explain div.explain-txt h2:first-child {
     margin-bottom: 30px;
     font-size: 27px;
   }
-  main section.explain div.explain-txt h3:nth-child(2) {
+  main section.explain div.explain-txt h2:nth-child(2) {
     position: relative;
     margin-left: 15px;
     margin-bottom: 45px;
@@ -286,10 +281,6 @@ main section.option {
   }
 }
 
-main section.option h3 {
-  font-size: 0;
-}
-
 main section.option div.flex-box {
   width: 100%;
   display: -webkit-box;
@@ -311,7 +302,7 @@ main section.option div.flex-box div.w-box {
   width: 120px;
   height: 120px;
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -385,14 +376,9 @@ main section.option div.flex-box div.b-box a:nth-child(2):hover {
 footer {
   position: relative;
   width: 100%;
+  margin-top: 50px;
   color: #867573;
   border-top: 1px solid rgba(134, 117, 115, 0.4);
-}
-
-@media screen and (min-width: 1024px) {
-  footer {
-    clear: both;
-  }
 }
 
 footer div.grid div {
