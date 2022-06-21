@@ -154,8 +154,11 @@ main {
             flex-wrap: wrap;
         }
 
-        div.club-img1-pc {
+        div {
             width: 50%;
+        }
+
+        div.club-img1-pc {
             text-align: center;
             img {
                 width: auto;
@@ -167,34 +170,12 @@ main {
             }
         }
 
-        div.club-img2-pc {
-            width: 50%;
-        }
-
         div.club-img3-pc {
             width: 100%;
         }
 
-        div.club-img4-pc {
-            width: 50%;
-        }
-        
-        div.club-img5-pc {
-            width: 50%;
-        }
-
-        div.club-img6-pc {
-            width: 50%;
-        }
-
-        div.club-img7-pc {
-            width: 50%;
-        }
-    
         div.prev-page-pc {
             position: relative;
-            width: 50%;
-            float: right;
             p {
                 position: absolute;
                 top: 50%;
