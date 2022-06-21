@@ -316,7 +316,7 @@ footer {
                 position: absolute;
                 top: 15px;
                 right: 0;
-                font-size: 90%; //
+                font-size: 90%; 
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -327,7 +327,7 @@ footer {
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 5%; //
+                    margin-right: 5%; 
                 }
             }
         }
@@ -340,7 +340,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -355,7 +355,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -370,7 +370,7 @@ footer {
             }
 
             a {
-                padding: 15px 5%; //
+                padding: 15px 5%; 
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -386,8 +386,8 @@ footer {
 
             p {
                 // display: none;
-                margin-top: 10px; //
-                font-weight: normal; //
+                margin-top: 10px; 
+                font-weight: normal; 
                 @include responsive(pc-screens) {
                     display: block;
                     margin-top: 35px;
