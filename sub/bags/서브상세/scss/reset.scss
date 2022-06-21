@@ -21,11 +21,11 @@ a {
 }
 
 h2 {
-    font-size: 0;
+    font-size: 1.125em;
 }
 
 h3 {
-    font-size: 1.125em;
+    font-size: 0;
 }
 
 h4 {
@@ -36,10 +36,7 @@ h4 {
 }
 
 p {
-    font: {
-        size: 0.95em;
-        weight: 550;
-    }
+    font-size: 0.95em;
 }
 
 span {
