@@ -178,38 +178,26 @@ main section p {
   }
 }
 
-main section.club-img-mobile div.club-des1 {
+main section.club-img-mobile div.club-des {
   text-align: center;
 }
 
-main section.club-img-mobile div.club-des1 h3 {
-  margin: 125px 0 60px;
+main section.club-img-mobile div.club-des h3 {
+  margin: 100px 0 75px;
 }
 
-main section.club-img-mobile div.club-des1 p {
-  margin-bottom: 125px;
+main section.club-img-mobile div.club-des p {
+  margin-bottom: 100px;
 }
 
-main section.club-img-mobile div.club-des2 {
-  text-align: center;
-}
-
-main section.club-img-mobile div.club-des2 h3 {
-  margin: 150px 0 65px;
-}
-
-main section.club-img-mobile div.club-des2 p {
-  margin-bottom: 150px;
-}
-
-main section.club-img-mobile div.next-page {
+main section.club-img-mobile div.prev-page {
   position: relative;
 }
 
-main section.club-img-mobile div.next-page p {
+main section.club-img-mobile div.prev-page p {
   position: absolute;
   top: 50%;
-  left: 15px;
+  right: 15px;
   font-size: 18px;
   color: #fff;
   -webkit-transform: translateY(-50%);
@@ -217,7 +205,7 @@ main section.club-img-mobile div.next-page p {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.club-img-mobile div.next-page p {
+  main section.club-img-mobile div.prev-page p {
     left: 30px;
   }
 }
@@ -231,9 +219,9 @@ main section.club-img-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -243,39 +231,31 @@ main section.club-img-pc div {
   width: 50%;
 }
 
-main section.club-img-pc div.club-des1-pc {
+main section.club-img-pc div.club-img3-pc {
+  width: 100%;
+}
+
+main section.club-img-pc div.club-des-pc {
   text-align: center;
 }
 
-main section.club-img-pc div.club-des1-pc h3 {
-  margin: 350px 0 90px;
+main section.club-img-pc div.club-des-pc h3 {
+  margin: 350px 0 100px;
 }
 
-main section.club-img-pc div.club-des1-pc p {
+main section.club-img-pc div.club-des-pc p {
   margin-bottom: 350px;
 }
 
-main section.club-img-pc div.club-des2-pc {
-  text-align: center;
-}
-
-main section.club-img-pc div.club-des2-pc h3 {
-  margin: 400px 0 50px;
-}
-
-main section.club-img-pc div.club-des2-pc p {
-  margin-bottom: 400px;
-}
-
-main section.club-img-pc div.next-page-pc {
+main section.club-img-pc div.prev-page-pc {
   position: relative;
   width: 50%;
 }
 
-main section.club-img-pc div.next-page-pc p {
+main section.club-img-pc div.prev-page-pc p {
   position: absolute;
   top: 50%;
-  left: 15px;
+  right: 15px;
   font-size: 24px;
   color: #fff;
   -webkit-transform: translateY(-50%);
