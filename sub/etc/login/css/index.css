@@ -1,0 +1,496 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 22px;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 a img {
+    width: 200px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 13px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 30px;
+}
+
+main section.title-box {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  background: url(../images/login_phone.png) no-repeat top center;
+}
+
+@media screen and (min-width: 768px) {
+  main section.title-box {
+    height: 300px;
+    background: url(../images/login_tablet.png) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.title-box {
+    height: 450px;
+    background: url(../images/login.png);
+    background-position: 50%;
+  }
+}
+
+main section.title-box div.login-title h1 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 200px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  main section.title-box div.login-title h1 {
+    font-size: 30px;
+    line-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.title-box div.login-title h1 {
+    font-size: 40px;
+    line-height: 450px;
+  }
+}
+
+main section.login-join h2 {
+  font-size: 0;
+}
+
+main section.login-join div.grid div.flex-box {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.login-join div.grid div.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main section.login-join div.grid div.flex-box div.login-box {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  padding: 45px;
+  margin-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 768px) {
+  main section.login-join div.grid div.flex-box div.login-box {
+    width: 49%;
+    margin-right: 1%;
+  }
+}
+
+main section.login-join div.grid div.flex-box div.login-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box p.typed {
+  font-size: 15px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box form {
+  margin-top: 20px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box form ul li label {
+  display: block;
+  font-size: 15px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box form ul li input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box p.service {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+main section.login-join div.grid div.flex-box div.login-box p.service a {
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+main section.login-join div.grid div.flex-box div.login-box p.service a:hover {
+  font-weight: 600;
+}
+
+main section.login-join div.grid div.flex-box div.login-box button {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  background-color: black;
+}
+
+main section.login-join div.grid div.flex-box div.login-box button a {
+  color: white;
+}
+
+main section.login-join div.grid div.flex-box div.login-box button a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+main section.login-join div.grid div.flex-box div.join-box {
+  position: relative;
+  width: 100%;
+  height: 740px;
+  padding: 45px;
+  margin-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 768px) {
+  main section.login-join div.grid div.flex-box div.join-box {
+    width: 49%;
+    margin-left: 1%;
+  }
+}
+
+main section.login-join div.grid div.flex-box div.join-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box span {
+  position: absolute;
+  top: 65px;
+  right: 45px;
+  font-size: 10px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box p.essential {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box form ul li label {
+  display: block;
+  font-size: 15px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box form ul li select, main section.login-join div.grid div.flex-box div.join-box form ul li input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box p.service {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+main section.login-join div.grid div.flex-box div.join-box p.service a {
+  display: inline-block;
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+main section.login-join div.grid div.flex-box div.join-box p.service a:hover {
+  font-weight: 600;
+}
+
+main section.login-join div.grid div.flex-box div.join-box button {
+  position: absolute;
+  bottom: 40px;
+  right: 45px;
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  background-color: black;
+}
+
+main section.login-join div.grid div.flex-box div.join-box button a {
+  color: white;
+}
+
+main section.login-join div.grid div.flex-box div.join-box button a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+footer hr {
+  border: 1px solid #867573;
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h2 {
+  display: inline-block;
+  color: #867573;
+  margin: 15px 0 10px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h2 {
+    font-size: 21px;
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h2 {
+    padding-right: 131px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h2 {
+    padding-right: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h2 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
