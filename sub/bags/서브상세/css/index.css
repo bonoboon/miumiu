@@ -1,0 +1,542 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+h3 {
+  font-size: 0;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+span {
+  font-size: 1.375em;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 a img {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 10px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 25px;
+}
+
+main article.slide h2 {
+  font-size: 0;
+}
+
+main article.slide img {
+  width: 100%;
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+  main article.slide img {
+    width: 55%;
+    margin-left: 22.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main section.explain {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 22.5%;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.explain {
+    top: 50%;
+    left: 0;
+    padding-left: 5%;
+  }
+}
+
+main section.explain div.explain-txt {
+  position: relative;
+  margin-left: 15px;
+}
+
+main section.explain div.explain-txt h2:first-child {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+main section.explain div.explain-txt h2:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  main section.explain div.explain-txt h2:first-child {
+    margin-bottom: 30px;
+    font-size: 27px;
+  }
+  main section.explain div.explain-txt h2:nth-child(2) {
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 45px;
+    font-size: 22px;
+  }
+}
+
+main section.explain div.explain-txt p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main section.explain div.explain-txt p {
+    font-size: 17px;
+  }
+}
+
+main section.explain div.explain-txt div.detail a {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main section.explain div.explain-txt div.detail a:hover {
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 768px) {
+  main section.explain div.explain-txt div.detail a {
+    font-size: 17px;
+  }
+}
+
+main section.explain div.explain-txt div.detail p {
+  display: none;
+}
+
+main section.explain div.explain-txt div.w-b-box {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.explain div.explain-txt div.w-b-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+  }
+  main section.explain div.explain-txt div.w-b-box div.wishlist-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-right: 0;
+  }
+  main section.explain div.explain-txt div.w-b-box div.wishlist-box a img {
+    width: 60%;
+    margin: 7px 7px;
+  }
+  main section.explain div.explain-txt div.w-b-box div.basket-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaa;
+  }
+  main section.explain div.explain-txt div.w-b-box div.basket-box a img {
+    width: 60%;
+    margin: 7px 7px;
+  }
+}
+
+main section.option {
+  padding-left: 15px;
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  main section.option {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option {
+    top: 50%;
+    right: 0%;
+    padding-right: 5%;
+  }
+}
+
+main section.option div.flex-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  main section.option div.flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 15px;
+  }
+}
+
+main section.option div.flex-box div.w-box {
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.w-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+main section.option div.flex-box div.w-box a {
+  display: inline-block;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+main section.option div.flex-box div.w-box a:hover {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.w-box a {
+    font-size: 17px;
+  }
+}
+
+main section.option div.flex-box div.b-box {
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+main section.option div.flex-box div.b-box p {
+  font-size: 13px;
+  color: white;
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box p {
+    margin-bottom: 58px;
+    font-size: 17px;
+  }
+}
+
+main section.option div.flex-box div.b-box a {
+  display: inline-block;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+main section.option div.flex-box div.b-box a:nth-child(2):hover {
+  border-bottom: 1px solid white;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.option div.flex-box div.b-box a {
+    font-size: 14px;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  color: #867573;
+  border-top: 1px solid rgba(134, 117, 115, 0.4);
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h4 {
+  display: inline-block;
+  margin: 15px 0 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h4 {
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h4 {
+    padding-right: 116px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
+    padding-right: 45px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h4 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-top: 35px;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

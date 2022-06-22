@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/order.css">
+    <title>주문추적</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href=""><img src="./images/logo_black.png" alt="logo"></a></h1>
+        </div>
+
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="header-icon">
+            <a href=""><img src="./images/login_black.png" alt="login"></a>
+            <a href=""><img src="./images/wishlist_black.png" alt="wishlist"></a>
+            <a href=""><img src="./images/basket_black.png" alt="basket"></a>
+        </div>
+
+        <div class="main-img-text">
+            <img src="./images/mainimg.png" alt="mainimg">
+            <p>주문 추적</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="grid">
+            <div class="main-flex-box">
+                <aside class="left-menu">
+                    <h2>메뉴</h2>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="">문의하기</a></li>
+                            <li><a href="">주문 추적</a></li>
+                            <li><a href="">반품</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <section class="order-des">
+                    <h2>주문</h2>
+                    <div class="order-tracking">
+                        <h3>주문 조회하기</h3>
+                        <ul>
+                            <li>주문 상품 배송시, 주문 승인 안내를 위해 조회 번호와 함께 확인 이메일을 보내드립니다.</li>
+                            <li><a href="">나의 계정</a> 페이지를 방문해 로그인하신 후 '주문' 탭을 선택하십시오.</li>
+                            <li>주문한 후 최대 1시간까지는 주문 상황이 표시되지 않을 수 있습니다.</li>
+                        </ul>
+                    </div>
+                    <div class="shipping">
+                        <h3>배송 국가, 요금 및 배송 시간</h3>
+                        <strong>
+                            참고 사항: 국경 문제로 인해 배송이 지연될 수 있습니다.<br> 
+                            자세한 정보는 <a href="">고객 서비스</a>로 문의하시기 바랍니다.
+                        </strong>
+                        <p>
+                            아래 배송 시간은 예상 시간이며 사전 주문,
+                            개인화 및 모노그램 상품에는 적용되지 않습니다.<br>
+                            예상 배송 시간은 주문결제 페이지에서 결제 전 확인할 수 있습니다.<br>
+                            예상 배송 시간은 주문의 승인 여부에 따라 달라질 수 있으며 
+                            별도로 명시되지 않는 한 주문일부터 계산됩니다.<br>
+                            배송 지역에 따라 각기 다른 이용 약관이 적용됩니다.<br> 
+                            배송비 특별 행사가 적용되는 경우 할인된 배송비는 결제 시 표시됩니다.<br>
+                            사전 주문, 개인화 또는 모노그램 서비스가 적용된 상품의 경우
+                            표에 명시된 배송 시간보다 더 오래 걸릴 수 있습니다.<br>
+                            예상 배송 시간은 결제 시 확인하십시오.<br>
+                        </p>
+                        <p>참고 사항: 화물 취급소 및 우편 사서함으로는 배송이 불가합니다.</p>
+                        <p>
+                            경우에 따라 영국 내 고객 주소로의 첫 번째 배송 시도가 실패하는 경우<br> 
+                            고객에게 해당 UPS 지점에서 주문 상품을 찾을 수 있다는 UPS 알림이 전송됩니다.<br>
+                            UPS에서 제공된 카드의 지침을 따르고 추가 정보가 필요한 경우<br>
+                            <strong>CLIENT.SERVICE.KR@MIUMIU.COM.</strong>에 문의하십시오.<br>
+                            해당 서비스의 제공 여부는 보장되지 않으며 제한적일 수 있습니다.<br>
+                        </p>
+                        <p>
+                            상품은 주문 시 접수된 배송지 주소로만 배송이 가능합니다.<br>
+                            일단 상품 주문이 완료된 후에는 변경이 허용되지 않습니다.
+                        </p>
+                        <p>
+                            사전 주문, 개인화 또는 모노그램 서비스가 적용된 상품은 배송 시간이 추가로 소요됩니다.<br>
+                            예상 배송 시간은 금액을 승인하기 전에 주문결제 페이지에 안내됩니다.
+                        </p>
+                    </div>
+                    <div class="shipping-address">
+                        <form action="#">
+                            <label for="choice">배송지</label>
+                            <select name="choicecountry" id="choice" size="1">
+                                <optgroup>
+                                    <option value="korea">대한민국</option>
+                                </optgroup>
+                            </select>
+                        </form>
+                        <strong>신속한 배송을 위해 배송지 주소에 도로명을 기재해주시기 바랍니다.</strong>
+                        <p>기타 문의 사항은 문의하기 페이지를 참조해 연락주시기 바랍니다.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="grid">
+            <div class="category">
+                <h2>Category</h2>
+                <span>▼</span>
+                <a href="">BAGS</a>
+                <a href="">ACCESSORY</a>
+                <a href="">READY TO WEAR</a>
+                <a href="">MIUMIU CLUB</a>
+            </div>
+            
+            <div class="service">
+                <h2>Customer Service</h2>
+                <span>▼</span>
+                <a href="">CONTACT US</a>
+                <a href="">RETURNS</a>
+                <a href="">TRACK YOUR ORDER</a>
+            </div>
+            
+            <div class="follow">
+                <h2>MIUMIU Follow</h2>
+                <span>▼</span>
+                <a href="">facebook</a>
+                <a href="">youtube</a>
+                <a href="">instagram</a>
+                <a href="">twitter</a>
+            </div>
+            
+            <div class="company">
+                <h2>Company</h2>
+                <span>▼</span>
+                <p>
+                    회사명: 프라다 코리아 (유). 사업자등록번호: 213-86-18599.<br>
+                    대표자: 알만도 톨로메리. 개인정보 보호책임자: 김지훈이사. 통신판매신고번호: 2017-서울강남-04082.<br>
+                    주소: 서울시 강남구 압구정로 439 06010.<br>
+                    고객 서비스 센터: 001 800 648648 00. 이메일: CLIENT.SERVICE.KR@MIUMIU.COM.<br>
+                    법적고지 및 이용약관 (링크를 확인하세요). 호스팅 서비스: WIIT.<br>
+                    구매안전서비스: NHN한국 사이버결제 주식회사에 가입하여 고객님의 안전한 거래를 보장하고 있습니다.<br>
+                    모든제품은 2016년 1월 이후 생산된 제품 입니다.
+                </p>
+            </div>
+            <div class="sns">
+                <a href=""><img src="./images/fb.png" alt="fb"></a>
+                <a href=""><img src="./images/youtube.png" alt="youtube"></a>
+                <a href=""><img src="./images/insta.png" alt="insta"></a>
+                <a href=""><img src="./images/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+            
+        <div class="footer-logo">
+            <a href=""><img src="./images/logo_color.png" alt="flogo"></a>
+        </div>
+        <div class="top">
+            <a href=""><img src="./images/top.png" alt="top"></a>
+        </div>
+    </footer>
+</body>
+</html>

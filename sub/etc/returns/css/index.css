@@ -1,0 +1,441 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  font-size: 0.99em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.96em;
+  font-weight: 550;
+}
+
+span {
+  font-size: 1.375em;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+header h1 a img {
+  width: 130px;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 a img {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 10px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 25px;
+}
+
+main .title-box {
+  width: 100%;
+  height: 200px;
+  margin: 15px 0 50px;
+  background: url(../images/returns_main.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-box {
+    height: 300px;
+    background: url(../images/returns_main.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-box {
+    height: 450px;
+    margin-bottom: 170px;
+    background: url(../images/returns_main.png);
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+
+main .title-box .title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-box .title h1 {
+    font-size: 30px;
+    line-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-box .title h1 {
+    font-size: 40px;
+    line-height: 450px;
+  }
+}
+
+main nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    border: none;
+  }
+}
+
+main nav .grid .gnb {
+  padding: 0 5%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb {
+    border: none;
+    float: left;
+    width: 32%;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+main nav .grid .gnb li {
+  display: inline-block;
+  margin: 10px 15% 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb li {
+    margin-bottom: 100px;
+  }
+}
+
+main nav .grid .gnb li:last-child {
+  margin-right: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb li {
+    display: block;
+  }
+}
+
+main nav .grid .gnb li a {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+main .returns-txt hr {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .returns-txt hr {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .returns-txt .grid .text-box {
+    float: right;
+    width: 63%;
+  }
+}
+
+main .returns-txt .grid .text-box h2 {
+  margin: 30px 0;
+}
+
+main .returns-txt .grid .text-box p {
+  font-weight: 450;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .returns-txt .grid .text-box p:last-child {
+    margin-bottom: 180px;
+  }
+}
+
+main .returns-txt .grid .text-box p a {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  color: #867573;
+  border-top: 1px solid rgba(134, 117, 115, 0.4);
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    clear: both;
+  }
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h3 {
+  display: inline-block;
+  margin: 15px 0 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h3 {
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h3 {
+    padding-right: 116px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h3 {
+    padding-right: 45px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h3 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h3 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-top: 35px;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

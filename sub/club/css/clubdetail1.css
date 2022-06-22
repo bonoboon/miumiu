@@ -74,7 +74,10 @@ header h1 a img {
 
 header .test111 img {
   width: 100%;
+<<<<<<< HEAD
   /* height: 500px; */
+=======
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 header .test111 p {
@@ -85,26 +88,47 @@ header .test111 p {
   color: white;
   font-size: 20px;
   z-index: 5;
+<<<<<<< HEAD
   /* background-color: aqua; */
+=======
+  font-size: 20px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 /* =====main===== */
 
 /* club-main */
+<<<<<<< HEAD
+=======
+main {
+  margin-bottom: 100px;
+}
+
+main p {
+  font-size: 20px;
+  color: #000;
+}
+
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 .club-flexBox {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .club-flexBox img {
   width: 100%;
 }
 
 .club-imgBox {
   margin-top: -4px;
+=======
+.club-imgBox {
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   overflow: hidden;
   height: 500px;
 }
 
+<<<<<<< HEAD
 .club-imgBox img {
   position: relative;
   top: -100px;
@@ -113,6 +137,35 @@ header .test111 p {
 .club-imgBox:last-child p {
   position: absolute;
   left: 15px;
+=======
+.captionImg {
+  text-align: center;
+}
+
+.captionImg p {
+  display: none;
+}
+
+.club-imgBox img {
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+
+.next-page {
+  position: relative;
+}
+
+.next-page img {
+  width: 100%;
+}
+
+.next-page p {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   display: inline-block;
   color: white;
   font-size: 20px;
@@ -120,10 +173,13 @@ header .test111 p {
 }
 
 /* =====footer===== */
+<<<<<<< HEAD
 footer {
   /* margin-top: -200px; */
 }
 
+=======
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 .footer-logo {
   align-items: center;
   text-align: center;
@@ -136,6 +192,13 @@ footer .top img {
 @media screen and (min-width: 1024px) {
   
   /* =====header===== */
+<<<<<<< HEAD
+=======
+  header .test111 p {
+    font-size: 30px;
+  }
+
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   header .test111 img {
     width: 100%;
     /* height: 700px; */
@@ -149,6 +212,7 @@ footer .top img {
   /* =====main===== */
   .club-flexBox {
     display: flex;
+<<<<<<< HEAD
     /* justify-content: center; */
   }
   
@@ -174,17 +238,52 @@ footer .top img {
 
   .captionImg a {
     text-align: center;
+=======
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .club-imgBox {
+    width: 50%;
+    height: 1000px;
+  }
+
+  .captionImg img {
+    width: 720px;
+    height: 900px;
+  }
+
+  .captionImg p {
+    display: block;
+    text-align: center;
+  }
+
+  .next-page img {
+    width: 50%;
+  }
+
+  .next-page p {
+    font-size: 30px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 
   /* =====footer===== */
 
   footer .top {
+<<<<<<< HEAD
   display: inline-block;
   text-align: center;
   background-color: red;
   }
 
 
+=======
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+  }
+  
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 
 /* =========================== 공통 소스 ================================= */
 

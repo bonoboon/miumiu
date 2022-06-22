@@ -23,7 +23,11 @@ a {
 }
 
 h2 {
+<<<<<<< HEAD
   font-size: 0;
+=======
+  font-size: 0.99em;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 h3 {
@@ -32,7 +36,11 @@ h3 {
 }
 
 p {
+<<<<<<< HEAD
   font-size: 0.95em;
+=======
+  font-size: 0.96em;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   font-weight: 550;
 }
 
@@ -64,24 +72,40 @@ header {
 }
 
 header h1 {
+<<<<<<< HEAD
   padding-top: 5px;
+=======
+  padding-top: 10px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   text-align: center;
 }
 
 header h1 a img {
+<<<<<<< HEAD
   width: 110px;
+=======
+  width: 130px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
+<<<<<<< HEAD
     width: 120px;
+=======
+    width: 200px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     margin-bottom: 40px;
   }
 }
 
 header div.mobile-menu {
   position: absolute;
+<<<<<<< HEAD
   top: 25px;
+=======
+  top: 35px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   right: 15px;
 }
 
@@ -111,13 +135,21 @@ header div.header-icon {
     display: block;
     position: absolute;
     bottom: 0;
+<<<<<<< HEAD
     right: 2%;
+=======
+    right: 15px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 }
 
 header div.header-icon a {
   display: inline-block;
+<<<<<<< HEAD
   margin-right: 15px;
+=======
+  margin-right: 25px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 header div.header-icon a:last-child {
@@ -140,28 +172,152 @@ main .title-box {
   main .title-box {
     height: 300px;
     background: url(../images/miu-belle-bag3.jpg);
+<<<<<<< HEAD
+=======
+    background-size: cover;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .title-box {
     height: 450px;
+<<<<<<< HEAD
     background: url(../images/miu-belle-bag3.jpg);
+=======
+    margin-bottom: 170px;
+    background: url(../images/miu-belle-bag3.jpg);
+    background-position: 50%;
+    background-size: cover;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 }
 
 main .title-box .title h1 {
   text-align: center;
+<<<<<<< HEAD
   font-size: calc(14px + 2.35vw);
   line-height: 200px;
 }
 
 @media screen and (min-width: 1024px) {
   main .title-box .title h1 {
+=======
+  color: #fff;
+  font-size: 20px;
+  line-height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-box .title h1 {
+    font-size: 30px;
+    line-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-box .title h1 {
+    font-size: 40px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     line-height: 450px;
   }
 }
 
+<<<<<<< HEAD
+=======
+main nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    border: none;
+  }
+}
+
+main nav .grid .gnb {
+  padding: 0 5%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb {
+    border: none;
+    float: left;
+    width: 32%;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+main nav .grid .gnb li {
+  display: inline-block;
+  margin: 10px 15% 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb li {
+    margin-bottom: 100px;
+  }
+}
+
+main nav .grid .gnb li:first-child {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+main nav .grid .gnb li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .grid .gnb li {
+    display: block;
+  }
+}
+
+main nav .grid .gnb li a {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+main .contact-txt hr {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .contact-txt hr {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .contact-txt .grid .text-box {
+    float: right;
+    width: 63%;
+  }
+}
+
+main .contact-txt .grid .text-box h2 {
+  margin: 30px 0;
+}
+
+main .contact-txt .grid .text-box p {
+  font-weight: 450;
+}
+
+main .contact-txt .grid .text-box p:last-child {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .contact-txt .grid .text-box p:last-child {
+    margin-bottom: 180px;
+  }
+}
+
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 footer {
   position: relative;
   width: 100%;
@@ -169,10 +325,20 @@ footer {
   border-top: 1px solid rgba(134, 117, 115, 0.4);
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (min-width: 1024px) {
+  footer {
+    clear: both;
+  }
+}
+
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 footer div.grid div {
   position: relative;
 }
 
+<<<<<<< HEAD
 footer div.grid div h4 {
   display: inline-block;
   margin: 10px 0;
@@ -180,6 +346,15 @@ footer div.grid div h4 {
 
 @media screen and (min-width: 1024px) {
   footer div.grid div h4 {
+=======
+footer div.grid div h3 {
+  display: inline-block;
+  margin: 15px 0 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h3 {
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -188,7 +363,11 @@ footer div.grid div h4 {
 
 footer div.grid div span {
   position: absolute;
+<<<<<<< HEAD
   top: 5px;
+=======
+  top: 15px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   right: 0;
   font-size: 90%;
 }
@@ -200,14 +379,21 @@ footer div.grid div span {
 }
 
 footer div.grid div a {
+<<<<<<< HEAD
   display: none;
+=======
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   color: #867573;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
+<<<<<<< HEAD
     margin-right: 3%;
+=======
+    margin-right: 5%;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 }
 
@@ -228,9 +414,14 @@ footer div.grid div.category a {
 }
 
 @media screen and (min-width: 1024px) {
+<<<<<<< HEAD
   footer div.grid div.service h4 {
     padding-right: 45px;
     margin-bottom: 40px;
+=======
+  footer div.grid div.service h3 {
+    padding-right: 45px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   }
 }
 
@@ -245,7 +436,11 @@ footer div.grid div.service a {
 }
 
 @media screen and (min-width: 1024px) {
+<<<<<<< HEAD
   footer div.grid div.follow h4 {
+=======
+  footer div.grid div.follow h3 {
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     display: none;
   }
 }
@@ -261,13 +456,20 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
+<<<<<<< HEAD
   footer div.grid div.company h4 {
+=======
+  footer div.grid div.company h3 {
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     display: none;
   }
 }
 
 footer div.grid div.company p {
+<<<<<<< HEAD
   display: none;
+=======
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
   margin-top: 10px;
   font-weight: normal;
 }
@@ -275,6 +477,10 @@ footer div.grid div.company p {
 @media screen and (min-width: 1024px) {
   footer div.grid div.company p {
     display: block;
+<<<<<<< HEAD
+=======
+    margin-top: 35px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
     margin-left: 0;
   }
 }

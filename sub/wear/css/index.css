@@ -7,7 +7,6 @@
 }
 
 body {
-  color: #867573;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   background-color: #f9f9f9;
 }
@@ -20,18 +19,34 @@ ul {
 a {
   display: block;
   text-decoration: none;
+  color: #000;
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 0;
+}
+
+h3 {
+  font-size: 1.125em;
+  color: #000;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
 }
 
 p {
-  font-size: 16px;
+  font-size: 0.95em;
+  font-weight: 550;
+}
+
+strong {
+  font-size: 0.9em;
 }
 
 span {
-  font-size: 22px;
+  font-size: 1.375em;
 }
 
 header,
@@ -58,23 +73,24 @@ header {
 }
 
 header h1 {
-  padding-top: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 
 header h1 a img {
-  width: 130px;
+  width: 110px;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
-    width: 200px;
+    width: 120px;
+    margin-bottom: 40px;
   }
 }
 
 header div.mobile-menu {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 15px;
 }
 
@@ -86,13 +102,13 @@ header div.mobile-menu {
 
 header div.mobile-menu span {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 1px;
-  background-color: #867573;
+  background-color: #000;
 }
 
 header div.mobile-menu span:nth-child(2) {
-  margin: 13px 0;
+  margin: 10px 0;
 }
 
 header div.header-icon {
@@ -104,13 +120,13 @@ header div.header-icon {
     display: block;
     position: absolute;
     bottom: 0;
-    right: 15px;
+    right: 2%;
   }
 }
 
 header div.header-icon a {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 header div.header-icon a:last-child {
@@ -118,33 +134,311 @@ header div.header-icon a:last-child {
 }
 
 header div.header-icon a img {
-  width: 30px;
+  width: 25px;
+}
+
+main article img {
+  width: 100%;
+  height: 350px;
+}
+
+@media screen and (min-width: 1024px) {
+  main article img {
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    margin: 40px 0 10px;
+  }
+}
+
+main nav .gnb {
+  padding: 0 4%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb {
+    padding: 0 3%;
+  }
+}
+
+main nav .gnb li {
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb li {
+    padding: 15px 0;
+    margin-right: 7%;
+    font-size: 1em;
+  }
+  main nav .gnb li:first-child {
+    font-weight: 550;
+  }
+  main nav .gnb li:nth-child(2) a {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+}
+
+main #outer {
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #outer {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #outer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #outer ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+main #outer ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+main #outer ul li a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+main #top {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #top {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #top .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #top .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #top .container .grid-item-main-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+main #top .container .grid-item-main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #top .container .grid-item-main-img {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+  }
+}
+
+main #top .container .grid-item a img {
+  width: 100%;
+  height: 100%;
+}
+
+main #top .container .grid-item a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #top .container .grid-item a p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+main #dress {
+  padding: 4%;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #dress {
+    padding: 0 2%;
+    margin-bottom: 200px;
+  }
+}
+
+main #dress ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #dress ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #dress ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+main #dress ul li a p {
+  padding: 3px 11%;
+  line-height: 15px;
+}
+
+main #bottom {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #bottom .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #bottom .container .grid-item-main-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+main #bottom .container .grid-item-main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container .grid-item-main-img {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+  }
+}
+
+main #bottom .container .grid-item a img {
+  width: 100%;
+  height: 100%;
+}
+
+main #bottom .container .grid-item a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #bottom .container .grid-item a p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
 }
 
 footer {
   position: relative;
   width: 100%;
-}
-
-footer hr {
-  border: 1px solid #867573;
+  color: #867573;
+  border-top: 1px solid rgba(134, 117, 115, 0.4);
 }
 
 footer div.grid div {
   position: relative;
 }
 
-footer div.grid div h2 {
+footer div.grid div h4 {
   display: inline-block;
-  color: #867573;
-  margin: 15px 0 10px 0;
-  font-size: 22px;
-  font-weight: normal;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h2 {
-    font-size: 21px;
+  footer div.grid div h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -153,8 +447,9 @@ footer div.grid div h2 {
 
 footer div.grid div span {
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 0;
+  font-size: 90%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -164,45 +459,58 @@ footer div.grid div span {
 }
 
 footer div.grid div a {
+  display: none;
   color: #867573;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 3%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.category h2 {
-    padding-right: 131px;
+  footer div.grid div.category h4 {
+    padding-right: 116px;
   }
 }
 
 footer div.grid div.category a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h2 {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
     padding-right: 45px;
     margin-bottom: 40px;
   }
 }
 
 footer div.grid div.service a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.follow h2 {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
     display: none;
   }
 }
 
 footer div.grid div.follow a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -212,13 +520,15 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h2 {
+  footer div.grid div.company h4 {
     display: none;
   }
 }
 
 footer div.grid div.company p {
-  margin-left: 5px;
+  display: none;
+  margin-top: 10px;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 1024px) {
@@ -236,8 +546,8 @@ footer div.grid div.sns {
   footer div.grid div.sns {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 15px;
   }
   footer div.grid div.sns a {
     margin-right: 15px;
