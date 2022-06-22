@@ -115,34 +115,23 @@ main {
             display: none;
         }
 
-        div.club-des1 {
+        div.club-des {
             text-align: center;
             h3 {
-                margin: 125px 0 60px;
+                margin: 100px 0 75px;
             }
 
             p {
-                margin-bottom: 125px;
+                margin-bottom: 100px;
             }
         }
 
-        div.club-des2 {
-            text-align: center;
-            h3 {
-                margin: 150px 0 65px;
-            }
-
-            p {
-                margin-bottom: 150px;
-            }
-        }
-
-        div.next-page {
+        div.prev-page {
             position: relative;
             p {
                 position: absolute;
                 top: 50%;
-                left: 15px;
+                right: 15px;
                 font-size: 18px;
                 color: #fff;
                 transform: translateY(-50%);
@@ -158,43 +147,36 @@ main {
         display: none;
         @include responsive(pc-screens) {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             flex-wrap: wrap;
         }
 
         div {
             width: 50%;
         }
-
-        div.club-des1-pc {
+        
+        div.club-img3-pc {
+            width: 100%;
+        }
+        
+        div.club-des-pc {
             text-align: center;
             h3 {
-                margin: 350px 0 90px;
+                margin: 350px 0 100px;
             }
-            
+
             p {
                 margin-bottom: 350px;
             }
         }
 
-        div.club-des2-pc {
-            text-align: center;
-            h3 {
-                margin: 400px 0 50px;
-            }
-            
-            p {
-                margin-bottom: 400px;
-            }
-        }
-
-        div.next-page-pc {
+        div.prev-page-pc {
             position: relative;
             width: 50%;
             p {
                 position: absolute;
                 top: 50%;
-                left: 15px;
+                right: 15px;
                 font-size: 24px;
                 color: #fff;
                 transform: translateY(-50%);
