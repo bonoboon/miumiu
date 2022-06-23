@@ -55,7 +55,10 @@ footer {
 header {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
+=======
   margin-bottom: 50px;
+>>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 header div.main-img-mobile {

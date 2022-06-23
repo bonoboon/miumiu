@@ -1,0 +1,623 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background-color: #f9f9f9;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  font-size: 0;
+}
+
+h3 {
+  font-size: 1.125em;
+  color: #000;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.95em;
+  font-weight: 550;
+}
+
+strong {
+  font-size: 0.9em;
+}
+
+span {
+  font-size: 1.375em;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  padding-top: 5px;
+  text-align: center;
+}
+
+header h1 a img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 a img {
+    width: 120px;
+    margin-bottom: 40px;
+  }
+}
+
+header h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  header h2 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+header div.mobile-menu {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.mobile-menu {
+    display: none;
+  }
+}
+
+header div.mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+}
+
+header div.mobile-menu span:nth-child(2) {
+  margin: 10px 0;
+}
+
+header div.header-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.header-icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+  }
+}
+
+header div.header-icon a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+header div.header-icon a:last-child {
+  margin-right: 0;
+}
+
+header div.header-icon a img {
+  width: 25px;
+}
+
+main article {
+  background-color: red;
+}
+
+main article img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main article img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    margin: 40px 0 10px;
+  }
+}
+
+main nav .gnb {
+  padding: 2% 4%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb {
+    padding: 0 3%;
+  }
+}
+
+main nav .gnb li {
+  display: inline-block;
+  font-size: 0.7em;
+  margin-right: 10%;
+}
+
+main nav .gnb li:nth-child(2) a {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb li {
+    padding: 15px 0;
+    margin-right: 7%;
+    font-size: 1em;
+  }
+  main nav .gnb li:first-child {
+    font-weight: 550;
+  }
+  main nav .gnb li:nth-child(2) a {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
+}
+
+main #WALLTES {
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #WALLTES {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #WALLTES ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 0.5rem;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #WALLTES ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+main #WALLTES ul li a img {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #WALLTES ul li a img {
+    width: 460px;
+    height: 460px;
+  }
+}
+
+main #WALLTES ul li a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+main #HATS {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #HATS .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #HATS .container .HATS-grid-item-main-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+main #HATS .container .HATS-grid-item-main-img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS .container .HATS-grid-item-main-img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+}
+
+main #HATS .container .HATS-grid-item-main-img p {
+  position: relative;
+  top: -70%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS .container .HATS-grid-item-main-img p {
+    left: 30%;
+    font-weight: normal;
+  }
+}
+
+main #HATS .container .HATS-grid-item-main-img p:nth-child(1) p {
+  margin-bottom: 70px;
+}
+
+main #HATS .container .HATS-grid-item-main-img .HATS-buy-btn {
+  position: relative;
+  top: -30%;
+  width: 260px;
+  background-Color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main #HATS .container .HATS-grid-item-main-img .HATS-buy-btn p {
+  text-align: center;
+  color: #f9f9f9;
+}
+
+main #HATS .container .grid-item a img {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS .container .grid-item a img {
+    height: 460px;
+  }
+}
+
+main #HATS .container .grid-item a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #HATS .container .grid-item a p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+main #EYEWEARE {
+  margin: 30px 0 60px;
+  padding: 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE {
+    margin-bottom: 100px;
+    padding: 2%;
+  }
+}
+
+main #EYEWEARE .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main #EYEWEARE .container .EYEWEARE-grid-item-main-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+main #EYEWEARE .container .EYEWEARE-grid-item-main-img img {
+  width: 100%;
+  height: 630px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE .container .EYEWEARE-grid-item-main-img img {
+    height: 1038px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE .container .EYEWEARE-grid-item-main-img {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+  }
+}
+
+main #EYEWEARE .container .grid-item a img {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE .container .grid-item a img {
+    height: 460px;
+  }
+}
+
+main #EYEWEARE .container .grid-item a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #EYEWEARE .container .grid-item a p {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  color: #867573;
+  border-top: 1px solid rgba(134, 117, 115, 0.4);
+}
+
+footer div.grid div {
+  position: relative;
+}
+
+footer div.grid div h4 {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div h4 {
+    font-weight: bold;
+    border-right: 2px solid #867573;
+    margin-right: 50px;
+  }
+}
+
+footer div.grid div span {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div span {
+    display: none;
+  }
+}
+
+footer div.grid div a {
+  display: none;
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div a {
+    display: inline-block;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category h4 {
+    padding-right: 116px;
+  }
+}
+
+footer div.grid div.category a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
+    padding-right: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+footer div.grid div.service a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
+    display: none;
+  }
+}
+
+footer div.grid div.follow a {
+  padding: 15px 5%;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company h4 {
+    display: none;
+  }
+}
+
+footer div.grid div.company p {
+  display: none;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.company p {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+footer div.grid div.sns {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.sns {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  footer div.grid div.sns a {
+    margin-right: 15px;
+  }
+  footer div.grid div.sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+footer div.footer-logo {
+  margin-top: 45px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo {
+    margin-top: 60px;
+  }
+}
+
+footer div.footer-logo img {
+  width: 110px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.footer-logo img {
+    width: 180px;
+  }
+}
+
+footer div.top {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.top {
+    position: absolute;
+    right: 100px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
