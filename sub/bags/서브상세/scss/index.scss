@@ -323,7 +323,7 @@ footer {
             }
 
             a {
-                // display: none;
+                display: none;
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
@@ -385,7 +385,7 @@ footer {
             }
 
             p {
-                // display: none;
+                display: none;
                 margin-top: 10px; 
                 font-weight: normal; 
                 @include responsive(pc-screens) {

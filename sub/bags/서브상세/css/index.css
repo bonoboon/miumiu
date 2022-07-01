@@ -412,6 +412,7 @@ footer div.grid div span {
 }
 
 footer div.grid div a {
+  display: none;
   color: #867573;
 }
 
@@ -477,6 +478,7 @@ footer div.grid div.follow a {
 }
 
 footer div.grid div.company p {
+  display: none;
   margin-top: 10px;
   font-weight: normal;
 }

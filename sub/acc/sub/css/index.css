@@ -26,7 +26,13 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.125em;
+  color: #000;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
 }
 
 p {
@@ -385,34 +391,21 @@ main section.option div.flex-box div.b-box a:nth-child(2):hover {
 footer {
   position: relative;
   width: 100%;
-}
-
-footer hr {
-  margin-top: 50px;
-  border: 1px solid #867573;
-}
-
-@media screen and (min-width: 768px) {
-  footer hr {
-    margin-top: 300px;
-  }
+  color: #867573;
+  border-top: 1px solid rgba(134, 117, 115, 0.4);
 }
 
 footer div.grid div {
   position: relative;
 }
 
-footer div.grid div h2 {
+footer div.grid div h4 {
   display: inline-block;
-  color: #867573;
-  margin: 15px 0 10px 0;
-  font-size: 22px;
-  font-weight: normal;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h2 {
-    font-size: 21px;
+  footer div.grid div h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -421,9 +414,9 @@ footer div.grid div h2 {
 
 footer div.grid div span {
   position: absolute;
-  top: 15px;
+  top: 5px;
   right: 0;
-  color: #867573;
+  font-size: 90%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -433,45 +426,58 @@ footer div.grid div span {
 }
 
 footer div.grid div a {
+  display: none;
   color: #867573;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 3%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.category h2 {
-    padding-right: 131px;
+  footer div.grid div.category h4 {
+    padding-right: 116px;
   }
 }
 
 footer div.grid div.category a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h2 {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
     padding-right: 45px;
     margin-bottom: 40px;
   }
 }
 
 footer div.grid div.service a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.follow h2 {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
     display: none;
   }
 }
 
 footer div.grid div.follow a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -481,13 +487,15 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h2 {
+  footer div.grid div.company h4 {
     display: none;
   }
 }
 
 footer div.grid div.company p {
-  margin-left: 5px;
+  display: none;
+  margin-top: 10px;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 1024px) {
@@ -505,8 +513,8 @@ footer div.grid div.sns {
   footer div.grid div.sns {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 15px;
   }
   footer div.grid div.sns a {
     margin-right: 15px;
@@ -534,17 +542,6 @@ footer div.footer-logo img {
 @media screen and (min-width: 1024px) {
   footer div.footer-logo img {
     width: 180px;
-  }
-}
-
-footer div.top {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.top {
-    position: absolute;
-    right: 100px;
   }
 }
 /*# sourceMappingURL=index.css.map */

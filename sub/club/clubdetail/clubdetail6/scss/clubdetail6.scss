@@ -19,14 +19,12 @@ header {
 
     img {
         display: block;
+        width: 100%;
     }
 
     div.main-img {
         @include responsive(pc-screens) {
             display: none;
-        }
-        img {
-            width: 100%;
         }
     }
 
@@ -34,10 +32,6 @@ header {
         display: none;
         @include responsive(pc-screens) {
             display: block;
-        }
-
-        img {
-            width: 100%;
         }
     }
 
@@ -62,15 +56,18 @@ header {
     div.title {
         position: absolute;
         left: 15px;
-        bottom: 50px;
+        bottom: 10%;
 
         @include responsive(pc-screens) {
             left: 30px;
         }
         
         p {
-            font-size: 20px;
+            font-size: 18px;
             color: #fff;
+            @include responsive(pc-screens) {
+                font-size: 24px;
+            }
         }
     }
 } // header
@@ -118,11 +115,11 @@ main {
         div.club-des {
             text-align: center;
             h3 {
-                margin: 100px 0 75px;
+                margin: 15% 0 11%;
             }
 
             p {
-                margin-bottom: 100px;
+                margin-bottom: 15%;
             }
         }
 
@@ -132,13 +129,9 @@ main {
                 position: absolute;
                 top: 50%;
                 right: 15px;
-                font-size: 18px;
+                font-size: 16px;
                 color: #fff;
                 transform: translateY(-50%);
-
-                @include responsive(pc-screens) {
-                    left: 30px;
-                }
             }
         }
     }
@@ -148,6 +141,7 @@ main {
         @include responsive(pc-screens) {
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             flex-wrap: wrap;
         }
 
@@ -162,11 +156,7 @@ main {
         div.club-des-pc {
             text-align: center;
             h3 {
-                margin: 350px 0 100px;
-            }
-
-            p {
-                margin-bottom: 350px;
+                margin-bottom: 5%;
             }
         }
 
@@ -176,8 +166,8 @@ main {
             p {
                 position: absolute;
                 top: 50%;
-                right: 15px;
-                font-size: 24px;
+                right: 30px;
+                font-size: 22px;
                 color: #fff;
                 transform: translateY(-50%);
             }
@@ -192,26 +182,18 @@ footer {
     width: 100%;
 
     hr {
-        border: 1px solid $color-base;
+        border: 1px solid $color-border;
     }
 
     div.grid {
         div {
             position: relative;
-            h2 {
+            h4 {
                 display: inline-block;
                 color: $color-base;
-                margin: 15px 0 10px 0;
-                font: {
-                    size: 22px;
-                    weight: normal;
-                }
-                
+                margin: 15px 0 10px;
                 @include responsive(pc-screens) {
-                    font: {
-                        size: 21px;
-                        weight: bold;
-                    }
+                    font-weight: bold;
                     border-right: 2px solid $color-base;
                     margin-right: 50px;
                 }
@@ -221,7 +203,7 @@ footer {
                 position: absolute;
                 top: 15px;
                 right: 0;
-                
+                font-size: 90%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -234,49 +216,50 @@ footer {
                 
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 55px;
+                    margin-right: 5%;
                 }
             }
         }
 
         div.category {
-            h2 {
-    
+            h4 {
                 @include responsive(pc-screens) {
-                    padding-right: 131px;
+                    padding-right: 116px;
                 }
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
         
         div.service {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
-                    margin-bottom: 40px;
                 }
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
 
         div.follow {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-                padding: 15px 5px;
-                
+                padding: 15px 5%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -284,8 +267,7 @@ footer {
         }
 
         div.company {
-            h2 {
-               
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -293,9 +275,10 @@ footer {
 
             p {
                 display: none;
-                margin-left: 5px;
+                margin-top: 10px;
                 @include responsive(pc-screens) {
                     display: block;
+                    margin-top: 35px;
                     margin-left: 0;
                 }
             }
@@ -307,8 +290,8 @@ footer {
             @include responsive(pc-screens) {
                 display: block;
                 position: absolute;
-                top: 15px;
-                right: 30px;
+                top: 10px;
+                right: 15px;
 
                 a {
                     margin-right: 15px;
@@ -322,7 +305,6 @@ footer {
     
     div.footer-logo {
         margin-top: 45px;
-        margin-bottom: 90px;
         text-align: center;
         
         @include responsive(pc-screens) {

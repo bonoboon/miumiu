@@ -26,6 +26,11 @@ h2 {
   font-size: 33px;
 }
 
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
 p {
   font-size: 16px;
 }
@@ -55,10 +60,13 @@ footer {
 header {
   position: relative;
   width: 100%;
-<<<<<<< HEAD
-=======
   margin-bottom: 50px;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 150px;
+  }
 }
 
 header div.main-img-mobile {
@@ -403,6 +411,7 @@ main section.wear div.wear-img-pc div.wear-big-pc a {
 }
 
 main article.slide {
+  position: relative;
   margin-bottom: 70px;
 }
 
@@ -416,7 +425,13 @@ main article.slide h2 {
   font-size: 0;
 }
 
-main article.slide ul.slide-img-mobile {
+main article.slide div.slide-box-mobile {
+  width: 100%;
+  overflow: hidden;
+}
+
+main article.slide div.slide-box-mobile ul.slide-img-mobile {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,12 +440,12 @@ main article.slide ul.slide-img-mobile {
 }
 
 @media screen and (min-width: 1024px) {
-  main article.slide ul.slide-img-mobile {
+  main article.slide div.slide-box-mobile ul.slide-img-mobile {
     display: none;
   }
 }
 
-main article.slide ul.slide-img-mobile li a img {
+main article.slide div.slide-box-mobile ul.slide-img-mobile li a img {
   width: 100%;
 }
 
@@ -452,30 +467,83 @@ main article.slide ul.slide-img-pc li a img {
   width: 100%;
 }
 
+main article.slide div.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+main article.slide div.left-arrow span {
+  display: block;
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+main article.slide div.left-arrow span:first-child {
+  margin-bottom: 28px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+main article.slide div.left-arrow span:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main article.slide div.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+main article.slide div.right-arrow span {
+  display: block;
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+main article.slide div.right-arrow span:first-child {
+  margin-bottom: 28px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main article.slide div.right-arrow span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 footer {
   position: relative;
   width: 100%;
 }
 
 footer hr {
-  border: 1px solid #867573;
+  border: 1px solid rgba(134, 117, 115, 0.4);
 }
 
 footer div.grid div {
   position: relative;
 }
 
-footer div.grid div h2 {
+footer div.grid div h4 {
   display: inline-block;
   color: #867573;
-  margin: 15px 0 10px 0;
-  font-size: 22px;
-  font-weight: normal;
+  margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h2 {
-    font-size: 21px;
+  footer div.grid div h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -486,6 +554,7 @@ footer div.grid div span {
   position: absolute;
   top: 15px;
   right: 0;
+  font-size: 90%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -502,39 +571,50 @@ footer div.grid div a {
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 5%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.category h2 {
-    padding-right: 131px;
+  footer div.grid div.category h4 {
+    padding-right: 116px;
   }
 }
 
 footer div.grid div.category a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h2 {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
     padding-right: 45px;
-    margin-bottom: 40px;
   }
 }
 
 footer div.grid div.service a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.follow h2 {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
     display: none;
   }
 }
 
 footer div.grid div.follow a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -544,19 +624,20 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h2 {
+  footer div.grid div.company h4 {
     display: none;
   }
 }
 
 footer div.grid div.company p {
   display: none;
-  margin-left: 5px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.grid div.company p {
     display: block;
+    margin-top: 35px;
     margin-left: 0;
   }
 }
@@ -569,8 +650,8 @@ footer div.grid div.sns {
   footer div.grid div.sns {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 15px;
   }
   footer div.grid div.sns a {
     margin-right: 15px;
@@ -582,7 +663,6 @@ footer div.grid div.sns {
 
 footer div.footer-logo {
   margin-top: 45px;
-  margin-bottom: 90px;
   text-align: center;
 }
 
@@ -608,8 +688,11 @@ footer div.top {
 
 @media screen and (min-width: 1024px) {
   footer div.top {
-    position: absolute;
+    display: block;
+    position: fixed;
     right: 100px;
+    bottom: 100px;
+    z-index: 100;
   }
 }
 /*# sourceMappingURL=index.css.map */

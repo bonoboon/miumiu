@@ -73,24 +73,24 @@ header {
 }
 
 header h1 {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 
 header h1 a img {
-  width: 110px;
+  width: 130px;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
-    width: 120px;
+    width: 200px;
     margin-bottom: 40px;
   }
 }
 
 header div.mobile-menu {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 15px;
 }
 
@@ -120,13 +120,13 @@ header div.header-icon {
     display: block;
     position: absolute;
     bottom: 0;
-    right: 2%;
+    right: 15px;
   }
 }
 
 header div.header-icon a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 header div.header-icon a:last-child {
@@ -412,7 +412,7 @@ footer div.grid div {
 
 footer div.grid div h4 {
   display: inline-block;
-  margin: 10px 0;
+  margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -425,7 +425,7 @@ footer div.grid div h4 {
 
 footer div.grid div span {
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 0;
   font-size: 90%;
 }
@@ -444,7 +444,7 @@ footer div.grid div a {
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
-    margin-right: 3%;
+    margin-right: 5%;
   }
 }
 
@@ -467,7 +467,6 @@ footer div.grid div.category a {
 @media screen and (min-width: 1024px) {
   footer div.grid div.service h4 {
     padding-right: 45px;
-    margin-bottom: 40px;
   }
 }
 
@@ -512,6 +511,7 @@ footer div.grid div.company p {
 @media screen and (min-width: 1024px) {
   footer div.grid div.company p {
     display: block;
+    margin-top: 35px;
     margin-left: 0;
   }
 }

@@ -75,16 +75,13 @@ header {
 
 header img {
   display: block;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   header div.main-img {
     display: none;
   }
-}
-
-header div.main-img img {
-  width: 100%;
 }
 
 header div.main-img-pc {
@@ -95,10 +92,6 @@ header div.main-img-pc {
   header div.main-img-pc {
     display: block;
   }
-}
-
-header div.main-img-pc img {
-  width: 100%;
 }
 
 header div.logo {
@@ -122,7 +115,7 @@ header div.logo h1 a img {
 header div.title {
   position: absolute;
   left: 15px;
-  bottom: 50px;
+  bottom: 10%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -132,8 +125,14 @@ header div.title {
 }
 
 header div.title p {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.title p {
+    font-size: 24px;
+  }
 }
 
 main {
@@ -183,11 +182,11 @@ main section.club-img-mobile div.club-des1 {
 }
 
 main section.club-img-mobile div.club-des1 h3 {
-  margin: 125px 0 60px;
+  margin: 18.93939393939394% 0 9.090909090909091%;
 }
 
 main section.club-img-mobile div.club-des1 p {
-  margin-bottom: 125px;
+  margin-bottom: 18.93939393939394%;
 }
 
 main section.club-img-mobile div.club-des2 {
@@ -195,11 +194,11 @@ main section.club-img-mobile div.club-des2 {
 }
 
 main section.club-img-mobile div.club-des2 h3 {
-  margin: 150px 0 65px;
+  margin: 22.72727272727273% 0 9.848484848484848%;
 }
 
 main section.club-img-mobile div.club-des2 p {
-  margin-bottom: 150px;
+  margin-bottom: 22.72727272727273%;
 }
 
 main section.club-img-mobile div.next-page {
@@ -210,16 +209,10 @@ main section.club-img-mobile div.next-page p {
   position: absolute;
   top: 50%;
   left: 15px;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-@media screen and (min-width: 1024px) {
-  main section.club-img-mobile div.next-page p {
-    left: 30px;
-  }
 }
 
 main section.club-img-pc {
@@ -234,6 +227,9 @@ main section.club-img-pc {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -241,30 +237,15 @@ main section.club-img-pc {
 
 main section.club-img-pc div {
   width: 50%;
-}
-
-main section.club-img-pc div.club-des1-pc {
   text-align: center;
 }
 
 main section.club-img-pc div.club-des1-pc h3 {
-  margin: 350px 0 90px;
-}
-
-main section.club-img-pc div.club-des1-pc p {
-  margin-bottom: 350px;
-}
-
-main section.club-img-pc div.club-des2-pc {
-  text-align: center;
+  margin-bottom: 4.6875%;
 }
 
 main section.club-img-pc div.club-des2-pc h3 {
-  margin: 400px 0 50px;
-}
-
-main section.club-img-pc div.club-des2-pc p {
-  margin-bottom: 400px;
+  margin-bottom: 2.604166666666667%;
 }
 
 main section.club-img-pc div.next-page-pc {
@@ -275,8 +256,8 @@ main section.club-img-pc div.next-page-pc {
 main section.club-img-pc div.next-page-pc p {
   position: absolute;
   top: 50%;
-  left: 15px;
-  font-size: 24px;
+  left: 30px;
+  font-size: 22px;
   color: #fff;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -288,24 +269,21 @@ footer {
 }
 
 footer hr {
-  border: 1px solid #867573;
+  border: 1px solid rgba(134, 117, 115, 0.4);
 }
 
 footer div.grid div {
   position: relative;
 }
 
-footer div.grid div h2 {
+footer div.grid div h4 {
   display: inline-block;
   color: #867573;
-  margin: 15px 0 10px 0;
-  font-size: 22px;
-  font-weight: normal;
+  margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h2 {
-    font-size: 21px;
+  footer div.grid div h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
@@ -316,6 +294,7 @@ footer div.grid div span {
   position: absolute;
   top: 15px;
   right: 0;
+  font-size: 90%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -332,39 +311,50 @@ footer div.grid div a {
 @media screen and (min-width: 1024px) {
   footer div.grid div a {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 5%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.category h2 {
-    padding-right: 131px;
+  footer div.grid div.category h4 {
+    padding-right: 116px;
   }
 }
 
 footer div.grid div.category a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h2 {
+  footer div.grid div.category a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.service h4 {
     padding-right: 45px;
-    margin-bottom: 40px;
   }
 }
 
 footer div.grid div.service a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.follow h2 {
+  footer div.grid div.service a {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.follow h4 {
     display: none;
   }
 }
 
 footer div.grid div.follow a {
-  padding: 15px 5px;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -374,19 +364,20 @@ footer div.grid div.follow a {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h2 {
+  footer div.grid div.company h4 {
     display: none;
   }
 }
 
 footer div.grid div.company p {
   display: none;
-  margin-left: 5px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.grid div.company p {
     display: block;
+    margin-top: 35px;
     margin-left: 0;
   }
 }
@@ -399,8 +390,8 @@ footer div.grid div.sns {
   footer div.grid div.sns {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 15px;
   }
   footer div.grid div.sns a {
     margin-right: 15px;
@@ -412,7 +403,6 @@ footer div.grid div.sns {
 
 footer div.footer-logo {
   margin-top: 45px;
-  margin-bottom: 90px;
   text-align: center;
 }
 

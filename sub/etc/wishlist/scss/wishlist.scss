@@ -261,21 +261,13 @@ footer {
     div.grid {
         div {
             position: relative;
-            h2 {
+            h4 {
                 display: inline-block;
                 color: $color-base;
-                margin: 15px 0 10px 0;
-                font: {
-                    size: 22px;
-                    weight: normal;
-                }
-                
+                margin: 15px 0 10px;
                 @include responsive(pc-screens) {
-                    font: {
-                        size: 21px;
-                        weight: bold;
-                    }
-                    border-right: 2px solid $color-base;
+                    font-weight: bold;
+                    border-right: 2px solid $color-border;
                     margin-right: 50px;
                 }
             }
@@ -284,7 +276,7 @@ footer {
                 position: absolute;
                 top: 15px;
                 right: 0;
-                
+                font-size: 90%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -297,49 +289,50 @@ footer {
                 
                 @include responsive(pc-screens) {
                     display: inline-block;
-                    margin-right: 55px;
+                    margin-right: 5%;
                 }
             }
         }
 
         div.category {
-            h2 {
-    
+            h4 {
                 @include responsive(pc-screens) {
-                    padding-right: 131px;
+                    padding-right: 116px;
                 }
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
         
         div.service {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
-                    margin-bottom: 40px;
                 }
             }
 
             a {
-                padding: 15px 5px;
+                padding: 15px 5%;
+                @include responsive(pc-screens) {
+                    padding: 0;
+                }
             }
         }
 
         div.follow {
-            h2 {
-
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-                padding: 15px 5px;
-                
+                padding: 15px 5%;
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -347,8 +340,7 @@ footer {
         }
 
         div.company {
-            h2 {
-               
+            h4 {
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -356,9 +348,10 @@ footer {
 
             p {
                 display: none;
-                margin-left: 5px;
+                margin-top: 10px;
                 @include responsive(pc-screens) {
                     display: block;
+                    margin-top: 35px;
                     margin-left: 0;
                 }
             }
@@ -370,8 +363,8 @@ footer {
             @include responsive(pc-screens) {
                 display: block;
                 position: absolute;
-                top: 15px;
-                right: 30px;
+                top: 10px;
+                right: 15px;
 
                 a {
                     margin-right: 15px;
@@ -385,7 +378,6 @@ footer {
     
     div.footer-logo {
         margin-top: 45px;
-        margin-bottom: 90px;
         text-align: center;
         
         @include responsive(pc-screens) {
@@ -397,15 +389,6 @@ footer {
             @include responsive(pc-screens) {
                 width: 180px;
             }
-        }
-    }
-
-    div.top {
-        display: none;
-
-        @include responsive(pc-screens) {
-            position: absolute;
-            right: 100px;
         }
     }
 }
