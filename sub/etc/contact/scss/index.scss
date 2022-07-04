@@ -17,16 +17,6 @@ header {
     position: relative;
     width: 100%;
     h1 {
-<<<<<<< HEAD
-        padding-top: 5px;
-        text-align: center;
-        a {
-            img {
-                width: 110px;
-                @include responsive(pc-screens) {
-                    width: 120px;
-                    margin-bottom: 40px;
-=======
         padding-top: 10px;
         text-align: center;
         a {
@@ -35,7 +25,6 @@ header {
                 @include responsive(pc-screens) {
                     width: 200px;
                     margin-bottom: 40px; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 }
             }
         }
@@ -43,11 +32,7 @@ header {
 
     div.mobile-menu {
         position: absolute;
-<<<<<<< HEAD
-        top: 25px;
-=======
         top: 35px; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
         right: 15px;
 
         @include responsive(pc-screens) {
@@ -56,19 +41,11 @@ header {
         
         span {
             display: block;
-<<<<<<< HEAD
-            width: 30px;
-            height: 1px;
-            background-color: $black;
-            &:nth-child(2) {
-                margin: 10px 0;
-=======
             width: 30px;    //
             height: 1px;
             background-color: $black;
             &:nth-child(2) {
                 margin: 10px 0; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
             }
         }
     }
@@ -80,29 +57,17 @@ header {
             display: block;
             position: absolute;
             bottom: 0;
-<<<<<<< HEAD
-            right: 2%;
-        }  
-        a {
-            display: inline-block;
-            margin-right: 15px;
-=======
             right: 15px;
         }  
         a {
             display: inline-block;
             margin-right: 25px; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
             &:last-child {
                 margin-right: 0;
             }
 
             img {
-<<<<<<< HEAD
-                width: 25px;
-=======
                 width: 25px; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
             }
         }
     }
@@ -121,33 +86,20 @@ main {
         @include responsive(tablet-screens) {
             height: 300px;
             background: url(../images/miu-belle-bag3.jpg);
-<<<<<<< HEAD
-=======
             background-size: cover;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
         }
 
         @include responsive(pc-screens) {
             height: 450px;
-<<<<<<< HEAD
-            background: url(../images/miu-belle-bag3.jpg); 
-
-=======
             margin-bottom: 170px;
             background: url(../images/miu-belle-bag3.jpg); 
             background-position: 50%;
             background-size: cover;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
         }
 
         .title {
             h1 {
                 text-align: center;
-<<<<<<< HEAD
-                font-size: calc(14px + 2.35vw);
-                line-height: 200px;
-                @include responsive(pc-screens) {
-=======
                 color: #fff;
                 font-size: 20px;
                 line-height: 200px;
@@ -157,14 +109,11 @@ main {
                 }
                 @include responsive(pc-screens) {
                     font-size: 40px;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                     line-height: 450px;
                 }
             }
         }
     }
-<<<<<<< HEAD
-=======
 
     nav {
         border-top: 1px solid $black-border;
@@ -239,7 +188,6 @@ main {
             }
         }
     }
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
 }
 
 
@@ -249,18 +197,6 @@ footer {
     width: 100%;
     color: $color-base;
     border-top: 1px solid $color-border;
-<<<<<<< HEAD
-    div.grid {
-        div {
-            position: relative;
-            h4 {
-                display: inline-block;
-                margin: 10px 0;
-                @include responsive(pc-screens) {
-                    font: {
-                        weight: bold;
-                    }
-=======
     @include responsive(pc-screens) {
         clear: both;
     }
@@ -272,7 +208,6 @@ footer {
                 margin: 15px 0 10px;
                 @include responsive(pc-screens) {
                     font-weight: bold;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                     border-right: 2px solid $color-base;
                     margin-right: 50px;
                 }
@@ -280,34 +215,20 @@ footer {
 
             span {
                 position: absolute;
-<<<<<<< HEAD
-                top: 5px;
-                right: 0;
-                font-size: 90%;
-=======
                 top: 15px;
                 right: 0;
                 font-size: 90%; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-<<<<<<< HEAD
-                display: none;
-                color: $color-base;
-                @include responsive(pc-screens) {
-                    display: inline-block;
-                    margin-right: 3%;
-=======
                 // display: none;
                 color: $color-base;
                 @include responsive(pc-screens) {
                     display: inline-block;
                     margin-right: 5%; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 }
             }
         }
@@ -320,11 +241,7 @@ footer {
             }
 
             a {
-<<<<<<< HEAD
-                padding: 15px 5%;
-=======
                 padding: 15px 5%; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -332,25 +249,14 @@ footer {
         }
         
         div.service {
-<<<<<<< HEAD
-            h4 {
-                @include responsive(pc-screens) {
-                    padding-right: 45px;
-                    margin-bottom: 40px;
-=======
             h3 {
                 @include responsive(pc-screens) {
                     padding-right: 45px;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 }
             }
 
             a {
-<<<<<<< HEAD
-                padding: 15px 5%;
-=======
                 padding: 15px 5%; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     padding: 0;
                 }
@@ -358,22 +264,14 @@ footer {
         }
 
         div.follow {
-<<<<<<< HEAD
-            h4 {
-=======
             h3 {
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             a {
-<<<<<<< HEAD
-                padding: 15px 5%;
-=======
                 padding: 15px 5%; //
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     display: none;
                 }
@@ -381,31 +279,19 @@ footer {
         }
 
         div.company {
-<<<<<<< HEAD
-            h4 {
-=======
             h3 {
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                 @include responsive(pc-screens) {
                     display: none;
                 }
             }
 
             p {
-<<<<<<< HEAD
-                display: none;
-                margin-top: 10px;
-                font-weight: normal;
-                @include responsive(pc-screens) {
-                    display: block;
-=======
                 // display: none;
                 margin-top: 10px; //
                 font-weight: normal; //
                 @include responsive(pc-screens) {
                     display: block;
                     margin-top: 35px;
->>>>>>> 846f3442d6406b12fca1243299dab6d8963a14e6
                     margin-left: 0;
                 }
             }
@@ -443,14 +329,4 @@ footer {
             }
         }
     }
-
-    div.top {
-        display: none;
-
-        @include responsive(pc-screens) {
-            position: absolute;
-            right: 100px;
-        }
-    }
-
 }
