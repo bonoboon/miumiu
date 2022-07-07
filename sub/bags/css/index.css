@@ -70,6 +70,14 @@ footer {
 header {
   position: relative;
   width: 100%;
+  height: 100px;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
 }
 
 header h1 {
@@ -88,27 +96,123 @@ header h1 a img {
   }
 }
 
-header div.mobile-menu {
+header div.mobile-menu-btn {
   position: absolute;
   top: 35px;
   right: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+header div.mobile-menu-btn.open span:first-child {
+  -webkit-transform: rotate(46deg) translate(5px, 10px);
+          transform: rotate(46deg) translate(5px, 10px);
+}
+
+header div.mobile-menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+header div.mobile-menu-btn.open span:last-child {
+  -webkit-transform: rotate(-46deg) translate(5px, -10px);
+          transform: rotate(-46deg) translate(5px, -10px);
 }
 
 @media screen and (min-width: 1024px) {
-  header div.mobile-menu {
+  header div.mobile-menu-btn {
     display: none;
   }
 }
 
-header div.mobile-menu span {
+header div.mobile-menu-btn span {
   display: block;
   width: 30px;
   height: 1px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
   background-color: #000;
 }
 
-header div.mobile-menu span:nth-child(2) {
+header div.mobile-menu-btn span:nth-child(2) {
   margin: 10px 0;
+}
+
+header .mobile-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #f9f9f9;
+}
+
+header .mobile-menu.show {
+  left: 0%;
+  opacity: 1;
+}
+
+header .mobile-menu.hide {
+  left: 100%;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+header .mobile-menu .category {
+  margin: 110px 0 70px 30px;
+}
+
+header .mobile-menu .category h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-top: 35px;
+}
+
+header .mobile-menu .category .sub-menu {
+  display: none;
+}
+
+header .mobile-menu .icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .mobile-menu .icon-menu .icon-img {
+  width: 6%;
+  margin-left: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div {
+  margin-top: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div img {
+  width: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-name {
+  width: 82%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.8rem;
+}
+
+header .mobile-menu .icon-menu .icon-name a {
+  margin-top: 26px;
 }
 
 header div.header-icon {
@@ -148,41 +252,66 @@ main article img {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  main nav {
-    margin: 40px 0 10px;
-  }
+main nav {
+  display: none;
 }
 
-main nav .gnb {
-  padding: 0 4%;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+@media screen and (min-width: 1024px) {
+  main nav {
+    display: block;
+    margin: 40px 0 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   main nav .gnb {
     padding: 0 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
   }
-}
-
-main nav .gnb li {
-  display: inline-block;
-  font-size: 0.7em;
 }
 
 @media screen and (min-width: 1024px) {
   main nav .gnb li {
+    display: inline-block;
     padding: 15px 0;
     margin-right: 7%;
-    font-size: 1em;
+    font-size: 1.25em;
   }
   main nav .gnb li:first-child {
-    font-weight: 550;
-  }
-  main nav .gnb li:nth-child(2) a {
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 100px;
     border-bottom: 2px solid #000;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: width 0.6s;
+    transition: width 0.6s;
+  }
+  main nav .gnb li a:hover::after {
+    width: 100%;
+  }
+  main nav .gnb li a.menuBold {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .fixed {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
   }
 }
 
