@@ -1,8 +1,22 @@
-window.onbeforeunload = function() {
-    // window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function() {
+//     // window.scrollTo(0, 0);
+// }
+
+// window.onload = function() {
+//     var img = document.querySelector(".grid-item-main-img");
+//     var modal = document.getElementById("overlay");
+//     var content = document.getElementById("modalContent");
+
+//     img.onclick = function() {
+//         overlay.style.display = "block";
+//     }
+
+// }
 
 
+
+
+//jQuery
 $(document).ready(function(){
 
     // 모바일(햄버거) 메뉴
@@ -14,7 +28,6 @@ $(document).ready(function(){
 
     //로고+메뉴 카테고리 스크롤
     var nav = ($("nav").offset().top);
-    var header = ($('header').offset().top + $('header').outerHeight());
     $(window).scroll (function() {
         if ($(window).scrollTop() > 1) {
             $("header").css("position","fixed");
@@ -36,14 +49,36 @@ $(document).ready(function(){
      });
 
     // 메뉴border
-    $("nav a").click(function() {
-        // $(this).css("font-weight","bold");
-        // $(this).css("font-weight", "");
-        $(this).toggleClass("menuBold");
-        if($("nav a").css("font-weight")=="bold") {
-            $(this).removeClass("menuBold");
+    var navA = $("nav > .gnb > li > a");
+    $(navA).click(function() {
+        var target = $(this).attr("href");
+        $("html").animate({scrollTop:$(target).offset().top}, 1000);
+
+        if(navA.target) {
+            $(navA.target).removeClass("menuBold")
+            $(this).addClass("menuBold");
         }else {
             $(this).addClass("menuBold");
+        }
+        navA.target = this;
+        return false;
+    });
+
+    // imgModal
+    const img = $(".container > .grid-main-img");
+    $(img).click(function() {
+        $(".overlay").show();
+        var imgSrc = $(this).children("img").attr("src");
+        var imgAlt = $(this).children("img").attr("alt");
+        $(".overlay img").attr("src", imgSrc);
+        $(".overlay img").attr("alt", imgAlt);
+    });
+
+    $(".overlay").click(function(e) {
+        if (e.target.className != "overlay") {
+            return false;
+        } else {
+            $(".overlay").hide()
         }
     })
    
