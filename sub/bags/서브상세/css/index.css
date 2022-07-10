@@ -62,7 +62,9 @@ footer {
 
 header {
   position: relative;
+  position: fixed;
   width: 100%;
+  height: 180px;
 }
 
 header h1 {
@@ -149,6 +151,7 @@ main article.slide img {
 @media screen and (min-width: 768px) {
   main section.explain {
     position: absolute;
+    position: fixed;
     top: 40%;
     left: 0;
     width: 22.5%;
@@ -259,6 +262,12 @@ main section.explain div.explain-txt div.w-b-box {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main .on {
+    display: none;
+  }
+}
+
 main section.option {
   padding-left: 15px;
   padding-top: 100px;
@@ -267,6 +276,7 @@ main section.option {
 @media screen and (min-width: 768px) {
   main section.option {
     position: absolute;
+    position: fixed;
     top: 40%;
     right: 0;
     padding-top: 0;
