@@ -3,27 +3,8 @@ window.onbeforeunload = function() {
 }
 
 window.onload = function() {
-//     var img = document.querySelector(".grid-item-main-img");
-//     var modal = document.getElementById("overlay");
-//     var content = document.getElementById("modalContent");
-
-//     img.onclick = function() {
-//         overlay.style.display = "block";
-//     }
-
-    // const element = document.querySelector(".shoulder1");
-    // function hover(element) {
-    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
-    // }
-    // function unhover(element) {
-    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
-
-    // }
-
 
 }
-
-
 
 
 //jQuery

@@ -41,6 +41,7 @@ header {
         right: 15px;
         z-index: 100;
         cursor: pointer;
+
         &.open span:first-child {
             transform: rotate(46deg) translate(5px, 10px);
         }
@@ -59,7 +60,7 @@ header {
             display: block;
             width: 30px;
             height: 1px;
-            transition: all .25s;
+            transition: all 0.25s;
             background-color: $black;
             &:nth-child(2) {
                 margin: 10px 0;

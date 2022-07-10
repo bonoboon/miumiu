@@ -129,8 +129,8 @@ header div.mobile-menu-btn span {
   display: block;
   width: 30px;
   height: 1px;
-  -webkit-transition: all .25s;
-  transition: all .25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   background-color: #000;
 }
 

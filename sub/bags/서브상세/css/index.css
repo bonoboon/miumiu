@@ -156,6 +156,8 @@ main article.slide img {
     left: 0;
     width: 22.5%;
     height: 300px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 }
 
@@ -264,7 +266,10 @@ main section.explain div.explain-txt div.w-b-box {
 
 @media screen and (min-width: 768px) {
   main .on {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 }
 
@@ -280,6 +285,8 @@ main section.option {
     top: 40%;
     right: 0;
     padding-top: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 }
 

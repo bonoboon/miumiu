@@ -70,28 +70,53 @@ footer {
 header {
   position: relative;
   width: 100%;
+  height: 100px;
+  z-index: 100;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
 }
 
 header h1 {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 
 header h1 a img {
-  width: 110px;
+  width: 130px;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
-    width: 120px;
+    width: 200px;
     margin-bottom: 40px;
   }
 }
 
 header div.mobile-menu {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+header div.mobile-menu.open span:first-child {
+  -webkit-transform: rotate(46deg) translate(5px, 10px);
+          transform: rotate(46deg) translate(5px, 10px);
+}
+
+header div.mobile-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+header div.mobile-menu.open span:last-child {
+  -webkit-transform: rotate(-46deg) translate(5px, -10px);
+          transform: rotate(-46deg) translate(5px, -10px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -104,11 +129,91 @@ header div.mobile-menu span {
   display: block;
   width: 30px;
   height: 1px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   background-color: #000;
 }
 
 header div.mobile-menu span:nth-child(2) {
   margin: 10px 0;
+}
+
+header .mobile-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #f9f9f9;
+}
+
+header .mobile-menu.show {
+  left: 0%;
+  opacity: 1;
+}
+
+header .mobile-menu.hide {
+  left: 100%;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+header .mobile-menu .category {
+  margin: 110px 0 70px 30px;
+}
+
+header .mobile-menu .category h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-top: 35px;
+}
+
+header .mobile-menu .category .sub-menu {
+  display: none;
+}
+
+header .mobile-menu .icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .mobile-menu .icon-menu .icon-img {
+  width: 6%;
+  margin-left: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div {
+  margin-top: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div img {
+  width: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-name {
+  width: 82%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.8rem;
+}
+
+header .mobile-menu .icon-menu .icon-name a {
+  margin-top: 26px;
 }
 
 header div.header-icon {
@@ -120,13 +225,13 @@ header div.header-icon {
     display: block;
     position: absolute;
     bottom: 0;
-    right: 2%;
+    right: 15px;
   }
 }
 
 header div.header-icon a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 header div.header-icon a:last-child {
@@ -148,16 +253,21 @@ main article img {
   }
 }
 
+main nav {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   main nav {
+    display: block;
     margin: 40px 0 10px;
   }
 }
 
 main nav .gnb {
-  padding: 0 4%;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
 }
 
 @media screen and (min-width: 1024px) {
