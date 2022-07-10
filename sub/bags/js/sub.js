@@ -2,7 +2,7 @@
 //     // window.scrollTo(0, 0);
 // }
 
-// window.onload = function() {
+window.onload = function() {
 //     var img = document.querySelector(".grid-item-main-img");
 //     var modal = document.getElementById("overlay");
 //     var content = document.getElementById("modalContent");
@@ -11,7 +11,17 @@
 //         overlay.style.display = "block";
 //     }
 
-// }
+    // const element = document.querySelector(".shoulder1");
+    // function hover(element) {
+    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
+    // }
+    // function unhover(element) {
+    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
+
+    // }
+
+
+}
 
 
 
@@ -81,6 +91,17 @@ $(document).ready(function(){
             $(".overlay").hide()
         }
     })
-   
+
+    // imgHover
+    $('.grid-item, .img-box > li > a').each(function() {
+        var nowImg = $(this).find('img');
+        var srcName = nowImg.attr('src');
+        var newSrc = srcName.substring(0, srcName.lastIndexOf('.'));
+
+        $(this).hover(function() {
+            $(this).find('img').attr('src', newSrc + '_on.' + /[^.]+$/.exec(srcName));}, function() {
+            $(this).find('img').attr('src', newSrc + '.' + /[^.]+$/.exec(srcName));}, function() {
+        });
+    });
 });
     
