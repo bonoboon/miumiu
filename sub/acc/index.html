@@ -5,23 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
     <title>MIU MIU</title>
 </head>
 <body>
     <header>
-        <h1><a href=""><img src="./images/logo_black.png" alt="logo"></a></h1>
+        <h1><a href="../../index.html"><img src="./images/logo_black.png" alt="logo"></a></h1>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu-btn">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        
+
+        <div class="mobile-menu hide">
+            <div class="category">
+                <h2>READY TO WEAR</h2>
+                <div class="sub-menu">
+                    <a href="../wear/index.html">OUTER</a>
+                    <a href="../wear/index.html">TOP</a>
+                    <a href="../wear/index.html">DRESS</a>
+                    <a href="../wear/index.html">BOTTOM</a>
+                </div>
+
+                <h2>ACCESSORY</h2>
+                <div class="sub-menu">
+                    <a href="#WALLTES">WALLETS</a>
+                    <a href="#HATS">HATS</a>
+                    <a href="#EYEWEAR">EYEWEAR</a>
+                </div>
+
+                <h2>BAGS</h2>
+                <div class="sub-menu">
+                    <a href="../bags/index.html">SHOULDER BAGS</a>
+                    <a href="../bags/index.html">CLUTCHES</a>
+                    <a href="../bags/index.html">TOP HANDLES</a>
+                    <a href="../bags/index.html">MINI BAGS</a>
+                </div>
+                    
+                <h2><a href="../club/club.html">MIUMIU CLUB</a></h2>
+            </div>
+    
+            <div class="icon-menu">
+                <div class="icon-img">
+                    <div><img src="./images/login_black.png" alt="login"></div>
+                    <div><img src="./images/wishlist_black.png" alt="wishlist"></div>
+                    <div><img src="./images/basket_black.png" alt="basket"></div>
+                </div>
+                <div class="icon-name">
+                    <a href="../etc/login/index.html">LOG-IN</a>
+                    <a href="../etc/wishlist/wishlist.html">WISHLIST</a>
+                    <a href="../etc/basket/index.html">CART</a>
+                </div>
+            </div><!-- icon-menu -->
+        </div><!-- mobile-menu -->
 
         <div class="header-icon">
-            <a href=""><img src="./images/login_color.png" alt="login"></a>
-            <a href=""><img src="./images/wishlist_color.png" alt="wishlist"></a>
-            <a href=""><img src="./images/basket_color.png" alt="basket"></a>
+            <a href="../etc/login/index.html"><img src="./images/login_black.png" alt="login"></a>
+            <a href="../etc/wishlist/wishlist.html"><img src="./images/wishlist_black.png" alt="wishlist"></a>
+            <a href="../etc/basket/index.html"><img src="./images/basket_black.png" alt="basket"></a>
         </div>
     </header>
 
@@ -36,9 +79,13 @@
                 <li>ACCESSORIES</li>
                 <li><a href="#WALLTES">WALLETS</a></li>
                 <li><a href="#HATS">HATS</a></li>
-                <li><a href="#EYEWEARE">EYEWEARE</a></li>
+                <li><a href="#EYEWEAR">EYEWEAR</a></li>
             </ul>
         </nav>
+
+        <div class="overlay">
+            <img src="" alt=""></img>
+        </div>
 
         <section id="WALLTES">
             <h3>WALLETS</h3>
@@ -146,8 +193,8 @@
             </div> <!--container-->
         </section>
         
-        <section id="EYEWEARE">
-            <h3>EYEWEARE</h3>
+        <section id="EYEWEAR">
+            <h3>EYEWEAR</h3>
             <div class="container">
                 <div class="EYEWEARE-grid-item-main-img">
                     <img src="./images/miumiunux_color.1280.1280.jpg" alt="miumiunux_color">

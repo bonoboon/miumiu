@@ -70,57 +70,156 @@ footer {
 header {
   position: relative;
   width: 100%;
+  height: 100px;
+  z-index: 100;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
 }
 
 header h1 {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 
 header h1 a img {
-  width: 110px;
+  width: 130px;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
-    width: 120px;
+    width: 200px;
     margin-bottom: 40px;
   }
 }
 
-header h2 {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1024px) {
-  header h2 {
-    font-size: 24px;
-    font-weight: normal;
-  }
-}
-
-header div.mobile-menu {
+header div.mobile-menu-btn {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+header div.mobile-menu-btn.open span:first-child {
+  -webkit-transform: rotate(46deg) translate(5px, 10px);
+          transform: rotate(46deg) translate(5px, 10px);
+}
+
+header div.mobile-menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+header div.mobile-menu-btn.open span:last-child {
+  -webkit-transform: rotate(-46deg) translate(5px, -10px);
+          transform: rotate(-46deg) translate(5px, -10px);
 }
 
 @media screen and (min-width: 1024px) {
-  header div.mobile-menu {
+  header div.mobile-menu-btn {
     display: none;
   }
 }
 
-header div.mobile-menu span {
+header div.mobile-menu-btn span {
   display: block;
   width: 30px;
   height: 1px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   background-color: #000;
 }
 
-header div.mobile-menu span:nth-child(2) {
+header div.mobile-menu-btn span:nth-child(2) {
   margin: 10px 0;
+}
+
+header .mobile-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: #f9f9f9;
+}
+
+header .mobile-menu.show {
+  left: 0%;
+  opacity: 1;
+}
+
+header .mobile-menu.hide {
+  left: 100%;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+header .mobile-menu .category {
+  margin: 110px 0 70px 30px;
+}
+
+header .mobile-menu .category h2 {
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-top: 35px;
+}
+
+header .mobile-menu .category .sub-menu {
+  display: none;
+  font-size: 1.2rem;
+}
+
+header .mobile-menu .category .sub-menu a {
+  margin-top: 15px;
+}
+
+header .mobile-menu .icon-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .mobile-menu .icon-menu .icon-img {
+  width: 6%;
+  margin-left: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div {
+  margin-top: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-img div img {
+  width: 30px;
+}
+
+header .mobile-menu .icon-menu .icon-name {
+  width: 82%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.8rem;
+}
+
+header .mobile-menu .icon-menu .icon-name a {
+  margin-top: 26px;
 }
 
 header div.header-icon {
@@ -132,13 +231,13 @@ header div.header-icon {
     display: block;
     position: absolute;
     bottom: 0;
-    right: 2%;
+    right: 15px;
   }
 }
 
 header div.header-icon a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 header div.header-icon a:last-child {
@@ -151,58 +250,104 @@ header div.header-icon a img {
 
 main article img {
   width: 100%;
+  height: 350px;
 }
 
 @media screen and (min-width: 1024px) {
   main article img {
-    position: relative;
-    top: -50%;
-    width: 100%;
-    height: 1240px;
+    height: 900px;
   }
+}
+
+main nav {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
   main nav {
+    display: block;
     margin: 40px 0 10px;
   }
-}
-
-main nav .gnb {
-  padding: 2% 4%;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 1024px) {
   main nav .gnb {
     padding: 0 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
   }
-}
-
-main nav .gnb li {
-  display: inline-block;
-  font-size: 0.7em;
-  margin-right: 10%;
-}
-
-main nav .gnb li:nth-child(2) a {
-  font-weight: bold;
-  border-bottom: 2px solid #000;
 }
 
 @media screen and (min-width: 1024px) {
   main nav .gnb li {
+    display: inline-block;
     padding: 15px 0;
     margin-right: 7%;
-    font-size: 1em;
+    font-size: 1.25em;
   }
   main nav .gnb li:first-child {
-    font-weight: 550;
-  }
-  main nav .gnb li:nth-child(2) a {
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 170px;
     border-bottom: 2px solid #000;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .gnb li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: width 0.6s;
+    transition: width 0.6s;
+  }
+  main nav .gnb li a:hover::after {
+    width: 100%;
+  }
+  main nav .gnb li a.menuBold {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .fixed {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+main .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+main .overlay img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1024px) {
+  main .overlay img {
+    width: 50%;
   }
 }
 
@@ -387,20 +532,20 @@ main #HATS .container .grid-item a p {
   }
 }
 
-main #EYEWEARE {
+main #EYEWEAR {
   width: 100%;
   margin: 30px 0 60px;
   padding: 4%;
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE {
+  main #EYEWEAR {
     margin-bottom: 100px;
     padding: 2%;
   }
 }
 
-main #EYEWEARE .container {
+main #EYEWEAR .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -415,7 +560,7 @@ main #EYEWEARE .container {
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE .container {
+  main #EYEWEAR .container {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -423,7 +568,7 @@ main #EYEWEARE .container {
   }
 }
 
-main #EYEWEARE .container .EYEWEARE-grid-item-main-img {
+main #EYEWEAR .container .EYEWEARE-grid-item-main-img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -432,43 +577,43 @@ main #EYEWEARE .container .EYEWEARE-grid-item-main-img {
   grid-row: 1/3;
 }
 
-main #EYEWEARE .container .EYEWEARE-grid-item-main-img img {
+main #EYEWEAR .container .EYEWEARE-grid-item-main-img img {
   width: 100%;
   height: 630px;
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE .container .EYEWEARE-grid-item-main-img img {
+  main #EYEWEAR .container .EYEWEARE-grid-item-main-img img {
     height: 1038px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE .container .EYEWEARE-grid-item-main-img {
+  main #EYEWEAR .container .EYEWEARE-grid-item-main-img {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3/5;
   }
 }
 
-main #EYEWEARE .container .grid-item a img {
+main #EYEWEAR .container .grid-item a img {
   width: 100%;
   height: 300px;
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE .container .grid-item a img {
+  main #EYEWEAR .container .grid-item a img {
     height: 460px;
   }
 }
 
-main #EYEWEARE .container .grid-item a p {
+main #EYEWEAR .container .grid-item a p {
   padding: 3px 10%;
   line-height: 15px;
 }
 
 @media screen and (min-width: 1024px) {
-  main #EYEWEARE .container .grid-item a p {
+  main #EYEWEAR .container .grid-item a p {
     padding: 0;
     margin-bottom: 15px;
   }

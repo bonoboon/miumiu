@@ -91,6 +91,7 @@ header {
         .category {
             margin: 110px 0 70px 30px;
             h2{
+                cursor: pointer;
                 font: {
                     size: 2.2rem;
                     weight: normal;
@@ -100,6 +101,10 @@ header {
 
             .sub-menu {
                 display: none;
+                font-size: 1.2rem;
+                a {
+                    margin-top: 15px;
+                }
             }
         }
 

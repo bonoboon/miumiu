@@ -2,30 +2,6 @@ window.onbeforeunload = function() {
     window.scrollTo(0, 0);
 }
 
-window.onload = function() {
-//     var img = document.querySelector(".grid-item-main-img");
-//     var modal = document.getElementById("overlay");
-//     var content = document.getElementById("modalContent");
-
-//     img.onclick = function() {
-//         overlay.style.display = "block";
-//     }
-
-    // const element = document.querySelector(".shoulder1");
-    // function hover(element) {
-    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
-    // }
-    // function unhover(element) {
-    //     element.setAttribute('src', "./images/shoulder/shoulderBagsBlack02.jpg");
-
-    // }
-
-
-}
-
-
-
-
 //jQuery
 $(document).ready(function(){
 
@@ -34,6 +10,17 @@ $(document).ready(function(){
         const mobileMenu = $(".mobile-menu");
         $(this).toggleClass("open");
         mobileMenu.toggleClass("hide show");
+    });
+
+    // 모바일(category)메뉴 
+    $(".mobile-menu > .category > h2").click(function() {
+        $(".mobile-menu > .category > .sub-menu").slideUp(300);
+
+        if($(this).next().css("display") == "block") {
+            $(this).next().slideUp(300);
+        } else {
+            $(this).next().slideDown(300);
+        }
     });
 
     //로고+메뉴 카테고리 스크롤
@@ -114,7 +101,6 @@ $(document).ready(function(){
             $(this).find('img').attr('src', newIcon + '_on.' + /[^.]+$/.exec(srcIcon));
         }, function() {
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
-
         });
     });
 });

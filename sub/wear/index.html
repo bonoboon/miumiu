@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
     <title>MIU MIU</title>
 </head>
 <body>
@@ -20,9 +22,20 @@
         <div class="mobile-menu hide">
             <div class="category">
                 <h2>READY TO WEAR</h2>
-                
+                <div class="sub-menu">
+                    <a href="../wear/index.html">OUTER</a>
+                    <a href="../wear/index.html">TOP</a>
+                    <a href="../wear/index.html">DRESS</a>
+                    <a href="../wear/index.html">BOTTOM</a>
+                </div>
+
                 <h2>ACCESSORY</h2>
-    
+                <div class="sub-menu">
+                    <a href="../acc/index.html">WALLETS</a>
+                    <a href="../acc/index.html">HATS</a>
+                    <a href="../acc/index.html">EYEWEAR</a>
+                </div>
+
                 <h2>BAGS</h2>
                 <div class="sub-menu">
                     <a href="#shoulder">SHOULDER BAGS</a>
@@ -31,7 +44,7 @@
                     <a href="#mini">MINI BAGS</a>
                 </div>
                     
-                <h2>MIUMIU CLUB</h2>
+                <h2><a href="../club/club.html">MIUMIU CLUB</a></h2>
             </div>
     
             <div class="icon-menu">
@@ -41,17 +54,17 @@
                     <div><img src="./images/basket_black.png" alt="basket"></div>
                 </div>
                 <div class="icon-name">
-                    <a href="#">LOG-IN</a>
-                    <a href="#">WISHLIST</a>
-                    <a href="#">CART</a>
+                    <a href="../etc/login/index.html">LOG-IN</a>
+                    <a href="../etc/wishlist/wishlist.html">WISHLIST</a>
+                    <a href="../etc/basket/index.html">CART</a>
                 </div>
-            </div>
+            </div><!-- icon-menu -->
         </div><!-- mobile-menu -->
 
         <div class="header-icon">
-            <a href=""><img src="./images/login_color.png" alt="login"></a>
-            <a href=""><img src="./images/wishlist_color.png" alt="wishlist"></a>
-            <a href=""><img src="./images/basket_color.png" alt="basket"></a>
+            <a href="../etc/login/index.html"><img src="./images/login_black.png" alt="login"></a>
+            <a href="../etc/wishlist/wishlist.html"><img src="./images/wishlist_black.png" alt="wishlist"></a>
+            <a href="../etc/basket/index.html"><img src="./images/basket_black.png" alt="basket"></a>
         </div>
     </header>
 
@@ -71,9 +84,13 @@
             </ul>
         </nav>
 
+        <div class="overlay">
+            <img src="" alt=""></img>
+        </div>
+
         <section id="outer">
-            <h3>outer</h3>
-            <ul>
+            <h3>OUTER</h3>
+            <ul class="img-box">
                 <li>
                     <a href="#">
                         <img src="./images/outer/outer1.PNG" alt="outer1">
@@ -137,7 +154,7 @@
         <section id="top">
             <h3>TOP</h3>
             <div class="container">
-                <div class="grid-item-main-img ">
+                <div class="grid-item-main-img">
                     <img src="./images/top/top_main.PNG" alt="top-main">
                 </div>
                 <div class="grid-item">
@@ -201,7 +218,7 @@
 
         <section id="dress">
             <h3>DRESS</h3>
-            <ul>
+            <ul class="img-box">
                 <li>
                     <a href="#">
                         <img src="./images/dress/dress1.PNG" alt="dress1">

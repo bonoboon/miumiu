@@ -2,11 +2,6 @@ window.onbeforeunload = function() {
     window.scrollTo(0, 0);
 }
 
-window.onload = function() {
-
-}
-
-
 //jQuery
 $(document).ready(function(){
 
@@ -16,6 +11,17 @@ $(document).ready(function(){
         $(this).toggleClass("open");
         mobileMenu.toggleClass("hide show");
     });
+
+    // 모바일(category)메뉴 
+    $(".mobile-menu > .category > h2").click(function() {
+        $(".mobile-menu > .category > .sub-menu").slideUp(300);
+
+        if($(this).next().css("display") == "block") {
+            $(this).next().slideUp(300);
+        } else {
+            $(this).next().slideDown(300);
+        }
+    })
 
     //로고+메뉴 카테고리 스크롤
     var nav = ($("nav").offset().top);
@@ -56,7 +62,7 @@ $(document).ready(function(){
     });
 
     // imgModal
-    const img = $(".container > .grid-main-img");
+    const img = $(".container > .EYEWEARE-grid-item-main-img");
     $(img).click(function() {
         $(".overlay").show();
         var imgSrc = $(this).children("img").attr("src");
@@ -93,11 +99,8 @@ $(document).ready(function(){
 
         $(this).hover(function() {
             $(this).find('img').attr('src', newIcon + '_on.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "25px");
         }, function() {
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "");
-
         });
     });
 });
