@@ -112,10 +112,8 @@ $(document).ready(function(){
 
         $(this).hover(function() {
             $(this).find('img').attr('src', newIcon + '_on.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "25px");
         }, function() {
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "");
 
         });
     });

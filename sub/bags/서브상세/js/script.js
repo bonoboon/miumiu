@@ -19,18 +19,23 @@ $(document).ready(function() {
     });
 
     // iconHover
-    $('.header-icon > a').each(function() {
+    $('.header-icon > a, .w-b-box > .wishlist-box > a, .w-b-box > .basket-box > a').each(function() {
         var nowIcon = $(this).find('img');
         var srcIcon = nowIcon.attr('src');
         var newIcon = srcIcon.substring(0, srcIcon.lastIndexOf('.'));
 
         $(this).hover(function() {
             $(this).find('img').attr('src', newIcon + '_on.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "25px");
         }, function() {
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
-            $(this).find("img").css("width", "");
+        });
+    });
 
+    //상품상세정보
+    $(function() {
+        $(".detail > p").hide();
+        $(".detail > h3").click(function() {
+            $(".detail > p").slideToggle();
         });
     });
 });
