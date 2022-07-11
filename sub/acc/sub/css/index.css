@@ -62,6 +62,7 @@ footer {
 }
 
 header {
+  position: fixed;
   position: relative;
   width: 100%;
 }
