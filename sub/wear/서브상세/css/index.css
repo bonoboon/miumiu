@@ -204,19 +204,20 @@ main section.explain div.explain-txt p {
   }
 }
 
-main section.explain div.explain-txt div.detail a {
+main section.explain div.explain-txt div.detail h3 {
   display: inline-block;
   color: black;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 
-main section.explain div.explain-txt div.detail a:hover {
+main section.explain div.explain-txt div.detail h3:hover {
   border-bottom: 1px solid #000;
 }
 
 @media screen and (min-width: 768px) {
-  main section.explain div.explain-txt div.detail a {
+  main section.explain div.explain-txt div.detail h3 {
     font-size: 17px;
   }
 }

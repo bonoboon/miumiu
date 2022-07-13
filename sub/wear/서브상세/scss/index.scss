@@ -153,11 +153,12 @@ main {
             }
             
             div.detail {
-                a {
+                h3 {
                     display: inline-block;
                     color: black;
                     font-size: 15px;
                     font-weight: 600;
+                    cursor: pointer;
     
                     &:hover {
                         border-bottom: 1px solid #000;
