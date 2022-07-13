@@ -417,18 +417,53 @@ main {
                 grid-template-rows: repeat(2,1fr);
             } 
             .EYEWEARE-grid-item-main-img {
+                position: relative;
                 grid-column: 1/3;
                 grid-row: 1/3;
-                img {
-                    width: 100%;
-                    height: 630px;
-                    @include responsive(pc-screens) {
-                        height: 1038px;
-                    } 
-                }
                 @include responsive(pc-screens) {
                     grid-column: 3/5;
                 } 
+                &::before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: $black;
+                    content: "";
+                    opacity: 0;
+                    transition: all 0.2s;
+
+                }
+                &:hover::before {
+                    opacity: 0.5;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    @include responsive(pc-screens) {
+                    } 
+                }
+                p {
+                    position: absolute;
+                    top:50%;
+                    left: 10px;
+                    opacity: 0;
+                    z-index: 2;
+                    transition: all 0.3s;
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                    color: #fff;
+                    @include responsive(pc-screens) {
+                        font-size: 1.5rem;
+                    }
+                }
+                &:hover p{
+                    transform: translateX(10px);
+                    opacity: 1;
+                }
             }
             .grid-item {
                 a {

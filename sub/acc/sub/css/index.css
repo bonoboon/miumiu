@@ -62,29 +62,30 @@ footer {
 }
 
 header {
-  position: fixed;
   position: relative;
+  position: fixed;
   width: 100%;
 }
 
 header h1 {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 
 header h1 a img {
-  width: 110px;
+  width: 130px;
 }
 
 @media screen and (min-width: 1024px) {
   header h1 a img {
     width: 200px;
+    margin-bottom: 40px;
   }
 }
 
 header div.mobile-menu {
   position: absolute;
-  top: 25px;
+  top: 35px;
   right: 15px;
 }
 
@@ -128,7 +129,7 @@ header div.header-icon a:last-child {
 }
 
 header div.header-icon a img {
-  width: 30px;
+  width: 25px;
 }
 
 main {
@@ -146,31 +147,27 @@ main article.slide img {
 
 @media screen and (min-width: 768px) {
   main article.slide img {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
-    width: 800px;
-    height: 800px;
+    width: 55%;
     margin-left: 22.5%;
   }
-}
-
-main article.slide img:last-child {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
   main section.explain {
     position: absolute;
+    position: fixed;
     top: 40%;
     left: 0;
     width: 22.5%;
     height: 300px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main section.explain {
-    top: 50%;
+    top: 40%;
     left: 0;
     padding-left: 5%;
   }
@@ -218,25 +215,26 @@ main section.explain div.explain-txt p {
   }
 }
 
-main section.explain div.explain-txt div.detail a {
+main section.explain div.explain-txt div.detail h3 {
   display: inline-block;
   color: black;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 
-main section.explain div.explain-txt div.detail a:hover {
+main section.explain div.explain-txt div.detail h3:hover {
   border-bottom: 1px solid #000;
 }
 
 @media screen and (min-width: 768px) {
-  main section.explain div.explain-txt div.detail a {
+  main section.explain div.explain-txt div.detail h3 {
     font-size: 17px;
   }
 }
 
 main section.explain div.explain-txt div.detail p {
-  display: none;
+  font-size: 0.85rem;
 }
 
 main section.explain div.explain-txt div.w-b-box {
@@ -271,6 +269,15 @@ main section.explain div.explain-txt div.w-b-box {
   }
 }
 
+@media screen and (min-width: 768px) {
+  main .on {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+}
+
 main section.option {
   padding-left: 15px;
   padding-top: 100px;
@@ -279,6 +286,7 @@ main section.option {
 @media screen and (min-width: 768px) {
   main section.option {
     position: absolute;
+    position: fixed;
     top: 40%;
     right: 0;
     padding-top: 0;
@@ -287,7 +295,7 @@ main section.option {
 
 @media screen and (min-width: 1024px) {
   main section.option {
-    top: 50%;
+    top: 40%;
     right: 0%;
     padding-right: 5%;
   }

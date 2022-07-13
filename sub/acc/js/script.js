@@ -21,7 +21,7 @@ $(document).ready(function(){
         } else {
             $(this).next().slideDown(300);
         }
-    })
+    });
 
     //로고+메뉴 카테고리 스크롤
     var nav = ($("nav").offset().top);
