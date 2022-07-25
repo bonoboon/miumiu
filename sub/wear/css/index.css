@@ -592,117 +592,117 @@ main #bottom .container .grid-item a p {
 footer {
   position: relative;
   width: 100%;
-  color: #867573;
-  border-top: 1px solid rgba(134, 117, 115, 0.4);
 }
 
-footer div.grid div {
+footer hr {
+  border: 1px solid rgba(134, 117, 115, 0.4);
+}
+
+footer div.grid div.footer-menu {
   position: relative;
+  cursor: pointer;
 }
 
-footer div.grid div h4 {
+footer div.grid div.footer-menu div.footer-menu-click {
   display: inline-block;
-  margin: 10px 0;
+}
+
+footer div.grid div.footer-menu h4 {
+  display: inline-block;
+  color: #867573;
+  margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h4 {
+  footer div.grid div.footer-menu h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
   }
 }
 
-footer div.grid div span {
+footer div.grid div.footer-menu span {
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 0;
   font-size: 90%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div span {
+  footer div.grid div.footer-menu span {
     display: none;
   }
 }
 
-footer div.grid div a {
+footer div.grid div.footer-menu a {
   display: none;
-  color: #867573;
+  padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div a {
+  footer div.grid div.footer-menu a {
     display: inline-block;
-    margin-right: 3%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.category h4 {
-    padding-right: 116px;
-  }
-}
-
-footer div.grid div.category a {
-  padding: 15px 5%;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.category a {
+    margin-right: 5%;
     padding: 0;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  footer div.grid div.service h4 {
-    padding-right: 45px;
-    margin-bottom: 40px;
-  }
-}
-
-footer div.grid div.service a {
-  padding: 15px 5%;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.service a {
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.follow h4 {
-    display: none;
-  }
-}
-
-footer div.grid div.follow a {
-  padding: 15px 5%;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.follow a {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.company h4 {
-    display: none;
-  }
-}
-
-footer div.grid div.company p {
-  display: none;
-  margin-top: 10px;
+footer div.grid div.footer-menu strong {
+  display: inline-block;
+  color: #867573;
   font-weight: normal;
 }
 
+footer div.grid div.footer-menu strong:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #867573;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+footer div.grid div.footer-menu strong:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+footer div.grid div.footer-menu p {
+  display: none;
+  color: #867573;
+  padding: 15px 0;
+}
+
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company p {
+  footer div.grid div.footer-menu p {
     display: block;
-    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.footer-menu:nth-child(2) h4 {
+    padding-right: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.footer-menu:nth-child(3) a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.footer-menu:nth-child(3) h4, footer div.grid div.footer-menu:last-child h4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.footer-menu h4 {
+    padding-right: 116px;
   }
 }
 
@@ -718,6 +718,7 @@ footer div.grid div.sns {
     right: 15px;
   }
   footer div.grid div.sns a {
+    display: inline-block;
     margin-right: 15px;
   }
   footer div.grid div.sns a:last-child {
@@ -737,23 +738,13 @@ footer div.footer-logo {
 }
 
 footer div.footer-logo img {
+  display: inline-block;
   width: 110px;
 }
 
 @media screen and (min-width: 1024px) {
   footer div.footer-logo img {
     width: 180px;
-  }
-}
-
-footer div.top {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.top {
-    position: absolute;
-    right: 100px;
   }
 }
 /*# sourceMappingURL=index.css.map */

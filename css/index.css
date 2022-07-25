@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 h2 {
   font-size: 33px;
 }
@@ -57,16 +61,39 @@ footer {
   padding: 0 15px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+}
+
+.modal .modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
 header {
   position: relative;
   width: 100%;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    margin-bottom: 150px;
-  }
 }
 
 header div.main-img-mobile {
@@ -84,28 +111,42 @@ header div.main-img-mobile a img {
   width: 100%;
 }
 
-header div.main-img-pc {
+header div#main-img-pc {
   display: none;
-  width: 100%;
-  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  header div.main-img-pc {
+  header div#main-img-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100vh;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  header div.main-img-pc a {
-    width: 33.33333%;
-  }
+header div#main-img-pc div.main-imgs {
+  position: relative;
+  overflow: hidden;
 }
 
-header div.main-img-pc a img {
-  width: 100%;
+header div#main-img-pc div.main-imgs:hover p {
+  visibility: visible;
+}
+
+header div#main-img-pc div.main-imgs a img {
+  width: 100.1%;
+}
+
+header div#main-img-pc div.main-imgs p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: hidden;
+  font-weight: bold;
+  font-size: 40px;
+  color: #f9f9f9;
 }
 
 header div.logo {
@@ -114,6 +155,7 @@ header div.logo {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 2;
 }
 
 header div.logo h1 a img {
@@ -126,34 +168,118 @@ header div.logo h1 a img {
   }
 }
 
-main {
-  width: 100%;
+header nav ul#gnb {
+  position: absolute;
+  right: 0;
+  width: 150px;
+  z-index: 10;
+  background-color: #f9f9f9;
 }
 
-main section {
-  margin-bottom: 60px;
+header nav ul#gnb li a {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: #000;
+}
+
+header nav ul#gnb li a:hover, header nav ul#gnb li a:active, header nav ul#gnb li a:focus {
+  background-color: #eee;
+  color: #000;
+}
+
+header nav ul#gnb li a.on {
+  background-color: #666;
+  color: #fff;
+}
+
+main {
+  padding-top: 50px;
 }
 
 @media screen and (min-width: 1024px) {
-  main section {
-    margin-bottom: 100px;
+  main {
+    padding-top: 0;
   }
+}
+
+main div.button {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+main div.button a {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  margin-bottom: 0;
+  border: 1px solid #867573;
+  font-size: 26px;
+  color: #867573;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.button a {
+    width: 90px;
+    height: 30px;
+    font-size: 24px;
+  }
+}
+
+main div.button a:hover {
+  color: #fff;
+  background-color: #867573;
+}
+
+main section {
+  width: 100%;
 }
 
 main section h2 {
   font-size: 0;
 }
 
-main section a {
+main section div.product-img-text {
   position: relative;
   width: 47%;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1024px) {
-  main section a {
+  main section div.product-img-text {
     margin-bottom: 40px;
   }
+}
+
+main section div.product-img-text:hover div.product-des {
+  visibility: visible;
+}
+
+main section div.product-img-text p.modal-text {
+  display: none;
+}
+
+main section div.product-img-text div.product-des {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  visibility: hidden;
+  text-align: center;
+}
+
+main section div.product-img-text div.product-des p {
+  color: #fff;
+}
+
+main section div.product-img-text div.product-des strong {
+  color: #fff;
+}
+
+main section a {
+  position: relative;
 }
 
 main section a:hover {
@@ -161,7 +287,6 @@ main section a:hover {
 }
 
 main section a img {
-  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -172,64 +297,26 @@ main section a img:hover {
   opacity: 0.5;
 }
 
-main section div.button {
-  text-align: center;
-}
-
-main section div.button a {
-  width: 100px;
-  height: 35px;
-  display: inline-block;
-  margin-bottom: 0;
-  border: 1px solid #867573;
-  font-size: 26px;
-  color: #867573;
+main section h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 5px;
 }
 
 @media screen and (min-width: 1024px) {
-  main section div.button a {
-    width: 90px;
-    height: 30px;
-    font-size: 24px;
+  main section h3 {
+    font-size: 26px;
   }
 }
 
-main section div.button a:hover {
-  color: #fff;
-  background-color: #867573;
+@media screen and (min-width: 1024px) {
+  main section#acc {
+    height: 100vh;
+    padding-top: 100px;
+  }
 }
 
-main section div.product-des-mobile {
-  display: none;
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
-  color: #fff;
-}
-
-main section div.product-des-mobile h3 {
-  margin-bottom: 5px;
-}
-
-main section div.product-des-pc {
-  display: none;
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
-  color: #fff;
-}
-
-main section div.product-des-pc h3 {
-  margin-bottom: 5px;
-}
-
-main section.acc div.acc-img-mobile {
+main section#acc div.acc-img-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,17 +329,17 @@ main section.acc div.acc-img-mobile {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.acc div.acc-img-mobile {
+  main section#acc div.acc-img-mobile {
     display: none;
   }
 }
 
-main section.acc div.acc-img-pc {
+main section#acc div.acc-img-pc {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.acc div.acc-img-pc {
+  main section#acc div.acc-img-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,15 +349,15 @@ main section.acc div.acc-img-pc {
   }
 }
 
-main section.acc div.acc-img-pc div.paint {
+main section#acc div.acc-img-pc div.paint {
   width: 35%;
 }
 
-main section.acc div.acc-img-pc div.paint a {
+main section#acc div.acc-img-pc div.paint a {
   width: 100%;
 }
 
-main section.acc div.acc-img-pc div.acc-pc-right {
+main section#acc div.acc-img-pc div.acc-pc-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,26 +369,29 @@ main section.acc div.acc-img-pc div.acc-pc-right {
   width: 60%;
 }
 
-main section.acc div.acc-img-pc div.acc-pc-right a {
-  width: 47%;
+main section#bags {
+  width: 100%;
+  padding-top: 50px;
 }
 
-main section.acc div.acc-img-pc div.acc-pc-right a img {
-  width: 100%;
-}
-
-main section.bags {
-  width: 100%;
-}
-
-main section.bags video {
-  width: 100%;
+main section#bags video {
   margin-bottom: 30px;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
-main section.bags div.bags-img-mobile {
+@media screen and (min-width: 1024px) {
+  main section#bags video {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section#bags div#bags-img-button {
+    height: 100vh;
+  }
+}
+
+main section#bags div#bags-img-button div.bags-img-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,21 +402,17 @@ main section.bags div.bags-img-mobile {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.bags div.bags-img-mobile {
+  main section#bags div#bags-img-button div.bags-img-mobile {
     display: none;
   }
 }
 
-main section.bags div.bags-img-mobile a {
-  width: 47%;
-}
-
-main section.bags div.bags-img-pc {
+main section#bags div#bags-img-button div.bags-img-pc {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.bags div.bags-img-pc {
+  main section#bags div#bags-img-button div.bags-img-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -338,7 +424,13 @@ main section.bags div.bags-img-pc {
   }
 }
 
-main section.wear div.wear-img-mobile {
+@media screen and (min-width: 1024px) {
+  main section#wear {
+    height: 100vh;
+  }
+}
+
+main section#wear div.wear-img-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,33 +441,33 @@ main section.wear div.wear-img-mobile {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.wear div.wear-img-mobile {
+  main section#wear div.wear-img-mobile {
     display: none;
   }
 }
 
-main section.wear div.wear-img-mobile div.wear-mobile-left {
+main section#wear div.wear-img-mobile div.wear-mobile-left {
   width: 47%;
 }
 
-main section.wear div.wear-img-mobile div.wear-mobile-left a {
+main section#wear div.wear-img-mobile div.wear-mobile-left div.product-img-text {
   width: 100%;
 }
 
-main section.wear div.wear-img-mobile div.wear-big {
+main section#wear div.wear-img-mobile div.wear-big {
   width: 47%;
 }
 
-main section.wear div.wear-img-mobile div.wear-big a {
+main section#wear div.wear-img-mobile div.wear-big a {
   width: 100%;
 }
 
-main section.wear div.wear-img-pc {
+main section#wear div.wear-img-pc {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.wear div.wear-img-pc {
+  main section#wear div.wear-img-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -386,7 +478,7 @@ main section.wear div.wear-img-pc {
   }
 }
 
-main section.wear div.wear-img-pc div.wear-pc-left {
+main section#wear div.wear-img-pc div.wear-pc-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,76 +490,93 @@ main section.wear div.wear-img-pc div.wear-pc-left {
   width: 60%;
 }
 
-main section.wear div.wear-img-pc div.wear-pc-left a {
-  width: 47%;
-}
-
-main section.wear div.wear-img-pc div.wear-big-pc {
+main section#wear div.wear-img-pc div.wear-big-pc {
   width: 35%;
 }
 
-main section.wear div.wear-img-pc div.wear-big-pc a {
+main section#wear div.wear-img-pc div.wear-big-pc a {
   width: 100%;
 }
 
-main article.slide {
+main article#slide {
   position: relative;
   margin-bottom: 70px;
+  padding-top: 50px;
 }
 
 @media screen and (min-width: 1024px) {
-  main article.slide {
-    margin-bottom: 235px;
+  main article#slide {
+    height: 100vh;
+    margin-bottom: 0;
   }
 }
 
-main article.slide h2 {
+main article#slide h2 {
   font-size: 0;
 }
 
-main article.slide div.slide-box-mobile {
+main article#slide h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  main article#slide h3 {
+    font-size: 26px;
+  }
+}
+
+main article#slide div#slide-box-mobile {
   width: 100%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
-main article.slide div.slide-box-mobile ul.slide-img-mobile {
-  position: relative;
+main article#slide div#slide-box-mobile ul.slide-m {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  position: relative;
   width: 400%;
 }
 
 @media screen and (min-width: 1024px) {
-  main article.slide div.slide-box-mobile ul.slide-img-mobile {
+  main article#slide div#slide-box-mobile ul.slide-m {
     display: none;
   }
 }
 
-main article.slide div.slide-box-mobile ul.slide-img-mobile li a img {
+main article#slide div#slide-box-mobile ul.slide-m li img {
   width: 100%;
 }
 
-main article.slide ul.slide-img-pc {
+main article#slide div#slide-box-pc {
+  width: 100%;
+  margin: 0 auto 35px;
+  overflow: hidden;
+}
+
+main article#slide div#slide-box-pc ul.slide-pc {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  main article.slide ul.slide-img-pc {
+  main article#slide div#slide-box-pc ul.slide-pc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden;
+    position: relative;
     width: 400%;
   }
 }
 
-main article.slide ul.slide-img-pc li a img {
+main article#slide div#slide-box-pc ul.slide-pc li a img {
   width: 100%;
 }
 
-main article.slide div.left-arrow {
+main article#slide div.prev {
+  display: none;
   position: absolute;
   top: 50%;
   left: 30px;
@@ -476,7 +585,13 @@ main article.slide div.left-arrow {
   border-radius: 50%;
 }
 
-main article.slide div.left-arrow span {
+@media screen and (min-width: 1024px) {
+  main article#slide div.prev {
+    display: block;
+  }
+}
+
+main article#slide div.prev span {
   display: block;
   width: 50px;
   height: 5px;
@@ -484,18 +599,19 @@ main article.slide div.left-arrow span {
   background-color: #fff;
 }
 
-main article.slide div.left-arrow span:first-child {
+main article#slide div.prev span:first-child {
   margin-bottom: 28px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-main article.slide div.left-arrow span:last-child {
+main article#slide div.prev span:last-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-main article.slide div.right-arrow {
+main article#slide div.next {
+  display: none;
   position: absolute;
   top: 50%;
   right: 30px;
@@ -504,7 +620,13 @@ main article.slide div.right-arrow {
   border-radius: 50%;
 }
 
-main article.slide div.right-arrow span {
+@media screen and (min-width: 1024px) {
+  main article#slide div.next {
+    display: block;
+  }
+}
+
+main article#slide div.next span {
   display: block;
   width: 50px;
   height: 5px;
@@ -512,13 +634,13 @@ main article.slide div.right-arrow span {
   background-color: #fff;
 }
 
-main article.slide div.right-arrow span:first-child {
+main article#slide div.next span:first-child {
   margin-bottom: 28px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-main article.slide div.right-arrow span:last-child {
+main article#slide div.next span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -532,25 +654,30 @@ footer hr {
   border: 1px solid rgba(134, 117, 115, 0.4);
 }
 
-footer div.grid div {
+footer div.grid div.footer-menu {
   position: relative;
+  cursor: pointer;
 }
 
-footer div.grid div h4 {
+footer div.grid div.footer-menu div.footer-menu-click {
+  display: inline-block;
+}
+
+footer div.grid div.footer-menu h4 {
   display: inline-block;
   color: #867573;
   margin: 15px 0 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div h4 {
+  footer div.grid div.footer-menu h4 {
     font-weight: bold;
     border-right: 2px solid #867573;
     margin-right: 50px;
   }
 }
 
-footer div.grid div span {
+footer div.grid div.footer-menu span {
   position: absolute;
   top: 15px;
   right: 0;
@@ -558,87 +685,80 @@ footer div.grid div span {
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div span {
+  footer div.grid div.footer-menu span {
     display: none;
   }
 }
 
-footer div.grid div a {
+footer div.grid div.footer-menu a {
   display: none;
-  color: #867573;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div a {
-    display: inline-block;
-    margin-right: 5%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.category h4 {
-    padding-right: 116px;
-  }
-}
-
-footer div.grid div.category a {
   padding: 15px 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.category a {
+  footer div.grid div.footer-menu a {
+    display: inline-block;
+    margin-right: 5%;
     padding: 0;
   }
 }
 
+footer div.grid div.footer-menu strong {
+  display: inline-block;
+  color: #867573;
+  font-weight: normal;
+}
+
+footer div.grid div.footer-menu strong:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #867573;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+footer div.grid div.footer-menu strong:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+footer div.grid div.footer-menu p {
+  display: none;
+  color: #867573;
+  padding: 15px 0;
+}
+
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service h4 {
+  footer div.grid div.footer-menu p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer div.grid div.footer-menu:nth-child(2) h4 {
     padding-right: 45px;
   }
 }
 
-footer div.grid div.service a {
-  padding: 15px 5%;
-}
-
 @media screen and (min-width: 1024px) {
-  footer div.grid div.service a {
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.follow h4 {
-    display: none;
-  }
-}
-
-footer div.grid div.follow a {
-  padding: 15px 5%;
-}
-
-@media screen and (min-width: 1024px) {
-  footer div.grid div.follow a {
+  footer div.grid div.footer-menu:nth-child(3) a {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company h4 {
+  footer div.grid div.footer-menu:nth-child(3) h4, footer div.grid div.footer-menu:last-child h4 {
     display: none;
   }
 }
 
-footer div.grid div.company p {
-  display: none;
-  margin-top: 10px;
-}
-
 @media screen and (min-width: 1024px) {
-  footer div.grid div.company p {
-    display: block;
-    margin-top: 35px;
-    margin-left: 0;
+  footer div.grid div.footer-menu h4 {
+    padding-right: 116px;
   }
 }
 
@@ -654,6 +774,7 @@ footer div.grid div.sns {
     right: 15px;
   }
   footer div.grid div.sns a {
+    display: inline-block;
     margin-right: 15px;
   }
   footer div.grid div.sns a:last-child {
@@ -673,6 +794,7 @@ footer div.footer-logo {
 }
 
 footer div.footer-logo img {
+  display: inline-block;
   width: 110px;
 }
 
@@ -682,17 +804,19 @@ footer div.footer-logo img {
   }
 }
 
-footer div.top {
-  display: none;
+footer div#top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  opacity: 0;
 }
 
 @media screen and (min-width: 1024px) {
-  footer div.top {
-    display: block;
-    position: fixed;
+  footer div#top {
     right: 100px;
     bottom: 100px;
-    z-index: 100;
+    z-index: 99;
   }
 }
 /*# sourceMappingURL=index.css.map */

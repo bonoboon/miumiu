@@ -5,188 +5,264 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <title>MIU MIU</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
+
+    <div class="modal">
+        <button class="close">X</button>
+        <div class="modal-content">
+            <img src="./images/paint.png" alt="paint">
+            <div class="modal-txt">
+                <p></p>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="main-img-mobile">
-            <a href=""><img src="./images/mainimg.png" alt="mainimg_moblie"></a>
+            <a href="#"><img src="./images/mainimg.png" alt="mainimg_moblie"></a>
         </div>
 
-        <div class="main-img-pc">
-            <a href=""><img src="./images/mainimg_pc_1.png" alt="mainimg_pc_1"></a>
-            <a href=""><img src="./images/mainimg_pc_2.png" alt="mainimg_pc_2"></a>
-            <a href=""><img src="./images/mainimg_pc_3.png" alt="mainimg_pc_3"></a>
+        <div id="main-img-pc" class="scroll">
+            <div class="main-imgs">
+                <a href="./sub/acc/index.html"><img src="./images/mainimg_pc_1.png" alt="mainimg_pc_1"></a>
+                <p>ACCESSORY</p>
+            </div>
+            <div class="main-imgs">
+                <a href="./sub/bags/index.html"><img src="./images/mainimg_pc_2.png" alt="mainimg_pc_2"></a>
+                <p>BAGS</p>
+            </div>
+            <div class="main-imgs">
+                <a href="./sub/wear/index.html"><img src="./images/mainimg_pc_3.png" alt="mainimg_pc_3"></a>
+                <p>WEAR</p>
+            </div>
         </div>
         
         <div class="logo">
-            <h1><a href=""><img src="./images/logo_white.png" alt="logo"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo_white.png" alt="logo"></a></h1>
         </div>
+
+        <nav>
+            <ul id="gnb">
+                <li><a href="#acc">ACCESSORY</a></li>
+                <li><a href="#bags">BAGS</a></li>
+                <li><a href="#wear">WEAR</a></li>
+                <li><a href="#slide">MIUMIUCLUB</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="acc">
+        <section id="acc" class="scroll">
             <h2>액세서리</h2>
             <div class="grid">
                 <div class="acc-img-mobile">
-                    <a href="">
-                        <img src="./images/pouch_beige.png" alt="pouch_beige">
-                    </a>
-                    <a href="">
-                        <img src="./images/sunglass_pink.png" alt="sunglass_pink">
-                    </a>
-                    <a href="">
-                        <img src="./images/earring.png" alt="earring">
-                    </a>
-                    <a href="">
-                        <img src="./images/wallet_pink.png" alt="wallet_pink">
-                    </a>
+                    <div class="product-img-text">
+                        <a href="./sub/acc/sub/WALLETS/materasse_pouch_cameo.html" target="_blank"><img src="./images/pouch_beige.png" alt="pouch_beige" ></a>
+                        <div class="product-des" >
+                            <p>마테라쎄 가죽 파우치 베이지</p>
+                            <strong>￦700,000</strong>
+                        </div>
+                    </div>
+                    <div class="product-img-text">
+                        <a href="#" class="modal-item"><img src="./images/sunglass_pink.png" alt="sunglass_pink"></a>
+                    </div>
+                    <div class="product-img-text">
+                        <a href="#" class="modal-item"><img src="./images/earring.png" alt="earring"></a>
+                    </div>
+                    <div class="product-img-text">
+                        <a href="./sub/acc/sub/WALLETS/madras_cardholder_pinkfirey.html" target="_blank"><img src="./images/wallet_pink.png" alt="wallet_pink"></a>
+                        <div class="product-des">
+                            <p>가죽 카드 홀더 핑크파이어리</p>
+                            <strong>￦520,000</strong>
+                        </div>
+                    </div>
                 </div> <!-- acc-mobile-img -->
 
                 <div class="acc-img-pc">
                     <div class="paint">
-                        <a href="">
-                            <img src="./images/paint.png" alt="paint">
-                        </a>
+                        <a href="#" class="modal-item"><img src="./images/paint.png" alt="paint"></a>
                     </div>
 
                     <div class="acc-pc-right">
-                        <a href="">
-                            <img src="./images/pouch_beige_pc.png" alt="pouch_beige">
-                        </a>
-                        <a href="">
-                            <img src="./images/sunglass_pink_pc.png" alt="sunglass_pink">
-                        </a>
-                        <a href="">
-                            <img src="./images/earring_pc.png" alt="earring">
-                        </a>
-                        <a href="">
-                            <img src="./images/wallet_pink_pc.png" alt="wallet_pink">
-                        </a>
+                        <div class="product-img-text">
+                            <a href="./sub/acc/sub/WALLETS/materasse_pouch_cameo.html" target="_blank"><img src="./images/pouch_beige_pc.png" alt="pouch_beige"></a>
+                            <div class="product-des">
+                                <p>마테라쎄 가죽 파우치 베이지</p>
+                                <strong>￦700,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="#" class="modal-item"><img src="./images/sunglass_pink_pc.png" alt="sunglass_pink"></a>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="#" class="modal-item"><img src="./images/earring_pc.png" alt="earring"></a>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/acc/sub/WALLETS/madras_cardholder_pinkfirey.html" target="_blank"><img src="./images/wallet_pink_pc.png" alt="wallet_pink"></a>
+                            <div class="product-des">
+                                <p>가죽 카드 홀더 핑크파이어리</p>
+                                <strong>￦520,000</strong>
+                            </div>
+                        </div>
                     </div>
                 </div> <!-- acc-pc-img -->
 
                 <div class="button">
-                    <a href="">VIEW</a>
+                    <a href="./sub/acc/index.html">VIEW</a>
                 </div>
-
             </div> <!-- grid -->
         </section>
 
-        <section class="bags">
+        <section id="bags">
             <h2>백</h2>
             <div class="grid">
-                <video autoplay loop>
-                    <source src="./media/bags_video.mp4" alt="bags_video">
-                </video>
-                
-                <div class="bags-img-mobile">
-                    <a href="">
-                        <img src="./images/bag_blue.png" alt="bag_blue">
-                    </a>
-                    <a href="">
-                        <img src="./images/bag_pink.png" alt="bag_pink">
-                    </a>
+                <div class="scroll">
+                    <video muted autoplay loop width="100%">
+                        <source src="./media/bags_video.mp4" alt="bags_video">
+                    </video>
                 </div>
-
-                <div class="bags-img-pc">
-                    <a href=""><img src="./images/bag_pc_1.png" alt="bag_pc_1"></a>
-                    <a href="">
-                        <img src="./images/bag_blue_pc.png" alt="bag_blue_pc">
-                    </a>
-                    <a href=""><img src="./images/bag_pc_2.png" alt="bag_pc_2"></a>
-                    <a href="">
-                        <img src="./images/bag_pink_pc.png" alt="bag_pink_pc">
-                    </a>
-                </div>
-
-                <div class="button">
-                    <a href="">VIEW</a>
+                <div id="bags-img-button" class="scroll">
+                    <div class="bags-img-mobile">
+                        <div class="product-img-text">
+                            <a href="./sub/bags/sub/index_mini2.html" target="_blank"><img src="./images/bag_blue.png" alt="bag_blue" ></a>
+                            <div class="product-des">
+                                <p>미우미우 아이코닉 크리스털 가죽 백</p>
+                                <strong>￦3,320,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/bags/sub/index_mini3.html" target="_blank"><img src="./images/bag_pink.png" alt="bag_pink"></a>
+                            <div class="product-des">
+                                <p>미우미우 아이코닉 크리스털 가죽 백</p>
+                                <strong>￦3,320,000</strong>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bags-img-pc">
+                        <div class="product-img-text">
+                            <a href="#" class="modal-item"><img src="./images/bag_pc_1.png" alt="bag_pc_1"></a>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/bags/sub/index_mini2.html" target="_blank"><img src="./images/bag_blue_pc.png" alt="bag_blue_pc" ></a>
+                            <div class="product-des">
+                                <p>미우미우 아이코닉 크리스털 가죽 백</p>
+                                <strong>￦3,320,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="#" class="modal-item"><img src="./images/bag_pc_2.png" alt="bag_pc_2"></a>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/bags/sub/index_mini3.html" target="_blank"><img src="./images/bag_pink_pc.png" alt="bag_pink_pc"></a>
+                            <div class="product-des">
+                                <p>미우미우 아이코닉 크리스털 가죽 백</p>
+                                <strong>￦3,320,000</strong>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="button">
+                        <a href="./sub/bags/index.html">VIEW</a>
+                    </div>
                 </div>
             </div> <!-- grid -->
         </section>
 
-        <section class="wear">
+        <section id="wear" class="scroll">
             <h2>레디투웨어</h2>
             <div class="grid">
                 <div class="wear-img-mobile">
                     <div class="wear-mobile-left">
-                        <a href="">
-                            <img src="./images/skirt_brown.png" alt="skirt_brown">
-                        </a>
-                        <a href="">
-                            <img src="./images/blazer.png" alt="blazer">
-                        </a>
+                        <div class="product-img-text">
+                            <a href="./sub/wear/sub/index_b1.html" target="_blank"><img src="./images/skirt_brown.png" alt="skirt_brown" ></a>
+                            <div class="product-des">
+                                <p>가죽 미니 스커트</p>
+                                <strong>￦2,990,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/wear/sub/index_o1.html" target="_blank"><img src="./images/blazer.png" alt="blazer" ></a>
+                            <div class="product-des">
+                                <p>크롭 그레인 블레이저</p>
+                                <strong>￦3,290,000</strong>
+                            </div>
+                        </div>
                     </div>
                     <div class="wear-big">
-                        <a href=""><img src="./images/wear_big.png" alt="wear_big"></a>
+                        <a href="#" class="modal-item"><img src="./images/wear_big.png" alt="wear_big"></a>
                     </div>
                 </div>
 
                 <div class="wear-img-pc">
                     <div class="wear-pc-left">
-                        <a href=""><img src="./images/wear_pc_1.png" alt="wear_pc_1"></a>
-                        <a href="">
-                            <img src="./images/skirt_brown_pc.png" alt="skirt_brown_pc">
-                        </a>
-                        <a href="">
-                            <img src="./images/wear_pc_2.png" alt="wear_pc_2">
-                        </a>
-                        <a href="">
-                            <img src="./images/blazer_pc.png" alt="blazer_pc">
-                        </a>
+                        <div class="product-img-text">
+                            <a href="#" class="modal-item"><img src="./images/wear_pc.png" alt="wear_pc"></a>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/wear/sub/index_b1.html" target="_blank"><img src="./images/skirt_brown_pc.png" alt="skirt_brown_pc" ></a>
+                            <div class="product-des">
+                                <p>가죽 미니 스커트</p>
+                                <strong>￦2,990,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/wear/sub/index_t7.html" target="_blank"><img src="./images/blouse.png" alt="blouse" ></a>
+                            <div class="product-des">
+                                <p>프린트 로고 크롭 블라우스</p>
+                                <strong>￦2,990,000</strong>
+                            </div>
+                        </div>
+                        <div class="product-img-text">
+                            <a href="./sub/wear/sub/index_o1.html" target="_blank"><img src="./images/blazer_pc.png" alt="blazer_pc" ></a>
+                            <div class="product-des">
+                                <p>크롭 그레인 블레이저</p>
+                                <strong>￦3,290,000</strong>
+                            </div>
+                        </div>
                     </div>
                     <div class="wear-big-pc">
-                        <a href=""><img src="./images/wear_big_pc.png" alt="wear_big_pc"></a>
+                        <a href="#" class="modal-item"><img src="./images/wear_big_pc.png" alt="wear_big_pc"></a>
                     </div>
                 </div>
                 <div class="button">
-                    <a href="">VIEW</a>
+                    <a href="./sub/wear/index.html">VIEW</a>
                 </div>
             </div> <!-- grid -->
         </section>
 
-        <article class="slide">
+        <article id="slide" class="scroll">
             <h2>슬라이드</h2>
-            <div class="slide-box-mobile">
-                <ul class="slide-img-mobile">
-                    <li>
-                        <a href=""><img src="./images/campaign.png" alt="campaign"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/fashionshow.png" alt="fashionshow"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/special.png" alt="special"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/womans.png" alt="womans"></a>
-                    </li>
+            <div id="slide-box-mobile">
+                <ul class="slide-m">
+                    <li><img src="./images/campaign.png" alt="campaign"></li>
+                    <li><img src="./images/fashionshow.png" alt="fashionshow"></li>
+                    <li><img src="./images/special.png" alt="special"></li>
+                    <li><img src="./images/womans.png" alt="womans"></li>
                 </ul>
             </div>
-            <div class="slide-box-pc">
-                <ul class="slide-img-pc">
-                    <li>
-                        <a href=""><img src="./images/campaign_pc.png" alt="campaign_pc"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/fashionshow_pc.png" alt="fashionshow_pc"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/special_pc.png" alt="special_pc"></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./images/womans_pc.png" alt="womans_pc"></a>
-                    </li>
+            <div id="slide-box-pc">
+                <ul class="slide-pc">
+                    <li><img src="./images/campaign_pc.png" alt="campaign_pc"></li>
+                    <li><img src="./images/fashionshow_pc.png" alt="fashionshow_pc"></li>
+                    <li><img src="./images/special_pc.png" alt="special_pc"></li>
+                    <li><img src="./images/womans_pc.png" alt="womans_pc"></li>
                 </ul>
             </div>
-            <div class="left-arrow">
+            <div class="prev">
                 <span></span>
                 <span></span>
             </div>
-            <div class="right-arrow">
+            <div class="next">
                 <span></span>
                 <span></span>
+            </div>
+            <div class="button">
+                <a href="./sub/club/club.html">VIEW</a>
             </div>
         </article>
     </main>
@@ -194,60 +270,70 @@
     <footer>
         <hr>
         <div class="grid">
-            <div class="category">
-                <h4>Category</h4>
-                <span>▼</span>
-                <a href="">BAGS</a>
-                <a href="">ACCESSORY</a>
-                <a href="">READY TO WEAR</a>
-                <a href="">MIUMIU CLUB</a>
-            </div>
-            
-            <div class="service">
-                <h4>Customer Service</h4>
-                <span>▼</span>
-                <a href="">CONTACT US</a>
-                <a href="">RETURNS</a>
-                <a href="">TRACK YOUR ORDER</a>
-            </div>
-            
-            <div class="follow">
-                <h4>MIUMIU Follow</h4>
-                <span>▼</span>
-                <a href="">facebook</a>
-                <a href="">youtube</a>
-                <a href="">instagram</a>
-                <a href="">twitter</a>
-            </div>
-            
-            <div class="company">
-                <h4>Company</h4>
-                <span>▼</span>
-                <p>
-                    회사명: 프라다 코리아 (유). 사업자등록번호: 213-86-18599.<br>
-                    대표자: 알만도 톨로메리. 개인정보 보호책임자: 김지훈이사. 통신판매신고번호: 2017-서울강남-04082.<br>
-                    주소: 서울시 강남구 압구정로 439 06010.<br>
-                    고객 서비스 센터: 001 800 648648 00. 이메일: CLIENT.SERVICE.KR@MIUMIU.COM.<br>
-                    법적고지 및 이용약관 (링크를 확인하세요). 호스팅 서비스: WIIT.<br>
-                    구매안전서비스: NHN한국 사이버결제 주식회사에 가입하여 고객님의 안전한 거래를 보장하고 있습니다.<br>
-                    모든제품은 2016년 1월 이후 생산된 제품 입니다.
-                </p>
-            </div>
+            <div class="footer-box">
+                <div class="footer-menu">
+                    <div class="footer-menu-click">
+                        <h4>Category</h4>
+                        <span class="down">▼</span>
+                    </div>
+                    <a href="./sub/bags/index.html"><strong>BAGS</strong></a>
+                    <a href="./sub/acc/index.html"><strong>ACCESSORY</strong></a>
+                    <a href="./sub/wear/index.html"><strong>READY TO WEAR</strong></a>
+                    <a href="./sub/club/club.html"><strong>MIUMIU CLUB</strong></a>
+                </div>
+                
+                <div class="footer-menu">
+                    <div class="footer-menu-click">
+                        <h4>Customer Service</h4>
+                        <span class="down">▼</span>
+                    </div>
+                    <a href="./sub/etc/contact/index.html"><strong>CONTACT US</strong></a>
+                    <a href="./sub/etc/returns/index.html"><strong>RETURNS</strong></a>
+                    <a href="./sub/etc/order/order.html"><strong>TRACK YOUR ORDER</strong></a>
+                </div>
 
+                <div class="footer-menu">
+                    <div class="footer-menu-click">
+                        <h4>MIUMIU Follow</h4>
+                        <span class="down">▼</span>
+                    </div>
+                    <a href="#"><strong>facebook</strong></a>
+                    <a href="#"><strong>youtube</strong></a>
+                    <a href="#"><strong>instagram</strong></a>
+                    <a href="#"><strong>twitter</strong></a>
+                </div>
+                
+                <div class="footer-menu">
+                    <div class="footer-menu-click">
+                        <h4>Company</h4>
+                        <span class="down">▼</span>
+                    </div>
+                    <p>
+                        회사명: 프라다 코리아 (유). 사업자등록번호: 213-86-18599.<br>
+                        대표자: 알만도 톨로메리. 개인정보 보호책임자: 김지훈이사. 통신판매신고번호: 2017-서울강남-04082.<br>
+                        주소: 서울시 강남구 압구정로 439 06010.<br>
+                        고객 서비스 센터: 001 800 648648 00. 이메일: CLIENT.SERVICE.KR@MIUMIU.COM.<br>
+                        법적고지 및 이용약관 (링크를 확인하세요). 호스팅 서비스: WIIT.<br>
+                        구매안전서비스: NHN한국 사이버결제 주식회사에 가입하여 고객님의 안전한 거래를 보장하고 있습니다.<br>
+                        모든제품은 2016년 1월 이후 생산된 제품 입니다.
+                    </p>
+                </div>
+            </div> <!-- footer-box -->
+            
             <div class="sns">
-                <a href="https://url.kr/bf8sph"><img src="./images/fb.png" alt="fb"></a>
-                <a href="https://www.youtube.com/user/miumiu"><img src="./images/youtube.png" alt="youtube"></a>
-                <a href="https://www.instagram.com/miumiu/"><img src="./images/insta.png" alt="insta"></a>
-                <a href="https://twitter.com/miumiuofficial"><img src="./images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="./images/fb.png" alt="fb"></a>
+                <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="./images/insta.png" alt="insta"></a>
+                <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
             </div>
-        </div>
+        </div> <!-- grid-->
             
         <div class="footer-logo">
-            <a href=""><img src="./images/logo_color.png" alt="flogo"></a>
+            <a href="#"><img src="./images/logo_color.png" alt="flogo"></a>
         </div>
 
-        <div class="top">
-            <a href=""><img src="./images/top.png" alt="top"></a>
+        <div id="top">
+            <img src="./images/top.png" alt="top"></a>
         </div>
     </footer>
 </body>

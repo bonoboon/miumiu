@@ -189,7 +189,7 @@ main {
 }
 
 
-// footer
+//footer
 footer {
     position: relative;
     width: 100%;
@@ -199,8 +199,12 @@ footer {
     }
 
     div.grid {
-        div {
+        div.footer-menu {
             position: relative;
+            cursor: pointer;
+            div.footer-menu-click {
+                display: inline-block;
+            }
             h4 {
                 display: inline-block;
                 color: $color-base;
@@ -225,74 +229,69 @@ footer {
 
             a {
                 display: none;
-                color: $color-base;
-                
+                padding: 15px 5%;
                 @include responsive(pc-screens) {
                     display: inline-block;
                     margin-right: 5%;
-                }
-            }
-        }
-
-        div.category {
-            h4 {
-                @include responsive(pc-screens) {
-                    padding-right: 116px;
-                }
-            }
-
-            a {
-                padding: 15px 5%;
-                @include responsive(pc-screens) {
                     padding: 0;
                 }
             }
-        }
-        
-        div.service {
-            h4 {
-                @include responsive(pc-screens) {
-                    padding-right: 45px;
+            
+            strong {
+                display: inline-block;
+                color: $color-base;
+                font-weight: normal;
+                &:after {
+                    display:block;
+                    content: '';
+                    border-bottom: solid 3px $color-base;  
+                    transform: scaleX(0);  
+                    transition: transform 250ms ease-in-out;
                 }
-            }
-
-            a {
-                padding: 15px 5%;
-                @include responsive(pc-screens) {
-                    padding: 0;
-                }
-            }
-        }
-
-        div.follow {
-            h4 {
-                @include responsive(pc-screens) {
-                    display: none;
-                }
-            }
-
-            a {
-                padding: 15px 5%;
-                @include responsive(pc-screens) {
-                    display: none;
-                }
-            }
-        }
-
-        div.company {
-            h4 {
-                @include responsive(pc-screens) {
-                    display: none;
+                &:hover:after {
+                    transform: scaleX(1);
                 }
             }
 
             p {
                 display: none;
-                margin-top: 10px;
+                color: $color-base;
+                padding: 15px 0;
                 @include responsive(pc-screens) {
                     display: block;
-                    margin-top: 35px;
-                    margin-left: 0;
+                }
+            }
+        }
+        
+        div.footer-menu {
+            &:nth-child(2) {
+                h4 {
+                    @include responsive(pc-screens) {
+                        padding-right: 45px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                a {
+                    @include responsive(pc-screens) {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(3),
+            &:last-child {
+                h4 {
+                    @include responsive(pc-screens) {
+                        display: none;
+                    }
+                }
+            }
+
+            h4 {
+                @include responsive(pc-screens) {
+                    padding-right: 116px;
                 }
             }
         }
@@ -307,6 +306,7 @@ footer {
                 right: 15px;
 
                 a {
+                    display: inline-block;
                     margin-right: 15px;
                     &:last-child {
                         margin-right: 0;
@@ -319,12 +319,12 @@ footer {
     div.footer-logo {
         margin-top: 45px;
         text-align: center;
-        
         @include responsive(pc-screens) {
             margin-top: 60px;
         }
         
         img {
+            display: inline-block;
             width: 110px;
             @include responsive(pc-screens) {
                 width: 180px;

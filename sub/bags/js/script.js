@@ -103,5 +103,12 @@ $(document).ready(function(){
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
         });
     });
+
+    //footer-menu-click
+    $(".footer-menu-click").click(function() {
+        if (!mql.matches) {
+            $(this).siblings().slideToggle(500, "swing");
+        }
+    });
 });
     

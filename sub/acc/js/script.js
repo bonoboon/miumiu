@@ -18,7 +18,7 @@ $(document).ready(function(){
 
         if($(this).next().css("display") == "block") {
             $(this).next().slideUp(300);
-        } else {
+        } else {    
             $(this).next().slideDown(300);
         }
     });
@@ -103,5 +103,13 @@ $(document).ready(function(){
             $(this).find('img').attr('src', newIcon + '.' + /[^.]+$/.exec(srcIcon));
         });
     });
+
+    //footer-menu-click
+    $(".footer-menu-click").click(function() {
+        if (!mql.matches) {
+            $(this).siblings().slideToggle(500, "swing");
+        }
+    });
+
 });
     
